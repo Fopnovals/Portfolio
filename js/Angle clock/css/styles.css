@@ -1,0 +1,118 @@
+body {
+    background: #fff;
+    color: #666;
+    margin: 0;
+    font: 9px/11px 'RobotoRegular', arial, helvetica, sans-serif;
+}
+
+/* General reset */
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+form, fieldset {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+img {
+    border-style: none;
+    display: block;
+}
+input, select, textarea {
+    vertical-align: middle;
+    resize: none;
+    outline: none;
+    font: 100% 'Raleway', helvetica, sans-serif;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+figure {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ovhreset:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* General settings */
+
+#wrapper {
+    max-width: 1200px;
+    width: auto;
+    margin: 20px auto 0;
+}
+.form {
+    width: 300px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.form input, .form label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.form input {
+    border: 1px solid #000;
+}
+.button {
+    display: inline-block;
+    margin: 0 auto;
+    width: 150px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: chartreuse;
+}
+.result {
+    font-size: 20px;
+    width: 200px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.clock {
+    width: 300px;
+    height: 300px;
+    background: url("../img/clock.png") no-repeat;
+    position: relative;
+    margin: 30px auto 0;
+}
+.big-arrow, .small-arrow {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    transition: 2s linear;
+}
+.big-arrow {
+    background: url("../img/big-strl.png") no-repeat 50% 7px;
+    z-index: 1;
+}
+.small-arrow {
+    background: url("../img/small-strl.png") no-repeat 50% 77px;
+    z-index: 2;
+}
