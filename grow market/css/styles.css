@@ -180,7 +180,7 @@ body {
 .registration {
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 102;
   background-color: #fff;
   top: -12px;
   right: -26px;
