@@ -1,0 +1,75 @@
+{{> head}}
+
+<div class="hero" style="background-image: url(img/bg/contact.jpg)">
+    <div class="hero-content container">
+        <a href="index.html" class="icon icon-logo-huge"></a>
+        <h1 class="h1-page">Contact us</h1>
+        <h3 class="h3">Who seeks will always find</h3>
+    </div>
+    <i class="icon icon-mouse"></i>
+</div>
+
+{{> header}}
+
+<div class="main">
+    <div class="contact">
+        <div class="c-address">
+            <div class="c-map" id="map" data-lat="40" data-lng="50" data-zoom="8"></div>
+            <div class="c-address-info">
+                <p>No.111 Room，No.2 Building LongGe piljinChaoYange District, Beijing, China. 102200</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                <button data-href="#form" class="js-scrollto button">CONNECT WITH US</button>
+            </div>
+        </div>
+        <div class="c-calendar">
+            <div class="container">
+                <div class="cc-block cc-widget left">
+                    <div id="datepicker" data-dates="dates.json"></div>
+                </div>
+                <div class="cc-block cc-holidays left">
+                    <div class="cc-heading">Company Holidays</div>
+                    <div class="cc-warning">During the holidays, the following lining</div>
+                    <ul class="cc-spoiler-list">
+                        <li class="cc-spoiler">
+                            <i class="icon icon-spoiler"></i>
+                            <div class="cc-spoiler-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                        </li>
+                        <li class="cc-spoiler">
+                            <i class="icon icon-spoiler"></i>
+                            <div class="cc-spoiler-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                        </li>
+                        <li class="cc-spoiler">
+                            <i class="icon icon-spoiler"></i>
+                            <div class="cc-spoiler-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="c-pgp center">
+            <button class="js-pgp pgp-trigger h">PGP EMAIL PUBLIC KEY</button>
+            <div class="pgp">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <div class="pgp-content">
+                    <div class="pgp-head">
+                        <p>-----BEGIN PGP PUBLIC KEY BLOCK-----</p>
+                        <p>Version: BCPG C# v1.6.1.0</p>
+                    </div>
+                    <p id="clipboard">mQENBFalSSEBCACeZuUH3+RH+FTtdXx3tLsBaaT/uIkfsuuYlC6qzNf/CrwBa4nfuR3Sb2y8mdhfaHZgVgwpioAm4289ZIKapuM4ytXg1jmO5tRHsb2Ea5S0lmAg/yLsnRydCzkZX8jIRudyr6OwsZpqQhWUxfDkXBEwA7YBK7zag/ry8sw9mCMQwVzMg44WvQultbkq+1PQqOflTw7tUsIn5oRUZki4rgfEDP0Qq6cDuqdgUK0tZ0AQ4fhl9OjZXTBgg1G4edZUsBoxh/i4QBELLUL/Quas7yOe9hzWgKSwoeLMeR2TDU5ttTQ46SrrN07l/3JRJSYjHVObmyfAUcJZi8IiQAhzE6nPABEBAAG0FHNhbGVzQGJsYWNrcGhhcm0uY29tiQEcBBABAgAGBQJWpUkhAAoJEL5PJ/XxdWvd0EwIAIXhb5UCRgfzMEKE+SsWEHwbgm/kYDLn/Qey8tPXY2V/XosmerTC5znOPt7klsovIDIIb29WEVafVLVf0Zw/ocbnYQBbrZTWfRhxzoH4b6sgLf2s0rUJFHLbnh21ef59Gv6YWN2mirZtXEyQUGqDY85tcYOuibFzKnE6oYkfXdA5cRjwLStHXsuKP7pTm6o3sbT2aw6oNO9V7BZiRjnKBHhRPiBLNplUoi3zxfcrb/eA4UIYhkM4fnncpi4nZ7oCItQJLJBZJYmO3bat0434ZmLTycGJZ0TUfoCztEUCumyT0iwYqL1GYwaICs2WwYu+LgLq7gBuHgtu0dXw/wkggrw==239Q</p>
+                    <div class="pgp-foot">
+                        <p>-----END PGP PUBLIC KEY BLOCK-----</p>
+                    </div>
+                </div>
+                <div class="pgp-buttons">
+                    <button data-clipboard-target="#clipboard" class="js-clipboard button">
+                        <span class="button-hidden">Copied</span>
+                        <span class="button-inner">Copy</span>
+                    </button>
+                    <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank" class="button button-transparent">What is this</a>
+                </div>
+            </div>
+        </div>
+        {{> contact-form}}
+    </div>
+</div>
+{{> footer}}

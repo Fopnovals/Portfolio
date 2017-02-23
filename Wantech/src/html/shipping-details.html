@@ -1,0 +1,329 @@
+{{> head}}
+{{> header}}
+
+<div class="order">
+    <div class="container">
+        <div class="order-wrapper">
+            <div class="order-details">
+                <a href="shop.html" title="Back" class="article-back"></a>
+                <!--<div class="order-checkout-wrapper">-->
+                    <!--<a href="" data-target="#checkout-via-email" data-toggle="modal" class="order-checkout">-->
+                        <!--<i class="icon icon-check-email"></i>-->
+                        <!--<span>Checkout via email</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <form class="modal modal-order fade" id="checkout-via-email">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal"></button>
+                                <div class="m-order-head">Enter your email</div>
+                                <div class="m-order-row">
+                                    <input type="email" class="input" placeholder="email@gmail.com" required />
+                                </div>
+                                <div class="m-order-submit">
+                                    <button type="submit" class="modal-push modal-push-normal">confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="order-list">
+                    <div class="order-header">
+                        <div class="order-name">My order</div>
+                        <a href="" class="order-promocode">Apply promo code</a>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <a href="" class="order-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                            <div class="order-desc">
+                                <div class="order-row">
+                                    <a href="" class="order-link">Seldafinil crystal</a>
+                                    <a href="" class="mo-item-remove"></a>
+                                </div>
+                                <div class="order-row">
+                                    <div class="order-muted">Color: Blue</div>
+                                </div>
+                                <div class="order-row">
+                                    <div class="order-muted">Weight: 100G</div>
+                                    <div class="order-price">$210</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <a href="" class="order-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                            <div class="order-desc">
+                                <div class="order-row">
+                                    <a href="" class="order-link">Seldafinil crystal</a>
+                                    <a href="" class="mo-item-remove"></a>
+                                </div>
+                                <div class="order-row">
+                                    <div class="order-muted">Color: Blue</div>
+                                </div>
+                                <div class="order-row">
+                                    <div class="order-muted">Weight: 100G</div>
+                                    <div class="order-price">$210</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <a href="" class="order-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                            <div class="order-desc">
+                                <div class="order-row">
+                                    <a href="" class="order-link">Seldafinil crystal</a>
+                                    <a href="" class="mo-item-remove"></a>
+                                </div>
+                                <div class="order-row">
+                                    <div class="order-muted">Color: Blue</div>
+                                </div>
+                                <div class="order-row">
+                                    <div class="order-muted">Weight: 100G</div>
+                                    <div class="order-price">$210</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        <span>Total</span>
+                        <strong class="order-total-price">$679</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="order-actions order-actions-wide js-tabs">
+                <div class="order-form order-form-shipping">
+                    <div class="order-nav nav">
+                        <a href="#oform-01" class="js-tab-trigger active order-nav-link">Shipping details</a>
+                        <a href="#oform-02" class="js-tab-trigger order-nav-link">Payments method</a>
+                    </div>
+                    <form id="oform-01" class="js-tab-target oform-shipping active oform-row">
+                        <div class="oform-field">
+                            <div class="oform-wrapper">
+                                <div class="oform-half">
+                                    <div class="oform-caption">First name</div>
+                                    <input type="text" class="input" required />
+                                </div>
+                                <div class="oform-half">
+                                    <div class="oform-caption">Last name</div>
+                                    <input type="text" class="input" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oform-field">
+                            <div class="oform-caption">Address line 1</div>
+                            <input type="text" class="input" required placeholder="Start typing your address" />
+                        </div>
+                        <div class="oform-field">
+                            <div class="oform-wrapper">
+                                <div class="oform-half">
+                                    <div class="oform-caption">City</div>
+                                    <select class="order-select">
+                                        <option>Choose city</option>
+                                        <option value="01">New York</option>
+                                        <option value="02">Chicago</option>
+                                        <option value="02">Orlando</option>
+                                    </select>
+                                </div>
+                                <div class="oform-half">
+                                    <div class="oform-caption">State/Province (optional)</div>
+                                    <select class="order-select">
+                                        <option>Choose state</option>
+                                        <option value="01">State 1</option>
+                                        <option value="02">State 2</option>
+                                        <option value="02">State 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oform-field">
+                            <div class="oform-wrapper">
+                                <div class="oform-half">
+                                    <div class="oform-caption">Postal code</div>
+                                    <input type="text" class="input" required />
+                                </div>
+                                <div class="oform-half">
+                                    <div class="oform-caption">Phone number</div>
+                                    <input type="tel" class="input" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oform-field">
+                            <div class="oform-caption">Comments</div>
+                            <textarea class="input input-textarea"></textarea>
+                        </div>
+                        <div class="oform-field">
+                            <div class="oform-caption">Select the shipping method:</div>
+                        </div>
+                        <div class="oform-field">
+                            <label class="label label-radio">
+                                <input type="radio" name="radiobutton" class="input-hidden" checked />
+                                <span class="label-radio-icon">
+                                <i class="icon icon-ok"></i>
+                            </span>
+                                <span class="label-text">Free Express Shipping</span>
+                            </label>
+                        </div>
+                        <div class="oform-field">
+                            <label class="label label-radio">
+                                <input type="radio" name="radiobutton" class="input-hidden" />
+                                <span class="label-radio-icon">
+                                <i class="icon icon-ok"></i>
+                            </span>
+                                <span class="label-text">Individual Shipping Option (Surcharge)</span>
+                            </label>
+                        </div>
+                        <div class="oform-submit center">
+                            <button type="submit" class="modal-push">Next step</button>
+                        </div>
+                    </form>
+                    <div id="oform-02" class="js-tab-target">
+                        <form class="form">
+                            <div class="oform-payment">
+                                <div class="oform-row">
+                                    <label class="label label-radio">
+                                        <input type="checkbox" name="radiobutton" class="input-hidden js-order-choose" />
+                                        <span class="label-radio-icon">
+                                            <i class="icon icon-ok"></i>
+                                        </span>
+                                        <span class="label-text">Bitcoin</span>
+                                        <i class="disabled icon icon-label-bitcoin"></i>
+                                        <i class="active icon icon-label-bitcoin-active"></i>
+                                    </label>
+                                    <div class="oform-note">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                </div>
+                                <div class="oform-row">
+                                    <label class="label label-radio">
+                                        <input type="checkbox" name="radiobutton" class="input-hidden js-order-choose" />
+                                        <span class="label-radio-icon">
+                                            <i class="icon icon-ok"></i>
+                                        </span>
+                                        <span class="label-text">Western Union</span>
+                                        <i class="disabled icon icon-label-wu"></i>
+                                        <i class="active icon icon-label-wu-active"></i>
+                                    </label>
+                                    <div class="oform-note">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                </div>
+                                <div class="oform-row">
+                                    <label class="label label-radio">
+                                        <input type="checkbox" name="radiobutton" class="input-hidden js-order-choose" />
+                                        <span class="label-radio-icon">
+                                            <i class="icon icon-ok"></i>
+                                        </span>
+                                        <span class="label-text">MoneyGram</span>
+                                        <i class="disabled icon icon-label-moneygram"></i>
+                                        <i class="active icon icon-label-moneygram-active"></i>
+                                    </label>
+                                    <div class="oform-note">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                </div>
+                                <div class="oform-row">
+                                    <label class="label label-radio">
+                                        <input type="checkbox" name="radiobutton" class="input-hidden js-order-choose" />
+                                        <span class="label-radio-icon">
+                                            <i class="icon icon-ok"></i>
+                                        </span>
+                                        <span class="label-text">Bank transfer</span>
+                                        <i class="disabled icon icon-label-bank"></i>
+                                        <i class="active icon icon-label-bank-active"></i>
+                                    </label>
+                                    <div class="oform-note">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                </div>
+                                <div class="oform-row">
+                                    <label class="label label-radio">
+                                        <input type="checkbox" name="radiobutton" class="input-hidden js-order-choose" />
+                                        <span class="label-radio-icon">
+                                            <i class="icon icon-ok"></i>
+                                        </span>
+                                        <span class="label-text">PayPal</span>
+                                        <i class="disabled icon icon-label-paypal"></i>
+                                        <i class="active icon icon-label-paypal-active"></i>
+                                    </label>
+                                    <div class="oform-note">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                </div>
+                                <div class="oform-row active">
+                                    <label class="label label-radio">
+                                        <input type="checkbox" name="radiobutton" class="input-hidden js-order-choose" checked />
+                                        <span class="label-radio-icon">
+                                            <i class="icon icon-ok"></i>
+                                        </span>
+                                        <span class="label-text">CreditCard</span>
+                                        <i class="disabled icon icon-label-card"></i>
+                                        <i class="active icon icon-label-card-active"></i>
+                                    </label>
+                                    <div class="oform-note">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                    <div class="oform-fields">
+                                        <div class="oform-field">
+                                            <div class="oform-caption">First/Last name</div>
+                                            <input type="email" class="input" />
+                                        </div>
+                                        <div class="oform-field">
+                                            <div class="oform-caption">Card number</div>
+                                            <input type="text" class="input" placeholder="xxxx xxxx xxxx xxxx" />
+                                        </div>
+                                        <div class="oform-field">
+                                            <div class="oform-wrapper">
+                                                <div class="oform-cell">
+                                                    <div class="oform-caption">Expiry data</div>
+                                                    <select class="order-select">
+                                                        <option>Month</option>
+                                                        <option value="01">01</option>
+                                                        <option value="01">02</option>
+                                                        <option value="01">03</option>
+                                                        <option value="01">04</option>
+                                                        <option value="01">05</option>
+                                                        <option value="01">06</option>
+                                                        <option value="01">07</option>
+                                                        <option value="01">08</option>
+                                                        <option value="01">09</option>
+                                                        <option value="01">10</option>
+                                                        <option value="01">11</option>
+                                                        <option value="01">12</option>
+                                                    </select>
+                                                </div>
+                                                <div class="oform-cell">
+                                                    <div class="oform-caption">&nbsp;</div>
+                                                    <select class="order-select">
+                                                        <option>Year</option>
+                                                        <option value="01">2018</option>
+                                                        <option value="01">2019</option>
+                                                        <option value="01">2020</option>
+                                                        <option value="01">2021</option>
+                                                        <option value="01">2022</option>
+                                                        <option value="01">2023</option>
+                                                    </select>
+                                                </div>
+                                                <div class="oform-cell oform-cell-tooltip">
+                                                    <div class="oform-caption">CVC/CVC2</div>
+                                                    <input type="text" class="input" />
+                                                    <i class="icon icon-label-cvv" title="3 digits on back of your card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-complete">
+                                <label class="label label-checkbox">
+                                    <input type="checkbox" required class="input-hidden" />
+                                    <span class="label-checkbox-icon">
+                                        <i class="icon icon-label-checkbox"></i>
+                                    </span>
+                                    <span class="label-text">I accept <a href="">Terms and Conditions of the Privacy Policy</a></span>
+                                </label>
+                                <div class="center">
+                                    <button type="submit" class="modal-push">
+                                        <span class="modal-push-innerwrap">
+                                            <span class="modal-push-text">COMPLETE PURSHASE</span>
+                                            <span class="pipe">|</span>
+                                            <span class="modal-push-sum">$630</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> footer}}

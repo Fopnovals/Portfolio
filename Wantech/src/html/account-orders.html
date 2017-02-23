@@ -1,0 +1,777 @@
+{{> head}}
+{{> header}}
+
+<div class="bg" style="background-image: url(img/bg/account.jpg)">
+    <h1 class="h1 h1-page">My account</h1>
+</div>
+
+<div class="main">
+    <div class="account">
+        <div class="container">
+            <div class="crumbs">
+                <a href="index.html" class="crumb">Home</a>
+                <a href="index.html" class="crumb">My Account</a>
+                <a href="account-tracking.html" class="crumb">Track My Order</a>
+                <a href="" class="filtering">
+                    <i class="icon icon-filtering"></i>
+                </a>
+                <ul class="second-menu">
+                    <li><a href="#"><span class="icon icon-upload"></span>UPLOAD PHOTO</a></li>
+                    <li><a href="#">CHANGE PASSWORD</a></li>
+                    <li><a href="#">CHANGE EMAIL</a></li>
+                    <li><a href="#">DELETED ACCOUNT</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav nav-support ord-h">
+            <a href="" class="nav-support-link active">ORDER History</a>
+            <a href="" class="nav-support-link">TRACK MY ORDER</a>
+            <a href="" class="nav-support-link">MY Comments</a>
+            <div class="discount">
+                <span class="discount-message">your discount is</span>
+                <span class="discount-value">5%</span>
+            </div>
+        </nav>
+        <div class="account-content">
+            <div class="container">
+                <table class="my-orders">
+                    <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>Order number</td>
+                        <td>Items</td>
+                        <td>Amount</td>
+                        <td>Method of payment</td>
+                        <td>Status</td>
+                        <td>Details</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Bank Wire Transfer</td>
+                        <td>
+                            <a href="#mo-items-01-form" data-target="#mo-items-01-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
+                            <form class="modal modal-confirm fade" id="mo-items-01-form">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"></button>
+                                            <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
+                                            <div class="confirm-caption">Comments*</div>
+                                            <textarea required class="input input-block input-textarea"></textarea>
+                                            <div class="label-file-wrap center">
+                                                <label class="label label-file" for="upload-recipe">
+                                                    <input id="upload-recipe" type="file" class="input-hidden" />
+                                                    <i class="icon icon-upload"></i>
+                                                    <span>UPLOAD RECIPE*</span>
+                                                </label>
+                                                <div class="label-file-name">No file uploaded</div>
+                                            </div>
+                                            <div class="center">
+                                                <button type="submit" class="modal-push">
+                                                    <span class="modal-push-innerwrap">
+                                                        <span class="modal-push-text">Confirm</span>
+                                                        <span class="pipe">|</span>
+                                                        <span class="modal-push-sum">$630</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="#mo-items-01" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-01">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>MoneyGram</td>
+                        <td>
+                            <a href="#mo-items-02-form" data-target="#mo-items-02-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
+                            <form class="modal modal-confirm fade" id="mo-items-02-form">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"></button>
+                                            <div class="confirm-name">Payment Confirmation MoneyGram</div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Reference Number*</div>
+                                                <input type="text" placeholder="XXXXXXXXXXXXXXXX" class="input input-block" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Date of payment*</div>
+                                                <input type="text" value="DD.MM.YYYY" class="input input-block" id="date-pick" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Info about the bank (full name & address)*</div>
+                                                <input type="text" class="input input-block" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Full name as in PASSPORT*</div>
+                                                <input type="text" class="input input-block" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Comments*</div>
+                                                <textarea required class="input input-block input-textarea"></textarea>
+                                            </div>
+                                            <div class="cover-upload clearfix">
+                                                <label class="right" for="upload-recip">
+                                                    <input id="upload-recip" type="file" class="input-hidden" />
+                                                    <i class="icon icon-upload2"></i>
+                                                    <span class="right">UPLOAD RECIPT</span>
+                                                </label>
+                                                <div class="label-file-name">No file uploaded</div>
+                                            </div>
+                                            <div class="check-cover clearfix">
+                                                <label class="label label-checkbox left" for="create-an-account">
+                                                    <input class="input-hidden" type="checkbox" required id="create-an-account">
+                                                    <span class="label-checkbox-icon">
+                                                        <i class="icon icon-label-checkbox"></i>
+                                                    </span>
+                                                    <span class="label-text">Create an account ?</span>
+                                                </label>
+
+
+                                            </div>
+                                            <div class="center">
+                                                <button type="submit" class="modal-push">
+                                                    <span class="modal-push-innerwrap">
+                                                        <span class="modal-push-text">Confirm</span>
+                                                        <span class="pipe">|</span>
+                                                        <span class="modal-push-sum">$630</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="#mo-items-02" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-02">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Western Union</td>
+                        <td>
+                            <a href="#mo-items-03-form" data-target="#mo-items-03-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
+                            <form class="modal modal-confirm fade" id="mo-items-03-form">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"></button>
+                                            <div class="confirm-name">Payment Confirmation Western Union</div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">MTCN*</div>
+                                                <input type="text" placeholder="XXXXXXXXXXXXXXXX" class="input input-block" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Date of payment*</div>
+                                                <input type="text" value="DD.MM.YYYY" class="input input-block" id="date-pick" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Info about the bank (full name & address)*</div>
+                                                <input type="text" class="input input-block" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Full name as in PASSPORT*</div>
+                                                <input type="text" class="input input-block" required>
+                                            </div>
+                                            <div class="mh-row">
+                                                <div class="confirm-caption">Comments*</div>
+                                                <textarea required class="input input-block input-textarea"></textarea>
+                                            </div>
+                                            <div class="cover-upload clearfix">
+                                                <label class="right" for="upload-recip">
+                                                    <input id="upload-recip" type="file" class="input-hidden" />
+                                                    <i class="icon icon-upload2"></i>
+                                                    <span class="right">UPLOAD RECIPT</span>
+                                                </label>
+                                                <div class="label-file-name">No file uploaded</div>
+                                            </div>
+                                            <div class="check-cover clearfix">
+                                                <label class="label label-checkbox left" for="create-an-account">
+                                                    <input class="input-hidden" type="checkbox" required id="create-an-account">
+                                                    <span class="label-checkbox-icon">
+                                                        <i class="icon icon-label-checkbox"></i>
+                                                    </span>
+                                                    <span class="label-text">Create an account ?</span>
+                                                </label>
+
+
+                                            </div>
+                                            <div class="center">
+                                                <button type="submit" class="modal-push">
+                                                    <span class="modal-push-innerwrap">
+                                                        <span class="modal-push-text">Confirm</span>
+                                                        <span class="pipe">|</span>
+                                                        <span class="modal-push-sum">$630</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="#mo-items-03" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-03">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Visa electron</td>
+                        <td>
+                            <a href="#mo-items-04-form" data-target="#mo-items-04-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
+                            <form class="modal modal-confirm fade" id="mo-items-04-form">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"></button>
+                                            <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
+                                            <div class="confirm-caption">Comments*</div>
+                                            <textarea required class="input input-block input-textarea"></textarea>
+                                            <div class="label-file-wrap center">
+                                                <label class="label label-file" for="upload-recipe">
+                                                    <input id="upload-recipe" type="file" class="input-hidden" />
+                                                    <i class="icon icon-upload"></i>
+                                                    <span>UPLOAD RECIPE*</span>
+                                                </label>
+                                                <div class="label-file-name">No file uploaded</div>
+                                            </div>
+                                            <div class="center">
+                                                <button type="submit" class="modal-push">
+                                                    <span class="modal-push-innerwrap">
+                                                        <span class="modal-push-text">Confirm</span>
+                                                        <span class="pipe">|</span>
+                                                        <span class="modal-push-sum">$630</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="#mo-items-04" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-04">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Visa electron</td>
+                        <td>
+                            <a href="#mo-items-05-form" data-target="#mo-items-05-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
+                            <form class="modal modal-confirm fade" id="mo-items-05-form">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"></button>
+                                            <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
+                                            <div class="confirm-caption">Comments*</div>
+                                            <textarea required class="input input-block input-textarea"></textarea>
+                                            <div class="label-file-wrap center">
+                                                <label class="label label-file" for="upload-recipe">
+                                                    <input id="upload-recipe" type="file" class="input-hidden" />
+                                                    <i class="icon icon-upload"></i>
+                                                    <span>UPLOAD RECIPE*</span>
+                                                </label>
+                                                <div class="label-file-name">No file uploaded</div>
+                                            </div>
+                                            <div class="center">
+                                                <button type="submit" class="modal-push">
+                                                    <span class="modal-push-innerwrap">
+                                                        <span class="modal-push-text">Confirm</span>
+                                                        <span class="pipe">|</span>
+                                                        <span class="modal-push-sum">$630</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="#mo-items-05" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-05">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Visa electron</td>
+                        <td>
+                            <a href="#mo-items-06-form" data-target="#mo-items-06-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
+                            <form class="modal modal-confirm fade" id="mo-items-06-form">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal"></button>
+                                            <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
+                                            <div class="confirm-caption">Comments*</div>
+                                            <textarea required class="input input-block input-textarea"></textarea>
+                                            <div class="label-file-wrap center">
+                                                <label class="label label-file" for="upload-recipe">
+                                                    <input id="upload-recipe" type="file" class="input-hidden" />
+                                                    <i class="icon icon-upload"></i>
+                                                    <span>UPLOAD RECIPE*</span>
+                                                </label>
+                                                <div class="label-file-name">No file uploaded</div>
+                                            </div>
+                                            <div class="center">
+                                                <button type="submit" class="modal-push">
+                                                    <span class="modal-push-innerwrap">
+                                                        <span class="modal-push-text">Confirm</span>
+                                                        <span class="pipe">|</span>
+                                                        <span class="modal-push-sum">$630</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="#mo-items-06" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-06">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Visa electron</td>
+                        <td>
+                            <div class="mo-status">
+                                <i class="icon icon-dollarsign"></i>
+                                <span class="mo-status-text">Paid</span>
+                            </div>
+                            <div class="mo-status">
+                                <i class="icon icon-truck-small"></i>
+                                <span class="mo-status-text">awaiting</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#mo-items-07" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-07">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Visa electron</td>
+                        <td>
+                            <div class="mo-status">
+                                <i class="icon icon-dollarsign"></i>
+                                <span class="mo-status-text">Paid</span>
+                            </div>
+                            <div class="mo-status">
+                                <i class="icon icon-truck-small-success"></i>
+                                <span class="mo-status-text">Shipped</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#mo-items-08" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-08">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Visa electron</td>
+                        <td>
+                            <div class="mo-status">
+                                <i class="icon icon-dollarsign"></i>
+                                <span class="mo-status-text">Paid</span>
+                            </div>
+                            <div class="mo-status">
+                                <i class="icon icon-truck-small"></i>
+                                <span class="mo-status-text">awaiting</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#mo-items-09" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-09">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- / Order -->
+
+                    <!-- Order -->
+                    <tr>
+                        <td>
+                            <div class="mo-date">12.02.2017</div>
+                        </td>
+                        <td>
+                            <div class="mo-group">GROUP BUY</div>
+                            <div class="mo-code">51248765</div>
+                        </td>
+                        <td>2</td>
+                        <td><strong>$429</strong></td>
+                        <td>Visa electron</td>
+                        <td>
+                            <div class="mo-status">
+                                <i class="icon icon-dollarsign"></i>
+                                <span class="mo-status-text">Paid</span>
+                            </div>
+                            <div class="mo-status">
+                                <i class="icon icon-truck-small-success"></i>
+                                <span class="mo-status-text">Shipped</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#mo-items-10" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
+                            <a href="" class="mo-item-remove"></a>
+                        </td>
+                    </tr>
+                    <tr class="mo-list">
+                        <td colspan="7">
+                            <div class="mo-items" id="mo-items-10">
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                                <div class="mo-item">
+                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
+                                    <span class="mo-item-prop">Seldafinil</span>
+                                    <span class="mo-item-prop">Blue</span>
+                                    <span class="mo-item-prop">Crystal</span>
+                                    <span class="mo-item-prop">100 g</span>
+                                    <span class="mo-item-prop">&mdash;</span>
+                                    <strong class="mo-item-prop">$210</strong>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> footer}}

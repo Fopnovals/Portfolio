@@ -1,0 +1,67 @@
+.jq-selectbox {
+  cursor: pointer;
+  line-height: 15px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.jq-selectbox__select {
+  width: 100%;
+  padding: 5px 19px 5px 5px;
+  background: $bg-select;
+}
+
+.jq-selectbox__select-text {
+  max-width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.jq-selectbox__trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+  height: 100%;
+  z-index: 1;
+  &:after, &:before {
+    position: absolute;
+    content: '';
+    top: 11px;
+    left: 0;
+    width: 6px;
+    height: 2px;
+    background: #555;
+    border-radius: 0 1px 1px 0;
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+  &:before {
+    transform: rotate(-45deg);
+    margin-left: 3px;
+  }
+}
+
+.jq-selectbox__dropdown {
+  z-index: 2;
+  border-radius: 2px;
+  min-width: 100%;
+  top: 39px;
+  left: 0;
+  overflow: hidden;
+  background: $bg-select;
+  ul {
+    max-height: 203px;
+  }
+}
+
+.jq-selectbox li {
+  transition: all .25s ease-out;
+  white-space: nowrap;
+  padding: 5px 19px 5px 5px;
+  &:hover, &.selected {
+    background: $blue;
+    color: #fff;
+  }
+}

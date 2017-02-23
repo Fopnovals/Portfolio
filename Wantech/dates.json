@@ -1,0 +1,20 @@
+{
+  "dates": [
+    {
+      "date": "2016-12-29",
+      "holiday": "Holiday name"
+    },
+    {
+      "date": "2016-12-26",
+      "holiday": "Other holiday name"
+    },
+    {
+      "date": "2017-1-5",
+      "holiday": "Another holiday name"
+    },
+    {
+      "date": "2017-2-1",
+      "holiday": "February first"
+    }
+  ]
+}

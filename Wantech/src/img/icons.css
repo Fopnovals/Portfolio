@@ -1,0 +1,570 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-air {
+  background-image: url(icons.png);
+  background-position: -348px -106px;
+  width: 35px;
+  height: 35px;
+}
+.icon-arrl {
+  background-image: url(icons.png);
+  background-position: -318px -240px;
+  width: 17px;
+  height: 37px;
+}
+.icon-arrow-right {
+  background-image: url(icons.png);
+  background-position: -374px -54px;
+  width: 30px;
+  height: 16px;
+}
+.icon-arrr {
+  background-image: url(icons.png);
+  background-position: -301px -240px;
+  width: 17px;
+  height: 37px;
+}
+.icon-avatar-empty {
+  background-image: url(icons.png);
+  background-position: -123px -228px;
+  width: 50px;
+  height: 43px;
+}
+.icon-bag {
+  background-image: url(icons.png);
+  background-position: -25px -339px;
+  width: 20px;
+  height: 21px;
+}
+.icon-bank-transfer {
+  background-image: url(icons.png);
+  background-position: -70px -207px;
+  width: 179px;
+  height: 21px;
+}
+.icon-big-logo {
+  background-image: url(icons.png);
+  background-position: -301px -110px;
+  width: 45px;
+  height: 45px;
+}
+.icon-bitcoin-blue {
+  background-image: url(icons.png);
+  background-position: -348px 0px;
+  width: 73px;
+  height: 19px;
+}
+.icon-bitcoin-logo {
+  background-image: url(icons.png);
+  background-position: 0px -364px;
+  width: 17px;
+  height: 22px;
+}
+.icon-bitcoin {
+  background-image: url(icons.png);
+  background-position: -348px -141px;
+  width: 67px;
+  height: 18px;
+}
+.icon-bulb {
+  background-image: url(icons.png);
+  background-position: -335px -240px;
+  width: 13px;
+  height: 18px;
+}
+.icon-calendar {
+  background-image: url(icons.png);
+  background-position: -348px -328px;
+  width: 11px;
+  height: 11px;
+}
+.icon-cart {
+  background-image: url(icons.png);
+  background-position: -103px -321px;
+  width: 19px;
+  height: 17px;
+}
+.icon-chat-dark {
+  background-image: url(icons.png);
+  background-position: -141px -339px;
+  width: 18px;
+  height: 18px;
+}
+.icon-chat {
+  background-image: url(icons.png);
+  background-position: -122px -321px;
+  width: 17px;
+  height: 16px;
+}
+.icon-check-email {
+  background-image: url(icons.png);
+  background-position: -374px -223px;
+  width: 31px;
+  height: 28px;
+}
+.icon-close {
+  background-image: url(icons.png);
+  background-position: -327px -214px;
+  width: 21px;
+  height: 21px;
+}
+.icon-comment {
+  background-image: url(icons.png);
+  background-position: -318px -305px;
+  width: 19px;
+  height: 16px;
+}
+.icon-crystal {
+  background-image: url(icons.png);
+  background-position: -348px -175px;
+  width: 35px;
+  height: 32px;
+}
+.icon-decrease {
+  background-image: url(icons.png);
+  background-position: -409px -51px;
+  width: 7px;
+  height: 1px;
+}
+.icon-dollarsign {
+  background-image: url(icons.png);
+  background-position: -335px -258px;
+  width: 7px;
+  height: 13px;
+}
+.icon-email {
+  background-image: url(icons.png);
+  background-position: -272px -228px;
+  width: 27px;
+  height: 21px;
+}
+.icon-exlamation {
+  background-image: url(icons.png);
+  background-position: -152px 0px;
+  width: 149px;
+  height: 130px;
+}
+.icon-eye {
+  background-image: url(icons.png);
+  background-position: -398px -315px;
+  width: 21px;
+  height: 13px;
+}
+.icon-faq {
+  background-image: url(icons.png);
+  background-position: -404px -54px;
+  width: 17px;
+  height: 16px;
+}
+.icon-fax-dark {
+  background-image: url(icons.png);
+  background-position: -103px -339px;
+  width: 19px;
+  height: 19px;
+}
+.icon-filtering {
+  background-image: url(icons.png);
+  background-position: -278px -180px;
+  width: 20px;
+  height: 22px;
+}
+.icon-geotrust {
+  background-image: url(icons.png);
+  background-position: -173px -228px;
+  width: 99px;
+  height: 21px;
+}
+.icon-icon-up {
+  background-image: url(icons.png);
+  background-position: -301px -187px;
+  width: 26px;
+  height: 27px;
+}
+.icon-increase {
+  background-image: url(icons.png);
+  background-position: -414px -243px;
+  width: 7px;
+  height: 7px;
+}
+.icon-jabber-dark {
+  background-image: url(icons.png);
+  background-position: -35px -364px;
+  width: 15px;
+  height: 20px;
+}
+.icon-label-bank-active {
+  background-image: url(icons.png);
+  background-position: -140px -277px;
+  width: 71px;
+  height: 25px;
+}
+.icon-label-bank {
+  background-image: url(icons.png);
+  background-position: -69px -277px;
+  width: 71px;
+  height: 25px;
+}
+.icon-label-bitcoin-active {
+  background-image: url(icons.png);
+  background-position: -249px -207px;
+  width: 50px;
+  height: 13px;
+}
+.icon-label-bitcoin {
+  background-image: url(icons.png);
+  background-position: -348px -315px;
+  width: 50px;
+  height: 13px;
+}
+.icon-label-card {
+  background-image: url(icons.png);
+  background-position: -295px -305px;
+  width: 23px;
+  height: 16px;
+}
+.icon-label-checkbox {
+  background-image: url(icons.png);
+  background-position: -405px -243px;
+  width: 9px;
+  height: 8px;
+}
+.icon-label-cvv {
+  background-image: url(icons.png);
+  background-position: -406px -259px;
+  width: 14px;
+  height: 14px;
+}
+.icon-label-moneygram-active {
+  background-image: url(icons.png);
+  background-position: -102px -305px;
+  width: 102px;
+  height: 16px;
+}
+.icon-label-moneygram {
+  background-image: url(icons.png);
+  background-position: 0px -305px;
+  width: 102px;
+  height: 16px;
+}
+.icon-label-paypal-active {
+  background-image: url(icons.png);
+  background-position: -348px -275px;
+  width: 58px;
+  height: 16px;
+}
+.icon-label-paypal {
+  background-image: url(icons.png);
+  background-position: -348px -259px;
+  width: 58px;
+  height: 16px;
+}
+.icon-label-wu-active {
+  background-image: url(icons.png);
+  background-position: -348px -207px;
+  width: 69px;
+  height: 16px;
+}
+.icon-label-wu {
+  background-image: url(icons.png);
+  background-position: -348px -159px;
+  width: 70px;
+  height: 16px;
+}
+.icon-logged-in {
+  background-image: url(icons.png);
+  background-position: 0px 0px;
+  width: 152px;
+  height: 152px;
+}
+.icon-logo-huge {
+  background-image: url(icons.png);
+  background-position: 0px -152px;
+  width: 278px;
+  height: 55px;
+}
+.icon-logo {
+  background-image: url(icons.png);
+  background-position: -374px -19px;
+  width: 35px;
+  height: 35px;
+}
+.icon-lookchem {
+  background-image: url(icons.png);
+  background-position: -204px -305px;
+  width: 91px;
+  height: 16px;
+}
+.icon-mail-dark {
+  background-image: url(icons.png);
+  background-position: -45px -339px;
+  width: 20px;
+  height: 20px;
+}
+.icon-mail {
+  background-image: url(icons.png);
+  background-position: -277px -130px;
+  width: 23px;
+  height: 18px;
+}
+.icon-map-expand {
+  background-image: url(icons.png);
+  background-position: -84px -339px;
+  width: 19px;
+  height: 19px;
+}
+.icon-moneygram-blue {
+  background-image: url(icons.png);
+  background-position: -152px -130px;
+  width: 125px;
+  height: 20px;
+}
+.icon-moneygram {
+  background-image: url(icons.png);
+  background-position: -173px -249px;
+  width: 111px;
+  height: 18px;
+}
+.icon-mouse {
+  background-image: url(icons.png);
+  background-position: -348px -19px;
+  width: 26px;
+  height: 52px;
+}
+.icon-next {
+  background-image: url(icons.png);
+  background-position: -278px -152px;
+  width: 17px;
+  height: 28px;
+}
+.icon-ok {
+  background-image: url(icons.png);
+  background-position: -383px -251px;
+  width: 9px;
+  height: 7px;
+}
+.icon-order-accepted {
+  background-image: url(icons.png);
+  background-position: -301px -65px;
+  width: 45px;
+  height: 45px;
+}
+.icon-paper-plane-blue {
+  background-image: url(icons.png);
+  background-position: -80px -321px;
+  width: 23px;
+  height: 17px;
+}
+.icon-paper-plane {
+  background-image: url(icons.png);
+  background-position: -323px -277px;
+  width: 23px;
+  height: 17px;
+}
+.icon-pdf-huge {
+  background-image: url(icons.png);
+  background-position: -301px 0px;
+  width: 47px;
+  height: 65px;
+}
+.icon-pdf {
+  background-image: url(icons.png);
+  background-position: -348px -223px;
+  width: 26px;
+  height: 36px;
+}
+.icon-phone-dark {
+  background-image: url(icons.png);
+  background-position: -301px -214px;
+  width: 26px;
+  height: 26px;
+}
+.icon-phone {
+  background-image: url(icons.png);
+  background-position: -159px -339px;
+  width: 18px;
+  height: 18px;
+}
+.icon-pin-thin {
+  background-image: url(icons.png);
+  background-position: -409px -19px;
+  width: 11px;
+  height: 17px;
+}
+.icon-pin {
+  background-image: url(icons.png);
+  background-position: -301px -155px;
+  width: 24px;
+  height: 32px;
+}
+.icon-pingiun {
+  background-image: url(icons.png);
+  background-position: -122px -339px;
+  width: 19px;
+  height: 18px;
+}
+.icon-placemark {
+  background-image: url(icons.png);
+  background-position: -409px -36px;
+  width: 12px;
+  height: 15px;
+}
+.icon-play {
+  background-image: url(icons.png);
+  background-position: 0px -207px;
+  width: 70px;
+  height: 70px;
+}
+.icon-powder {
+  background-image: url(icons.png);
+  background-position: -348px -291px;
+  width: 32px;
+  height: 24px;
+}
+.icon-prev {
+  background-image: url(icons.png);
+  background-position: -325px -155px;
+  width: 17px;
+  height: 28px;
+}
+.icon-qq-dark {
+  background-image: url(icons.png);
+  background-position: -17px -364px;
+  width: 18px;
+  height: 20px;
+}
+.icon-rails {
+  background-image: url(icons.png);
+  background-position: -383px -71px;
+  width: 35px;
+  height: 35px;
+}
+.icon-sea {
+  background-image: url(icons.png);
+  background-position: -348px -71px;
+  width: 35px;
+  height: 35px;
+}
+.icon-search {
+  background-image: url(icons.png);
+  background-position: -327px -187px;
+  width: 21px;
+  height: 21px;
+}
+.icon-shipping {
+  background-image: url(icons.png);
+  background-position: -284px -249px;
+  width: 16px;
+  height: 17px;
+}
+.icon-skype-dark {
+  background-image: url(icons.png);
+  background-position: -383px -175px;
+  width: 32px;
+  height: 32px;
+}
+.icon-skype {
+  background-image: url(icons.png);
+  background-position: -65px -339px;
+  width: 19px;
+  height: 19px;
+}
+.icon-toggle-map {
+  background-image: url(icons.png);
+  background-position: -374px -251px;
+  width: 9px;
+  height: 8px;
+}
+.icon-tor {
+  background-image: url(icons.png);
+  background-position: -405px -223px;
+  width: 16px;
+  height: 20px;
+}
+.icon-truck-small-success {
+  background-image: url(icons.png);
+  background-position: -139px -321px;
+  width: 16px;
+  height: 12px;
+}
+.icon-truck-small {
+  background-image: url(icons.png);
+  background-position: -155px -321px;
+  width: 16px;
+  height: 12px;
+}
+.icon-truck {
+  background-image: url(icons.png);
+  background-position: -70px -228px;
+  width: 53px;
+  height: 44px;
+}
+.icon-upload-small {
+  background-image: url(icons.png);
+  background-position: -406px -275px;
+  width: 14px;
+  height: 14px;
+}
+.icon-upload {
+  background-image: url(icons.png);
+  background-position: -50px -364px;
+  width: 15px;
+  height: 19px;
+}
+.icon-upload2 {
+  background-image: url(icons.png);
+  background-position: -383px -106px;
+  width: 35px;
+  height: 33px;
+}
+.icon-verisign {
+  background-image: url(icons.png);
+  background-position: 0px -277px;
+  width: 69px;
+  height: 28px;
+}
+.icon-western-union {
+  background-image: url(icons.png);
+  background-position: -211px -277px;
+  width: 86px;
+  height: 19px;
+}
+.icon-western {
+  background-image: url(icons.png);
+  background-position: 0px -321px;
+  width: 80px;
+  height: 18px;
+}
+.icon-wickr-dark {
+  background-image: url(icons.png);
+  background-position: 0px -339px;
+  width: 25px;
+  height: 25px;
+}
+.icon-wickr {
+  background-image: url(icons.png);
+  background-position: -297px -277px;
+  width: 26px;
+  height: 17px;
+}
+.icon-wire {
+  background-image: url(icons.png);
+  background-position: -380px -291px;
+  width: 40px;
+  height: 18px;
+}

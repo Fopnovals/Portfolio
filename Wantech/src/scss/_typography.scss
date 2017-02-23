@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600,700,800|PT+Sans|Ubuntu:400,700|Lato:700');
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proxima_nova_regular-webfont.eot');
+  src: url('../fonts/proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+  url('../fonts/proxima_nova_regular-webfont.woff') format('woff'),
+  url('../fonts/proxima_nova_regular-webfont.ttf') format('truetype'),
+  url('../fonts/proxima_nova_regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url('../fonts/MyriadProBold/MyriadProBold.eot');
+  src: url('../fonts/MyriadProBold/MyriadProBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadProBold/MyriadProBold.woff') format('woff'),
+  url('../fonts/MyriadProBold/MyriadProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font: normal 14px/20px 'Open Sans', sans-serif;
+  color: $text-primary;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.noupper {
+  text-transform: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.condensed {
+  font: {
+    family: 'Open Sans Condensed', sans-serif;
+    weight: 300;
+  }
+}

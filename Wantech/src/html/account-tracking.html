@@ -1,0 +1,46 @@
+{{> head}}
+{{> header}}
+
+<div class="bg" style="background-image: url(img/bg/account.jpg)">
+    <h1 class="h1 h1-page">My account</h1>
+</div>
+
+<div class="main">
+    <div class="account">
+        <div class="container">
+            <div class="crumbs">
+                <a href="index.html" class="crumb">Home</a>
+                <a href="index.html" class="crumb">My Account</a>
+                <a href="account-tracking.html" class="crumb">Track My Order</a>
+                <a href="" class="filtering">
+                    <i class="icon icon-filtering"></i>
+                </a>
+                <ul class="second-menu">
+                    <li><a href="#"><span class="icon icon-upload"></span>UPLOAD PHOTO</a></li>
+                    <li><a href="#">CHANGE PASSWORD</a></li>
+                    <li><a href="#">CHANGE EMAIL</a></li>
+                    <li><a href="#">DELETED ACCOUNT</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav nav-support">
+            <a href="" class="nav-support-link">ORDER History</a>
+            <a href="" class="nav-support-link active">TRACK MY ORDER</a>
+            <a href="" class="nav-support-link">MY Comments</a>
+        </nav>
+        <div class="account-content tr-mo">
+            <form class="track center">
+            <select required class="field-select" name="order">
+                <option class="option-fake">№ ORDER</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+            </select>
+            <input type="text" class="input" placeholder="Please input ..." required />
+            <input type="submit" value="Search" class="track-submit" />
+        </form>
+        </div>
+    </div>
+</div>
+
+{{> footer}}

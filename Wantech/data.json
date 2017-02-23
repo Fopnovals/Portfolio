@@ -1,0 +1,33 @@
+{
+  "map": {
+    "lat": 50,
+    "long": 60,
+    "zoom": 5
+  },
+  "users": [
+    {
+      "name": "Tim Whiteside",
+      "country": "Ukraine",
+      "city": "Krarkov",
+      "img": "img/gui/avatar-empty.png",
+      "lat": 50,
+      "long": 65
+    },
+    {
+      "name": "Tim Whiteside",
+      "country": "Ukraine",
+      "city": "Odessa",
+      "img": "img/content/article/avatar.jpg",
+      "lat": 48,
+      "long": 62
+    },
+    {
+      "name": "Tim Whiteside",
+      "country": "Ukraine",
+      "city": "Kiev",
+      "img": "img/gui/avatar-empty.png",
+      "lat": 54,
+      "long": 63
+    }
+  ]
+}
