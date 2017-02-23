@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<title>Vpluse</title>
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/select2.css">
+	<link rel="stylesheet" href="css/main.css">
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+<body>
+	<div class="layer"></div>
+	<div class="wrapper">
+		<!-- BEGIN HEADER -->
+		<header class="header">
+            <div class="block__container">
+				<div class="logo">
+					<a class="logo__wrapper" href="#?">
+						<img class="logo__img" src="img/logo.png" alt="logo">
+						<img class="logo__mob" src="img/logo_mob.png" alt="logo">
+					</a>
+				</div>
+				<div class="authorization">
+					<a href="#?" class="logout btn">Выйти</a>
+				</div>
+				<div class="user">
+					<div class="user__info user__info_height">
+						<div class="user__photo">
+							<img src="img/user.png" alt="user_photo">
+						</div>
+						<div class="user__description">
+							<span class="user__title">Александер Сташук</span>
+							<span class="user__subtitle">vpluse</span>
+						</div>
+					</div>
+					<div class="user__info user__info_margin">
+						<div class="user__ico">
+							<img src="img/balance.png" alt="balance_photo">
+						</div>
+						<div class="user__description">
+							<span class="user__title">Баланс</span>
+							<span class="user__subtitle">103.56$</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- HEADER EOF -->
+
+		<!-- BEGIN SIDEBAR -->
+		<div class="sidebar">
+			<ul class="sidebar__nav">
+				<li class="sidebar__row">
+					<a class="sidebar__item sidebar__item-trader" href="#?">
+						<span class="sidebar__title">Rebate трейдеру</span>
+					</a>
+				</li>
+				<li class="sidebar__row">
+					<a class="sidebar__item sidebar__item-investor js-drop" href="#?">
+						<span class="sidebar__title">Rebate инвестору</span>
+					</a>
+					<ul class="dropdown">
+						<li class="dropdown__row">
+							<a class="dropdown__item" href="#?">Refback с HYIP</a>
+						</li>
+						<li class="dropdown__row">
+							<a class="dropdown__item" href="#?">Refback с инвестиций</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar__row">
+					<a class="sidebar__item sidebar__item-webmaster" href="#?">
+						<span class="sidebar__title">Rebate вебмастеру</span>
+					</a>
+				</li>
+				<li class="sidebar__row">
+					<a class="sidebar__item sidebar__item-support" href="#?">
+						<span class="sidebar__title">Техподдержка</span>
+					</a>
+				</li>
+				<li class="sidebar__row">
+					<a class="sidebar__item sidebar__item-profile js-drop" href="#?">
+						<span class="sidebar__title">Мой профиль</span>
+					</a>
+					<ul class="dropdown">
+						<li class="dropdown__row">
+							<a class="dropdown__item" href="#?">Menu с HYIP</a>
+						</li>
+						<li class="dropdown__row">
+							<a class="dropdown__item" href="#?">Menu с инвестиций</a>
+						</li>
+						<li class="dropdown__row">
+							<a class="dropdown__item" href="#?">Menu с HYIP</a>
+						</li>
+						<li class="dropdown__row">
+							<a class="dropdown__item" href="#?">Menu с инвестиций</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar__row">
+					<a class="sidebar__item sidebar__item-balance" href="#?">
+						<span class="sidebar__title">Баланс</span>
+					</a>
+				</li>
+			</ul>
+			<a class="show-menu" href="#?">
+				<span class="show-menu__ico"></span>
+				<span class="show-menu__title">свернуть</span>
+			</a>
+		</div>
+		<!-- SIDEBAR EOF -->
+
+		<!-- BEGIN CONTENT -->
+		<section class="content">
+            <div class="block__container">
+				<div class="content__main">
+					<nav class="nav-block">
+						<a class="nav-block__item nav-block__item-active" href="#?">
+							<span class="nav-block__text">Rebate сервис</span>
+						</a>
+						<a class="nav-block__item" href="#?">
+							<span class="nav-block__text">Кабинет партнера</span>
+						</a>
+						<a class="nav-block__item" href="#?">
+							<span class="nav-block__text">Vpluse-vps</span>
+						</a>
+						<a class="nav-block__item" href="#?">
+							<span class="nav-block__text">Vpluse-bot</span>
+						</a>
+					</nav>
+					<div class="content__section">
+						<div class="profit">
+							<span class="title-block">Начисления</span>
+							<div class="sort">
+								<div class="sort__box sort__switch">
+									<a class="sort__control sort__control_prev" href="#?"></a>
+									<a class="sort__control sort__control_next" href="#?"></a>
+								</div>
+								<div class="sort__box">
+									<select class="js-select">
+										<option>31.06 - 30-10</option>
+										<option>31.10 - 30-12</option>
+										<option>31.12 - 01-01</option>
+									</select>
+								</div>
+								<div class="sort__box">
+									<select class="js-select">
+										<option>Детализация по месяцам</option>
+										<option>Детализация по дням</option>
+										<option>Детализация по годам</option>
+										<option>Детализация по городам</option>
+									</select>
+								</div>
+							</div>
+							<div class="profit__diagram">
+								<img src="img/diagram_1.png" alt="diagram">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content__addit center-box">
+					<div class="specification">
+						<span class="title-block">Детализация</span>
+						<div class="sort">
+							<div class="sort__box">
+								<select class="js-select">
+									<option>Детализация по компаниям</option>
+									<option>Детализация по трейдерам</option>
+									<option>Детализация по вебмастерам</option>
+									<option>Детализация по месяцам</option>
+									<option>Детализация по годам</option>
+									<option>Детализация по городам</option>
+								</select>
+							</div>
+						</div>
+						<div class="specification__diagram">
+							<img src="img/diagram_2.png" alt="diagram">
+						</div>
+					</div>
+				</div>
+				<div class="content__bottom">
+					<div class="history">
+						<span class="title-block">история операций</span>
+						<div class="history__table">
+							<table class="rtable rtable--flip">
+								<thead>
+									<tr>
+										<th>Дата</th>
+										<th>Направление</th>
+										<th>Куда/Откуда</th>
+										<th>Сумма</th>
+										<th>Примечание</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>29.09.2016</td>
+										<td class="all-bid__table_confirmed">Начисление</td>
+										<td>Forex4you</td>
+										<td>108</td>
+										<td>14656767732221108</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+									<tr>
+										<td>29.09.2016</td>
+										<td class="all-bid__table_confirmed">Начисление</td>
+										<td>Forex4you</td>
+										<td>108</td>
+										<td>14656767732221108</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+									<tr>
+										<td>29.09.2016</td>
+										<td class="all-bid__table_confirmed">Начисление</td>
+										<td>Forex4you</td>
+										<td>108</td>
+										<td>14656767732221108</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+									<tr>
+										<td>29.09.2016</td>
+										<td class="all-bid__table_confirmed">Начисление</td>
+										<td>Forex4you</td>
+										<td>108</td>
+										<td>14656767732221108</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+									<tr>
+										<td>29.09.2016</td>
+										<td class="all-bid__table_confirmed">Начисление</td>
+										<td>Forex4you</td>
+										<td>108</td>
+										<td>14656767732221108</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+									<tr>
+										<td>29.09.2016</td>
+										<td class="all-bid__table_confirmed">Начисление</td>
+										<td>Forex4you</td>
+										<td>108</td>
+										<td>14656767732221108</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+									<tr>
+										<td>29.09.2016</td>
+										<td class="all-bid__table_confirmed">Начисление</td>
+										<td>Forex4you</td>
+										<td>108</td>
+										<td>14656767732221108</td>
+									</tr>
+									<tr>
+										<td>30.10.2016</td>
+										<td class="all-bid__table_rejected">Вывод</td>
+										<td>Webmoney</td>
+										<td>95</td>
+										<td>3459897155181</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- CONTENT EOF -->
+	</div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
