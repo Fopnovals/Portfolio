@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Identity and Privacy LEAK</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/maine355e9eid08k8ik3ayvi.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+        <link href="static/css/separate-css/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body onload="time()">
+
+        <div class="wrapper third-page">
+            <header class="header">
+                <div class="container">
+                    <div class="header-top">
+                        <a href="index.html" class="logo">
+                            <h1>
+                        <span>Identity and Privacy</span>
+                        <strong>LEAK</strong>
+                    </h1>
+                        </a>
+                        <div class="button-preview-container">
+                            <a href="#" class="button-preview">preview</a>
+                        </div>
+                    </div>
+                    <div class="header-bottom clearfix">
+                        <div class="timer-container">
+                            <div id="timer">
+                                <div class="span-container">
+                                    <span class="days">00</span>
+                                    <strong></strong>
+                                </div>
+                                <div class="span-container">
+                                    <span class="hours">00</span>
+                                    <strong></strong>
+                                </div>
+                                <div class="span-container">
+                                    <span class="minutes">00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-bottom_text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="metods-of-pay">
+                    <div class="buttons-pay clearfix">
+                        <a href="#" class="pay-by-credits-card active">Pay by credit card</a>
+                        <a href="#" class="pay-by-bitcoin">Pay by bitcoin</a>
+                    </div>
+                    <form action="#" class="pay-by-credits-card-box pay-box active">
+                        <div class="input-cover">
+                            <label for="name">Cardholder Name:</label>
+                            <input name="name" type="text" id="name" tabindex="1" required pattern="^[a-zA-Z\s]+$">
+                        </div>
+                        <div class="input-cover">
+                            <label for="card-number">Card Number</label>
+                            <input name="card-number" type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" tabindex="2" maxlength="19" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" required pb-role="username">
+                        </div>
+                        <div class="input-cover">
+                            <span>Expiration Date: MM / YY</span>
+                            <div class="select-cover">
+                                <select name="" id="choose-month" required>
+                                    <option value="" selected disabled>Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+                            <div class="select-cover">
+                                <select name="" id="choose-year" required>
+                                    <option value="" selected disabled>Year</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-cover cvv">
+                            <label for="cvv2">CVV2</label>
+                            <input type="password" id="cvv2" name="card-cvv" tabindex="5" minlength="3" maxlength="4" pattern="[0-9]{3-4}" required pb-role="password">
+                        </div>
+                        <div class="cover-submit">
+                            <input type="submit" value="PAY">
+                        </div>
+                    </form>
+                    <form action="#" class="pay-box">
+                        <div class="qr-code">
+                            <span class="code">1KoX6AA5VTdbBTkw27YEqKfAtTeQo97RRt</span>
+                            <div id="qrcode"></div>
+                            <div class="cover-submit">
+                                <input type="submit" value="PAY">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p>If payment is sucseeded all your data will be permanetly removed from our server cloud.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="static/js/maine355e9eid08k8ik3ayvi.min.js"></script>
+        <script src="static/js/separate-js/jquery.formstyler.js"></script>
+        <script src="static/js/separate-js/jquery.qrcode.min.js"></script>
+
+    </body>
+
+</html>
