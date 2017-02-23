@@ -1,0 +1,1 @@
+This is very bad project (bad code), because the designer was lazy and didnt align boxes, texts and other elements. The client wanted PixelPerfect. So, this project has many unnecessary classes.
