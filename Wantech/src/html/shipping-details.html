@@ -32,6 +32,10 @@
                     <div class="order-header">
                         <div class="order-name">My order</div>
                         <a href="" class="order-promocode">Apply promo code</a>
+                        <div class="cover-promo">
+                            <input class="input-promo input" type="text" placeholder="Input promo code">
+                            <button type="button" class="button-promo btn btn-add">Ok</button>
+                        </div>
                     </div>
                     <div class="order-items">
                         <div class="order-item">
@@ -306,8 +310,26 @@
                                     <span class="label-checkbox-icon">
                                         <i class="icon icon-label-checkbox"></i>
                                     </span>
-                                    <span class="label-text">I accept <a href="">Terms and Conditions of the Privacy Policy</a></span>
+                                    <span class="label-text">I accept <a href="" data-target="#something-popup" data-toggle="modal">Terms and Conditions of the Privacy Policy</a></span>
                                 </label>
+                                <div id="something-popup" class="modal fade in mh" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <button type="button" class="close" data-dismiss="modal"></button>
+                                                <div class="center">
+                                                    <h3 class="title-item">Something text</h3>
+                                                </div>
+                                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="center">
                                     <button type="submit" class="modal-push">
                                         <span class="modal-push-innerwrap">
@@ -327,3 +349,5 @@
 </div>
 
 {{> footer}}
+{{> form-feedback}}
+{{> sign-reg}}

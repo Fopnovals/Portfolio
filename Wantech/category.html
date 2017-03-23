@@ -8,13 +8,12 @@
     <title>Wantech</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/gui/favicon.png" />
-    <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzHL-dd1PuiUJYX-WngdZL5_EwFt13Uz0&sensor=SET_TO_TRUE_OR_FALSE" async></script>
 
     <META NAME=»ROBOTS» CONTENT="NOINDEX, NOFOLLOW" />
 
 </head>
-<body>
-<header class="header">
+<body><header class="header">
     <div class="header-top">
         <div class="container">
             <div class="nav nav-top">
@@ -66,9 +65,13 @@
                     <a href="contact.html" class="nav-link">Contact us</a>
                 </nav>
                 <nav class="nav nav-account">
-                    <a href="" class="nav-link">My account</a>
-                    <a href="" class="nav-link icon icon-email"></a>
-                    <a href="" class="nav-link icon icon-search"></a>
+                    <a href="" data-toggle="modal" data-target="#form-sign-reg" class="nav-link">My account</a>
+                    <a href="#form-feedback" data-target="#form-feedback" data-toggle="modal" class="nav-link icon icon-email"></a>
+                    <a href="" class="nav-link icon icon-search">
+                        <form action="#" class="general-search">
+                            <input type="search" placeholder="Search...">
+                        </form>
+                    </a>
                     <a href="" class="nav-link icon icon-bag js-cdd-open">
                         <span class="cart-count">3</span>
                     </a>
@@ -448,22 +451,22 @@
                 </form>
             </div>
             <div class="stuff-list">
-                <div class="stuff">
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/1.png" alt="img" />
                             <div class="stuff-img-full" style="background-image: url(img/content/stuff.jpg)"></div>
                         </a>
                         <div class="stuff-tag">
-                            <a href="" class="stuff-tag-link disabled">
+                            <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
-                            <a href="" class="stuff-tag-link disabled">
+                            <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -488,14 +491,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/2.png" alt="img" />
@@ -504,13 +507,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -535,14 +538,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/3.png" alt="img" />
@@ -551,13 +554,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
-                            <a href="" class="stuff-tag-link disabled">
+                            <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -582,14 +585,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/4.png" alt="img" />
@@ -598,13 +601,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
-                            <a href="" class="stuff-tag-link disabled">
+                            <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -629,29 +632,29 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/5.png" alt="img" />
                             <div class="stuff-img-full" style="background-image: url(img/content/stuff.jpg)"></div>
                         </a>
                         <div class="stuff-tag">
-                            <a href="" class="stuff-tag-link disabled">
+                            <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -676,14 +679,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/6.png" alt="img" />
@@ -692,13 +695,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -723,14 +726,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/7.png" alt="img" />
@@ -739,13 +742,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -770,14 +773,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/8.png" alt="img" />
@@ -786,13 +789,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -817,14 +820,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/9.png" alt="img" />
@@ -833,13 +836,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -864,14 +867,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/10.png" alt="img" />
@@ -880,13 +883,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -911,14 +914,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/11.png" alt="img" />
@@ -927,13 +930,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -958,14 +961,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/12.png" alt="img" />
@@ -974,13 +977,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1005,14 +1008,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/13.png" alt="img" />
@@ -1021,13 +1024,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1052,14 +1055,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/14.png" alt="img" />
@@ -1068,13 +1071,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1099,14 +1102,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/15.png" alt="img" />
@@ -1115,13 +1118,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1146,14 +1149,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/16.png" alt="img" />
@@ -1162,13 +1165,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1193,14 +1196,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/17.png" alt="img" />
@@ -1209,13 +1212,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1240,14 +1243,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/18.png" alt="img" />
@@ -1256,13 +1259,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1287,14 +1290,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/19.png" alt="img" />
@@ -1303,13 +1306,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1334,14 +1337,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/20.png" alt="img" />
@@ -1350,13 +1353,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1381,14 +1384,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/21.png" alt="img" />
@@ -1397,13 +1400,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1428,14 +1431,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/22.png" alt="img" />
@@ -1444,13 +1447,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1475,14 +1478,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/23.png" alt="img" />
@@ -1491,13 +1494,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1522,14 +1525,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/24.png" alt="img" />
@@ -1538,13 +1541,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1569,14 +1572,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/25.png" alt="img" />
@@ -1585,13 +1588,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1616,14 +1619,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/26.png" alt="img" />
@@ -1632,13 +1635,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1663,14 +1666,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/27.png" alt="img" />
@@ -1679,13 +1682,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1710,14 +1713,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/28.png" alt="img" />
@@ -1726,13 +1729,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1757,14 +1760,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/29.png" alt="img" />
@@ -1773,13 +1776,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1804,14 +1807,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/30.png" alt="img" />
@@ -1820,13 +1823,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1851,14 +1854,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/31.png" alt="img" />
@@ -1867,13 +1870,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1898,14 +1901,14 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="stuff">
+                </form>
+                <form action="#" class="stuff">
                     <div class="stuff-inner">
                         <a href="" class="stuff-img">
                             <img src="img/content/category/32.png" alt="img" />
@@ -1914,13 +1917,13 @@
                         <div class="stuff-tag">
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-crystal"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-crystal">
                                 </div>
                                 <div class="stuff-tag-name">crystal</div>
                             </a>
                             <a href="" class="stuff-tag-link">
                                 <div class="stuff-tag-icon">
-                                    <i class="icon icon-powder"></i>
+                                    <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                 </div>
                                 <div class="stuff-tag-name">powder</div>
                             </a>
@@ -1945,13 +1948,13 @@
                                 <option value="red">Red</option>
                                 <option value="yellow">Yellow</option>
                                 <option value="black">Black</option>
-                            </select>            <a href="" class="btn btn-add">
+                            </select>            <button type="button" class="btn btn-add">
                                 <i class="icon icon-cart"></i>
                                 <span class="btn-add-inner">Add to cart</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                </div>            </div>
+                </form>            </div>
             <div class="center">
                 <a href="" class="load-more">Load more 40/200</a>
             </div>
@@ -2156,3 +2159,87 @@
 </body>
 </html>
 
+<div id="error-add-to-cart" class="modal fade in mh" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h3 class="title-item">CHOOSE ALL PARAMETERS</h3>
+                <span class="color-of-product">Choose color of product</span>
+                <span class="type-of-product">Choose type of product ('Crystal' or 'Powder')</span>
+            </div>
+        </div>
+    </div>
+</div><form class="modal modal-confirm fade" id="form-feedback">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="confirm-name">Feedback</div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Input your e-mail*</div>
+                    <input type="email" class="input input-block" required>
+                </div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Your message*</div>
+                    <textarea required class="input input-block input-textarea"></textarea>
+                </div>
+                <div class="center">
+                    <button type="submit" class="modal-push">
+                        <span class="modal-push-innerwrap">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form><form class="modal modal-confirm fade" id="form-sign-reg">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body clearfix">
+                <div class="modal-left">
+                    <div class="confirm-name center">Sign in</div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row forgot-container">
+                        <span class="forgot">Forgot password?</span>
+                        <input id="forgot" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="forgot">Remember me</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">SIGN IN</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <div class="confirm-name center">Registration</div>
+                    <div class="mh-row">
+                        <input type="text" class="input input-block" placeholder="USERNAME" required>
+                    </div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row term">
+                        <input id="term-us-use" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="term-us-use">I agree to the Terms of Use and to receive emails.</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">CREATE ACCOUNT</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

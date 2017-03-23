@@ -20,6 +20,15 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url('../fonts/MyriadProRegular/MyriadProRegular.eot');
+  src: url('../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadProRegular/MyriadProRegular.woff') format('woff'),
+  url('../fonts/MyriadProRegular/MyriadProRegular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 html {
   font: normal 14px/20px 'Open Sans', sans-serif;

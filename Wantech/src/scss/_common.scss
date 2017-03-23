@@ -1,9 +1,9 @@
 html, body {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
   min-width: $body-min-width;
 }
 
@@ -124,4 +124,5 @@ fieldset {
 .input-hidden {
   position: absolute;
   opacity: 0;
+  visibility: hidden;
 }

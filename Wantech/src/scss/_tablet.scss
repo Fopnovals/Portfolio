@@ -63,8 +63,17 @@
     }
     &-goods {
       &-link {
-        padding: 6px 15px;
+        padding: 7px 15px;
       }
+    }
+  }
+
+  .shop.goods {
+    .ns-link {
+      padding: 6px 15px;
+    }
+    .form-search-category {
+      margin-bottom: 15px;
     }
   }
 
@@ -104,6 +113,9 @@
     &-list {
       margin: 45px -7.5px 60px;
     }
+  }
+  .similar .stuff {
+    padding: 0;
   }
   .icon {
     &-mouse {
@@ -344,9 +356,9 @@
   }
 
   .labels {
-    margin: 0 25px 25px 0;
+    margin: 0 4% 25px 0;
     + .labels {
-      margin: 0 25px 25px 0;
+      margin: 0 0 25px 0;
     }
   }
 
@@ -384,11 +396,124 @@
       }
     }
   }
-
+  .reviews {
+    &-content {
+      width: calc(((100% - 1187px) / 2) + (1187px / 2) - 134px);
+      &-inner {
+        width: 436px;
+      }
+    }
+    &-map {
+      width: calc(((100% - 1187px) / 2) + (1187px / 2) + 134px);
+    }
+    &.active {
+      .reviews {
+        &-map {
+          margin-left: calc((((100% - 1187px) / 2) + (1187px / 2) - 134px) * -1);
+        }
+      }
+    }
+  }
+  .preorder-button {
+    font-size: 13px;
+  }
 }
 
 
+@media (max-width: 1180px) {
+  .reviews {
+    &-content {
+      width: 43%;
+      padding-left: 20px;
+      &-inner {
+        width: 100%;
+      }
+    }
+    &-map {
+      width: 57%;
+    }
+    &.active {
+      .reviews {
+        &-map {
+          margin-left: -43%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .labels {
+    margin: 0 0 25px 0;
+  }
+  .similar-items-wrap {
+    padding-bottom: 124px;
+  }
+  .similar {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &-arrows {
+      display: none;
+    }
+    .stuff {
+      margin: 30px 0 220px;
+      padding: 0 8px;
+      width: 25%;
+    }
+  }
+  .viewed, .similar {
+    .slick-dots {
+      bottom: 72px;
+      li {
+        margin: 0 8px;
+        width: 16px;
+        height: 16px;
+        button {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: #477efb;
+          opacity: 0.4;
+          border: none;
+        }
+        &.slick-active {
+          button {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .viewed .slick-dots {
+    bottom: -67px;
+  }
+  .goods .stuff:hover .stuff-inner {
+    padding: 23px 10px 18px;
+  }
+  .viewed.center {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .viewed-item {
+    margin: 0 18px;
+  }
+  .p-slide {
+    height: 422px;
+    width: 451px;
+  }
+  .p-gallery-wrap {
+    width: 48%;
+  }
+}
+
 @media (max-width: 980px) {
+  body, html {
+    width: 980px;
+  }
   .c-calendar {
     padding: 100px 0 179px;
   }
@@ -430,8 +555,16 @@
     padding: 0 20px 43px;
   }
   .reviews-content-inner {
-    padding-right: 37px;
-    padding-left: 18px;
+    padding-right: 27px;
+  }
+  .reviews-content {
+    width: 42%;
+  }
+  .reviews-map {
+    width: 58%;
+  }
+  .reviews.active .reviews-map {
+    margin-left: -42%;
   }
   .latest-wrap {
     padding: 58px 0 6px;
@@ -546,10 +679,6 @@
   .p-table td:first-child {
     width: 35%;
   }
-  .p-slide {
-    height: 422px;
-    width: 451px;
-  }
   .p-tabs.new-change {
     margin-top: 44px;
     padding-bottom: 40px;
@@ -625,40 +754,11 @@
   .account-content.com {
     padding: 90px 0 133px;
   }
-  .p-gallery-wrap {
-    width: 48%;
-  }
   .product {
     padding: 40px 0;
-  }
-  .similar-items-wrap {
-    padding-bottom: 124px;
-  }
-  .viewed, .similar {
-    .slick-dots {
-      bottom: 72px;
-      li {
-        margin: 0 8px;
-        width: 16px;
-        height: 16px;
-        button {
-          width: 16px;
-          height: 16px;
-          border-radius: 50%;
-          background-color: #477efb;
-          opacity: 0.4;
-          border: none;
-        }
-        &.slick-active {
-          button {
-            opacity: 1;
-          }
-        }
-      }
+    &-bg {
+      background-image: url("../img/bg/product980.png");
     }
-  }
-  .viewed .slick-dots {
-    bottom: -67px;
   }
   .about-white .about-intro.gr-b {
     padding: 55px 0 86px;
@@ -669,18 +769,27 @@
   .gb-info .h-text {
     margin: 29px 0 109px;
   }
-  .filtering {
-    display: block;
-  }
   .nav-support-link {
     font-size: 16px;
-  }
-  .second-menu {
-    display: none;
   }
   .ord-h {
     .nav-support-link, .discount-message, .discount-value {
       font-size: 16px;
     }
+  }
+  .account-content.change-pass {
+    padding: 67px 0 147px;
+  }
+  .delete-one-row {
+    margin: 50px 0 0 40px;
+  }
+  .nav-support-link + .nav-support-link {
+    margin-left: 30px;
+  }
+  .labels-cap {
+    margin-right: 16px;
+  }
+  .labels {
+    margin: 11px 14px 48px 0;
   }
 }

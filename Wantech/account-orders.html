@@ -8,13 +8,12 @@
     <title>Wantech</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/gui/favicon.png" />
-    <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzHL-dd1PuiUJYX-WngdZL5_EwFt13Uz0&sensor=SET_TO_TRUE_OR_FALSE" async></script>
 
     <META NAME=»ROBOTS» CONTENT="NOINDEX, NOFOLLOW" />
 
 </head>
-<body>
-<header class="header">
+<body><header class="header">
     <div class="header-top">
         <div class="container">
             <div class="nav nav-top">
@@ -66,9 +65,13 @@
                     <a href="contact.html" class="nav-link">Contact us</a>
                 </nav>
                 <nav class="nav nav-account">
-                    <a href="" class="nav-link">My account</a>
-                    <a href="" class="nav-link icon icon-email"></a>
-                    <a href="" class="nav-link icon icon-search"></a>
+                    <a href="" data-toggle="modal" data-target="#form-sign-reg" class="nav-link">My account</a>
+                    <a href="#form-feedback" data-target="#form-feedback" data-toggle="modal" class="nav-link icon icon-email"></a>
+                    <a href="" class="nav-link icon icon-search">
+                        <form action="#" class="general-search">
+                            <input type="search" placeholder="Search...">
+                        </form>
+                    </a>
                     <a href="" class="nav-link icon icon-bag js-cdd-open">
                         <span class="cart-count">3</span>
                     </a>
@@ -137,7 +140,7 @@
                     <i class="icon icon-filtering"></i>
                 </a>
                 <ul class="second-menu">
-                    <li><a href="#"><span class="icon icon-upload"></span>UPLOAD PHOTO</a></li>
+                    <li><a href="#upload-photo" data-target="#upload-photo" data-toggle="modal"><span class="icon icon-upload"></span>UPLOAD PHOTO</a></li>
                     <li><a href="#">CHANGE PASSWORD</a></li>
                     <li><a href="#">CHANGE EMAIL</a></li>
                     <li><a href="#">DELETED ACCOUNT</a></li>
@@ -174,10 +177,7 @@
                         <td>
                             <div class="mo-date">12.02.2017</div>
                         </td>
-                        <td>
-                            <div class="mo-group">GROUP BUY</div>
-                            <div class="mo-code">51248765</div>
-                        </td>
+                        <td>51248765</td>
                         <td>2</td>
                         <td><strong>$429</strong></td>
                         <td>Bank Wire Transfer</td>
@@ -191,14 +191,15 @@
                                             <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
                                             <div class="confirm-caption">Comments*</div>
                                             <textarea required class="input input-block input-textarea"></textarea>
-                                            <div class="label-file-wrap center">
-                                                <label class="label label-file" for="upload-recipe">
-                                                    <input id="upload-recipe" type="file" class="input-hidden" />
-                                                    <i class="icon icon-upload"></i>
-                                                    <span>UPLOAD RECIPE*</span>
+                                            <div class="cover-upload clearfix">
+                                                <label for="upload-recip1">
+                                                    <input id="upload-recip1" type="file" class="input-hidden" />
+                                                    <i class="icon icon-upload2"></i>
+                                                    <span>UPLOAD RECIPT</span>
                                                 </label>
                                                 <div class="label-file-name">No file uploaded</div>
                                             </div>
+                                            <div class="state-upload center"></div>
                                             <div class="center">
                                                 <button type="submit" class="modal-push">
                                                     <span class="modal-push-innerwrap">
@@ -249,10 +250,7 @@
                         <td>
                             <div class="mo-date">12.02.2017</div>
                         </td>
-                        <td>
-                            <div class="mo-group">GROUP BUY</div>
-                            <div class="mo-code">51248765</div>
-                        </td>
+                        <td>51248765</td>
                         <td>2</td>
                         <td><strong>$429</strong></td>
                         <td>MoneyGram</td>
@@ -268,9 +266,9 @@
                                                 <div class="confirm-caption">Reference Number*</div>
                                                 <input type="text" placeholder="XXXXXXXXXXXXXXXX" class="input input-block" required>
                                             </div>
-                                            <div class="mh-row">
+                                            <div class="mh-row popup-calendar">
                                                 <div class="confirm-caption">Date of payment*</div>
-                                                <input type="text" value="DD.MM.YYYY" class="input input-block" id="date-pick" required>
+                                                <input type="text" value="DD.MM.YYYY" class="input input-block" id="date-pick1" required>
                                             </div>
                                             <div class="mh-row">
                                                 <div class="confirm-caption">Info about the bank (full name & address)*</div>
@@ -285,24 +283,14 @@
                                                 <textarea required class="input input-block input-textarea"></textarea>
                                             </div>
                                             <div class="cover-upload clearfix">
-                                                <label class="right" for="upload-recip">
-                                                    <input id="upload-recip" type="file" class="input-hidden" />
+                                                <label for="upload-recip2">
+                                                    <input id="upload-recip2" type="file" class="input-hidden" />
                                                     <i class="icon icon-upload2"></i>
-                                                    <span class="right">UPLOAD RECIPT</span>
+                                                    <span>UPLOAD RECIPT</span>
                                                 </label>
                                                 <div class="label-file-name">No file uploaded</div>
                                             </div>
-                                            <div class="check-cover clearfix">
-                                                <label class="label label-checkbox left" for="create-an-account">
-                                                    <input class="input-hidden" type="checkbox" required id="create-an-account">
-                                                    <span class="label-checkbox-icon">
-                                                        <i class="icon icon-label-checkbox"></i>
-                                                    </span>
-                                                    <span class="label-text">Create an account ?</span>
-                                                </label>
-
-
-                                            </div>
+                                            <div class="state-upload center"></div>
                                             <div class="center">
                                                 <button type="submit" class="modal-push">
                                                     <span class="modal-push-innerwrap">
@@ -353,10 +341,7 @@
                         <td>
                             <div class="mo-date">12.02.2017</div>
                         </td>
-                        <td>
-                            <div class="mo-group">GROUP BUY</div>
-                            <div class="mo-code">51248765</div>
-                        </td>
+                        <td>51248765</td>
                         <td>2</td>
                         <td><strong>$429</strong></td>
                         <td>Western Union</td>
@@ -372,9 +357,9 @@
                                                 <div class="confirm-caption">MTCN*</div>
                                                 <input type="text" placeholder="XXXXXXXXXXXXXXXX" class="input input-block" required>
                                             </div>
-                                            <div class="mh-row">
+                                            <div class="mh-row popup-calendar">
                                                 <div class="confirm-caption">Date of payment*</div>
-                                                <input type="text" value="DD.MM.YYYY" class="input input-block" id="date-pick" required>
+                                                <input type="text" value="DD.MM.YYYY" class="input input-block" id="date-pick2" required>
                                             </div>
                                             <div class="mh-row">
                                                 <div class="confirm-caption">Info about the bank (full name & address)*</div>
@@ -389,24 +374,14 @@
                                                 <textarea required class="input input-block input-textarea"></textarea>
                                             </div>
                                             <div class="cover-upload clearfix">
-                                                <label class="right" for="upload-recip">
-                                                    <input id="upload-recip" type="file" class="input-hidden" />
+                                                <label for="upload-recip3">
+                                                    <input id="upload-recip3" type="file" class="input-hidden" />
                                                     <i class="icon icon-upload2"></i>
-                                                    <span class="right">UPLOAD RECIPT</span>
+                                                    <span>UPLOAD RECIPT</span>
                                                 </label>
                                                 <div class="label-file-name">No file uploaded</div>
                                             </div>
-                                            <div class="check-cover clearfix">
-                                                <label class="label label-checkbox left" for="create-an-account">
-                                                    <input class="input-hidden" type="checkbox" required id="create-an-account">
-                                                    <span class="label-checkbox-icon">
-                                                        <i class="icon icon-label-checkbox"></i>
-                                                    </span>
-                                                    <span class="label-text">Create an account ?</span>
-                                                </label>
-
-
-                                            </div>
+                                            <div class="state-upload center"></div>
                                             <div class="center">
                                                 <button type="submit" class="modal-push">
                                                     <span class="modal-push-innerwrap">
@@ -429,231 +404,6 @@
                     <tr class="mo-list">
                         <td colspan="7">
                             <div class="mo-items" id="mo-items-03">
-                                <div class="mo-item">
-                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
-                                    <span class="mo-item-prop">Seldafinil</span>
-                                    <span class="mo-item-prop">Blue</span>
-                                    <span class="mo-item-prop">Crystal</span>
-                                    <span class="mo-item-prop">100 g</span>
-                                    <span class="mo-item-prop">&mdash;</span>
-                                    <strong class="mo-item-prop">$210</strong>
-                                </div>
-                                <div class="mo-item">
-                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
-                                    <span class="mo-item-prop">Seldafinil</span>
-                                    <span class="mo-item-prop">Blue</span>
-                                    <span class="mo-item-prop">Crystal</span>
-                                    <span class="mo-item-prop">100 g</span>
-                                    <span class="mo-item-prop">&mdash;</span>
-                                    <strong class="mo-item-prop">$210</strong>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- / Order -->
-
-                    <!-- Order -->
-                    <tr>
-                        <td>
-                            <div class="mo-date">12.02.2017</div>
-                        </td>
-                        <td>
-                            <div class="mo-group">GROUP BUY</div>
-                            <div class="mo-code">51248765</div>
-                        </td>
-                        <td>2</td>
-                        <td><strong>$429</strong></td>
-                        <td>Visa electron</td>
-                        <td>
-                            <a href="#mo-items-04-form" data-target="#mo-items-04-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
-                            <form class="modal modal-confirm fade" id="mo-items-04-form">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <button type="button" class="close" data-dismiss="modal"></button>
-                                            <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
-                                            <div class="confirm-caption">Comments*</div>
-                                            <textarea required class="input input-block input-textarea"></textarea>
-                                            <div class="label-file-wrap center">
-                                                <label class="label label-file" for="upload-recipe">
-                                                    <input id="upload-recipe" type="file" class="input-hidden" />
-                                                    <i class="icon icon-upload"></i>
-                                                    <span>UPLOAD RECIPE*</span>
-                                                </label>
-                                                <div class="label-file-name">No file uploaded</div>
-                                            </div>
-                                            <div class="center">
-                                                <button type="submit" class="modal-push">
-                                                    <span class="modal-push-innerwrap">
-                                                        <span class="modal-push-text">Confirm</span>
-                                                        <span class="pipe">|</span>
-                                                        <span class="modal-push-sum">$630</span>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </td>
-                        <td>
-                            <a href="#mo-items-04" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
-                            <a href="" class="mo-item-remove"></a>
-                        </td>
-                    </tr>
-                    <tr class="mo-list">
-                        <td colspan="7">
-                            <div class="mo-items" id="mo-items-04">
-                                <div class="mo-item">
-                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
-                                    <span class="mo-item-prop">Seldafinil</span>
-                                    <span class="mo-item-prop">Blue</span>
-                                    <span class="mo-item-prop">Crystal</span>
-                                    <span class="mo-item-prop">100 g</span>
-                                    <span class="mo-item-prop">&mdash;</span>
-                                    <strong class="mo-item-prop">$210</strong>
-                                </div>
-                                <div class="mo-item">
-                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
-                                    <span class="mo-item-prop">Seldafinil</span>
-                                    <span class="mo-item-prop">Blue</span>
-                                    <span class="mo-item-prop">Crystal</span>
-                                    <span class="mo-item-prop">100 g</span>
-                                    <span class="mo-item-prop">&mdash;</span>
-                                    <strong class="mo-item-prop">$210</strong>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- / Order -->
-
-                    <!-- Order -->
-                    <tr>
-                        <td>
-                            <div class="mo-date">12.02.2017</div>
-                        </td>
-                        <td>
-                            <div class="mo-group">GROUP BUY</div>
-                            <div class="mo-code">51248765</div>
-                        </td>
-                        <td>2</td>
-                        <td><strong>$429</strong></td>
-                        <td>Visa electron</td>
-                        <td>
-                            <a href="#mo-items-05-form" data-target="#mo-items-05-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
-                            <form class="modal modal-confirm fade" id="mo-items-05-form">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <button type="button" class="close" data-dismiss="modal"></button>
-                                            <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
-                                            <div class="confirm-caption">Comments*</div>
-                                            <textarea required class="input input-block input-textarea"></textarea>
-                                            <div class="label-file-wrap center">
-                                                <label class="label label-file" for="upload-recipe">
-                                                    <input id="upload-recipe" type="file" class="input-hidden" />
-                                                    <i class="icon icon-upload"></i>
-                                                    <span>UPLOAD RECIPE*</span>
-                                                </label>
-                                                <div class="label-file-name">No file uploaded</div>
-                                            </div>
-                                            <div class="center">
-                                                <button type="submit" class="modal-push">
-                                                    <span class="modal-push-innerwrap">
-                                                        <span class="modal-push-text">Confirm</span>
-                                                        <span class="pipe">|</span>
-                                                        <span class="modal-push-sum">$630</span>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </td>
-                        <td>
-                            <a href="#mo-items-05" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
-                            <a href="" class="mo-item-remove"></a>
-                        </td>
-                    </tr>
-                    <tr class="mo-list">
-                        <td colspan="7">
-                            <div class="mo-items" id="mo-items-05">
-                                <div class="mo-item">
-                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
-                                    <span class="mo-item-prop">Seldafinil</span>
-                                    <span class="mo-item-prop">Blue</span>
-                                    <span class="mo-item-prop">Crystal</span>
-                                    <span class="mo-item-prop">100 g</span>
-                                    <span class="mo-item-prop">&mdash;</span>
-                                    <strong class="mo-item-prop">$210</strong>
-                                </div>
-                                <div class="mo-item">
-                                    <a href="" class="mo-img" style="background-image: url(img/content/slider/03.jpg)"></a>
-                                    <span class="mo-item-prop">Seldafinil</span>
-                                    <span class="mo-item-prop">Blue</span>
-                                    <span class="mo-item-prop">Crystal</span>
-                                    <span class="mo-item-prop">100 g</span>
-                                    <span class="mo-item-prop">&mdash;</span>
-                                    <strong class="mo-item-prop">$210</strong>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- / Order -->
-
-                    <!-- Order -->
-                    <tr>
-                        <td>
-                            <div class="mo-date">12.02.2017</div>
-                        </td>
-                        <td>
-                            <div class="mo-group">GROUP BUY</div>
-                            <div class="mo-code">51248765</div>
-                        </td>
-                        <td>2</td>
-                        <td><strong>$429</strong></td>
-                        <td>Visa electron</td>
-                        <td>
-                            <a href="#mo-items-06-form" data-target="#mo-items-06-form" data-toggle="modal" class="mo-btn mo-btn-red">Confirm payment</a>
-                            <form class="modal modal-confirm fade" id="mo-items-06-form">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <button type="button" class="close" data-dismiss="modal"></button>
-                                            <div class="confirm-name">Payment Confirmation Bank Wire Transfer</div>
-                                            <div class="confirm-caption">Comments*</div>
-                                            <textarea required class="input input-block input-textarea"></textarea>
-                                            <div class="label-file-wrap center">
-                                                <label class="label label-file" for="upload-recipe">
-                                                    <input id="upload-recipe" type="file" class="input-hidden" />
-                                                    <i class="icon icon-upload"></i>
-                                                    <span>UPLOAD RECIPE*</span>
-                                                </label>
-                                                <div class="label-file-name">No file uploaded</div>
-                                            </div>
-                                            <div class="center">
-                                                <button type="submit" class="modal-push">
-                                                    <span class="modal-push-innerwrap">
-                                                        <span class="modal-push-text">Confirm</span>
-                                                        <span class="pipe">|</span>
-                                                        <span class="modal-push-sum">$630</span>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </td>
-                        <td>
-                            <a href="#mo-items-06" class="js-toggle-target mo-btn mo-btn-blue">View details</a>
-                            <a href="" class="mo-item-remove"></a>
-                        </td>
-                    </tr>
-                    <tr class="mo-list">
-                        <td colspan="7">
-                            <div class="mo-items" id="mo-items-06">
                                 <div class="mo-item">
                                     <a href="" class="mo-img" style="background-image: url(img/content/slider/02.jpg)"></a>
                                     <span class="mo-item-prop">Seldafinil</span>
@@ -968,3 +718,99 @@
 </body>
 </html>
 
+<form class="modal modal-confirm fade" id="upload-photo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="confirm-name">Upload photo</div>
+                <div class="cover-upload clearfix">
+                    <label for="upload-recip5">
+                        <input id="upload-recip5" type="file" class="input-hidden" />
+                        <i class="icon icon-upload2"></i>
+                        <span>UPLOAD RECIPT</span>
+                    </label>
+                    <div class="label-file-name">No file uploaded</div>
+                </div>
+                <div class="state-upload center"></div>
+                <div class="center">
+                    <button type="submit" class="modal-push">
+                        <span class="modal-push-innerwrap">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form><form class="modal modal-confirm fade" id="form-feedback">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="confirm-name">Feedback</div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Input your e-mail*</div>
+                    <input type="email" class="input input-block" required>
+                </div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Your message*</div>
+                    <textarea required class="input input-block input-textarea"></textarea>
+                </div>
+                <div class="center">
+                    <button type="submit" class="modal-push">
+                        <span class="modal-push-innerwrap">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form><form class="modal modal-confirm fade" id="form-sign-reg">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body clearfix">
+                <div class="modal-left">
+                    <div class="confirm-name center">Sign in</div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row forgot-container">
+                        <span class="forgot">Forgot password?</span>
+                        <input id="forgot" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="forgot">Remember me</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">SIGN IN</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <div class="confirm-name center">Registration</div>
+                    <div class="mh-row">
+                        <input type="text" class="input input-block" placeholder="USERNAME" required>
+                    </div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row term">
+                        <input id="term-us-use" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="term-us-use">I agree to the Terms of Use and to receive emails.</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">CREATE ACCOUNT</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

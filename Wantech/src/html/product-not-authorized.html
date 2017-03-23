@@ -1,7 +1,7 @@
 {{> head}}
 {{> header}}
 
-<div class="bg" style="background-image: url(img/bg/category.jpg)"></div>
+<div class="bg product-bg"></div>
 
 <nav class="nav nav-category">
     {{> shop-links}}
@@ -20,6 +20,11 @@
                         <div class="p-slide" style="background-image: url(img/content/product/hero-03.jpg)"></div>
                     </div>
                     <div class="p-dots"></div>
+                    <div class="small-gallery">
+                        <div class="p-slide" style="background-image:url(img/content/product/hero.jpg)"></div>
+                        <div class="p-slide" style="background-image:url(img/content/product/hero-02.jpg)"></div>
+                        <div class="p-slide" style="background-image:url(img/content/product/hero-03.jpg)"></div>
+                    </div>
                 </div>
                 <div class="p-cell p-info">
                     <div class="breadcrumbs">
@@ -70,19 +75,27 @@
                                 <div class="labels-cap">Colors:</div>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" checked />
-                                    <span class="label-color-inner" style="background: #afb7c4;"></span>
+                                    <span class="label-color-inner" style="background: #afb7c4;">
+                                        <strong class="hint-of-color">Gray</strong>
+                                    </span>
                                 </label>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" />
-                                    <span class="label-color-inner" style="background: #72c4cf;"></span>
+                                    <span class="label-color-inner" style="background: #72c4cf;">
+                                        <strong class="hint-of-color">Blue</strong>
+                                    </span>
                                 </label>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" />
-                                    <span class="label-color-inner" style="background: #fcfcfc;border-color: #f0f0f0;"></span>
+                                    <span class="label-color-inner" style="background: #fcfcfc;border-color: #f0f0f0;">
+                                        <strong class="hint-of-color">White</strong>
+                                    </span>
                                 </label>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" />
-                                    <span class="label-color-inner" style="background: #e2636c;"></span>
+                                    <span class="label-color-inner" style="background: #e2636c;">
+                                        <strong class="hint-of-color">Red</strong>
+                                    </span>
                                 </label>
                             </div>
                             <div class="labels nav">
@@ -104,6 +117,18 @@
                                     <button class="js-counter input-count-minus" type="button">-</button>
                                     <input class="input-count" data-currency="g" type="text" value="1g" name="quantity" />
                                     <button class="js-counter input-count-plus" type="button">+</button>
+                                </div>
+                                <div class="hint-of-price">
+                                    <ul>
+                                        <li><span>50G-100G</span><span>USD10/G</span></li>
+                                        <li><span>100G-250G</span><span>USD9/G</span></li>
+                                        <li><span>250G-500G</span><span>USD8/G</span></li>
+                                        <li><span>500G-1KG</span><span>USD7/G</span></li>
+                                        <li><span>1KG-2KG</span><span>USD6/G</span></li>
+                                        <li><span>2KG-3KG</span><span>USD5/G</span></li>
+                                        <li><span>3KG-4KG</span><span>USD4/G</span></li>
+                                        <li><span>4KG-5KG</span><span>USD3/G</span></li>
+                                    </ul>
                                 </div>
                                 <div class="p-eq">=</div>
                                 <div class="p-total">$1560</div>
@@ -456,3 +481,6 @@
 </div>
 
 {{> footer}}
+{{> add-cart}}
+{{> form-feedback}}
+{{> sign-reg}}

@@ -8,13 +8,12 @@
     <title>Wantech</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/gui/favicon.png" />
-    <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzHL-dd1PuiUJYX-WngdZL5_EwFt13Uz0&sensor=SET_TO_TRUE_OR_FALSE" async></script>
 
     <META NAME=»ROBOTS» CONTENT="NOINDEX, NOFOLLOW" />
 
 </head>
-<body>
-<header class="header">
+<body><header class="header">
     <div class="header-top">
         <div class="container">
             <div class="nav nav-top">
@@ -66,9 +65,13 @@
                     <a href="contact.html" class="nav-link">Contact us</a>
                 </nav>
                 <nav class="nav nav-account">
-                    <a href="" class="nav-link">My account</a>
-                    <a href="" class="nav-link icon icon-email"></a>
-                    <a href="" class="nav-link icon icon-search"></a>
+                    <a href="" data-toggle="modal" data-target="#form-sign-reg" class="nav-link">My account</a>
+                    <a href="#form-feedback" data-target="#form-feedback" data-toggle="modal" class="nav-link icon icon-email"></a>
+                    <a href="" class="nav-link icon icon-search">
+                        <form action="#" class="general-search">
+                            <input type="search" placeholder="Search...">
+                        </form>
+                    </a>
                     <a href="" class="nav-link icon icon-bag js-cdd-open">
                         <span class="cart-count">3</span>
                     </a>
@@ -137,7 +140,7 @@
                     <i class="icon icon-filtering"></i>
                 </a>
                 <ul class="second-menu">
-                    <li><a href="#"><span class="icon icon-upload"></span>UPLOAD PHOTO</a></li>
+                    <li><a href="#upload-photo" data-target="#upload-photo" data-toggle="modal"><span class="icon icon-upload"></span>UPLOAD PHOTO</a></li>
                     <li><a href="#">CHANGE PASSWORD</a></li>
                     <li><a href="#">CHANGE EMAIL</a></li>
                     <li><a href="#">DELETED ACCOUNT</a></li>
@@ -247,3 +250,99 @@
 </body>
 </html>
 
+<form class="modal modal-confirm fade" id="upload-photo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="confirm-name">Upload photo</div>
+                <div class="cover-upload clearfix">
+                    <label for="upload-recip5">
+                        <input id="upload-recip5" type="file" class="input-hidden" />
+                        <i class="icon icon-upload2"></i>
+                        <span>UPLOAD RECIPT</span>
+                    </label>
+                    <div class="label-file-name">No file uploaded</div>
+                </div>
+                <div class="state-upload center"></div>
+                <div class="center">
+                    <button type="submit" class="modal-push">
+                        <span class="modal-push-innerwrap">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form><form class="modal modal-confirm fade" id="form-feedback">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="confirm-name">Feedback</div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Input your e-mail*</div>
+                    <input type="email" class="input input-block" required>
+                </div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Your message*</div>
+                    <textarea required class="input input-block input-textarea"></textarea>
+                </div>
+                <div class="center">
+                    <button type="submit" class="modal-push">
+                        <span class="modal-push-innerwrap">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form><form class="modal modal-confirm fade" id="form-sign-reg">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body clearfix">
+                <div class="modal-left">
+                    <div class="confirm-name center">Sign in</div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row forgot-container">
+                        <span class="forgot">Forgot password?</span>
+                        <input id="forgot" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="forgot">Remember me</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">SIGN IN</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <div class="confirm-name center">Registration</div>
+                    <div class="mh-row">
+                        <input type="text" class="input input-block" placeholder="USERNAME" required>
+                    </div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row term">
+                        <input id="term-us-use" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="term-us-use">I agree to the Terms of Use and to receive emails.</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">CREATE ACCOUNT</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

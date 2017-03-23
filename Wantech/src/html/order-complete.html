@@ -6,32 +6,36 @@
         <div class="order-wrapper">
             <div class="order-details">
                 <a href="shop.html" title="Back" class="article-back"></a>
-                <div class="order-checkout-wrapper">
-                    <a href="" data-target="#checkout-via-email" data-toggle="modal" class="order-checkout">
-                        <i class="icon icon-check-email"></i>
-                        <span>Checkout via email</span>
-                    </a>
-                </div>
-                <form class="modal modal-order fade" id="checkout-via-email">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal"></button>
-                                <div class="m-order-head">Enter your email</div>
-                                <div class="m-order-row">
-                                    <input type="email" class="input" placeholder="email@gmail.com" required />
-                                </div>
-                                <div class="m-order-submit">
-                                    <button type="submit" class="modal-push modal-push-normal">confirm</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                <!--<div class="order-checkout-wrapper">-->
+                    <!--<a href="" data-target="#checkout-via-email" data-toggle="modal" class="order-checkout">-->
+                        <!--<i class="icon icon-check-email"></i>-->
+                        <!--<span>Checkout via email</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<form class="modal modal-order fade" id="checkout-via-email">-->
+                    <!--<div class="modal-dialog">-->
+                        <!--<div class="modal-content">-->
+                            <!--<div class="modal-body">-->
+                                <!--<button type="button" class="close" data-dismiss="modal"></button>-->
+                                <!--<div class="m-order-head">Enter your email</div>-->
+                                <!--<div class="m-order-row">-->
+                                    <!--<input type="email" class="input" placeholder="email@gmail.com" required />-->
+                                <!--</div>-->
+                                <!--<div class="m-order-submit">-->
+                                    <!--<button type="submit" class="modal-push modal-push-normal">confirm</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
                 <div class="order-list">
                     <div class="order-header">
                         <div class="order-name">My order</div>
-                        <a href="" class="order-promocode">Apply promo code</a>
+                        <!--<a href="" class="order-promocode">Apply promo code</a>-->
+                        <!--<div class="cover-promo">-->
+                            <!--<input class="input-promo input" type="text" placeholder="Input promo code">-->
+                            <!--<button type="button" class="button-promo btn btn-add">Ok</button>-->
+                        <!--</div>-->
                     </div>
                     <div class="order-items">
                         <div class="order-item">
@@ -138,3 +142,5 @@
 </div>
 
 {{> footer}}
+{{> form-feedback}}
+{{> sign-reg}}

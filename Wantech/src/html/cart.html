@@ -28,11 +28,15 @@
                         <!--</div>-->
                     <!--</div>-->
                 <!--</form>-->
-                <div class="order-list">
-                    <div class="order-header">
+                <div class="order-list clearfix">
+                    <form action="#" class="order-header">
                         <div class="order-name">My order</div>
                         <a href="" class="order-promocode">Apply promo code</a>
-                    </div>
+                        <div class="cover-promo">
+                            <input class="input-promo input" type="text" placeholder="Input promo code">
+                            <button type="button" class="button-promo btn btn-add">Ok</button>
+                        </div>
+                    </form>
                     <div class="order-items">
                         <div class="order-item">
                             <a href="" class="order-img" style="background-image: url(img/content/slider/02.jpg)"></a>
@@ -42,10 +46,24 @@
                                     <a href="" class="mo-item-remove"></a>
                                 </div>
                                 <div class="order-row">
-                                    <div class="order-muted">Color: Blue</div>
+                                    <div class="order-muted clearfix">
+                                        <span>Color: </span>
+                                        <select name="" id="" class="change-color-order">
+                                            <option value="Blue">Blue</option>
+                                            <option value="Gray">Gray</option>
+                                            <option value="transparent">transparent</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="order-row">
-                                    <div class="order-muted">Weight: 100G</div>
+                                    <div class="order-muted">
+                                        <span>Weight: </span>
+                                        <select name="" id="" class="change-weight-order">
+                                            <option value="100G">100G</option>
+                                            <option value="200G">100G</option>
+                                            <option value="300G">100G</option>
+                                        </select>
+                                    </div>
                                     <div class="order-price">$210</div>
                                 </div>
                             </div>
@@ -58,10 +76,24 @@
                                     <a href="" class="mo-item-remove"></a>
                                 </div>
                                 <div class="order-row">
-                                    <div class="order-muted">Color: Blue</div>
+                                    <div class="order-muted clearfix">
+                                        <span>Color: </span>
+                                        <select name="" id="" class="change-color-order">
+                                            <option value="Blue">Blue</option>
+                                            <option value="Gray">Gray</option>
+                                            <option value="transparent">transparent</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="order-row">
-                                    <div class="order-muted">Weight: 100G</div>
+                                    <div class="order-muted">
+                                        <span>Weight: </span>
+                                        <select name="" id="" class="change-weight-order">
+                                            <option value="100G">100G</option>
+                                            <option value="200G">100G</option>
+                                            <option value="300G">100G</option>
+                                        </select>
+                                    </div>
                                     <div class="order-price">$210</div>
                                 </div>
                             </div>
@@ -74,18 +106,32 @@
                                     <a href="" class="mo-item-remove"></a>
                                 </div>
                                 <div class="order-row">
-                                    <div class="order-muted">Color: Blue</div>
+                                    <div class="order-muted clearfix">
+                                        <span>Color: </span>
+                                        <select name="" id="" class="change-color-order">
+                                            <option value="Blue">Blue</option>
+                                            <option value="Gray">Gray</option>
+                                            <option value="transparent">transparent</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="order-row">
-                                    <div class="order-muted">Weight: 100G</div>
+                                    <div class="order-muted">
+                                        <span>Weight: </span>
+                                        <select name="" id="" class="change-weight-order">
+                                            <option value="100G">100G</option>
+                                            <option value="200G">100G</option>
+                                            <option value="300G">100G</option>
+                                        </select>
+                                    </div>
                                     <div class="order-price">$210</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="order-total">
-                        <span>Total</span>
-                        <strong class="order-total-price">$679</strong>
+                        <div class="order-total">
+                            <span>Total</span>
+                            <strong class="order-total-price">$679</strong>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,3 +214,5 @@
 </div>
 
 {{> footer}}
+{{> form-feedback}}
+{{> sign-reg}}

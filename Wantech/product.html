@@ -8,13 +8,12 @@
     <title>Wantech</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/gui/favicon.png" />
-    <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzHL-dd1PuiUJYX-WngdZL5_EwFt13Uz0&sensor=SET_TO_TRUE_OR_FALSE" async></script>
 
     <META NAME=»ROBOTS» CONTENT="NOINDEX, NOFOLLOW" />
 
 </head>
-<body>
-<header class="header">
+<body><header class="header">
     <div class="header-top">
         <div class="container">
             <div class="nav nav-top">
@@ -66,9 +65,13 @@
                     <a href="contact.html" class="nav-link">Contact us</a>
                 </nav>
                 <nav class="nav nav-account">
-                    <a href="" class="nav-link">My account</a>
-                    <a href="" class="nav-link icon icon-email"></a>
-                    <a href="" class="nav-link icon icon-search"></a>
+                    <a href="" data-toggle="modal" data-target="#form-sign-reg" class="nav-link">My account</a>
+                    <a href="#form-feedback" data-target="#form-feedback" data-toggle="modal" class="nav-link icon icon-email"></a>
+                    <a href="" class="nav-link icon icon-search">
+                        <form action="#" class="general-search">
+                            <input type="search" placeholder="Search...">
+                        </form>
+                    </a>
                     <a href="" class="nav-link icon icon-bag js-cdd-open">
                         <span class="cart-count">3</span>
                     </a>
@@ -122,7 +125,7 @@
         </div>
     </div>
 </header>
-<div class="bg" style="background-image: url(img/bg/category.jpg)"></div>
+<div class="bg product-bg"></div>
 
 <nav class="nav nav-category">
     <a href="" data-href="#ncd-01" class="nav-link">API’s &amp; Intermediates</a>
@@ -438,11 +441,16 @@
             <div class="container">
                 <div class="p-cell p-gallery-wrap">
                     <div class="p-gallery">
-                        <div class="p-slide" style="background-image: url(img/content/product/hero.jpg)"></div>
-                        <div class="p-slide" style="background-image: url(img/content/product/hero-02.jpg)"></div>
-                        <div class="p-slide" style="background-image: url(img/content/product/hero-03.jpg)"></div>
+                        <div class="p-slide" style="background-image:url(img/content/product/hero.jpg)"></div>
+                        <div class="p-slide" style="background-image:url(img/content/product/hero-02.jpg)"></div>
+                        <div class="p-slide" style="background-image:url(img/content/product/hero-03.jpg)"></div>
                     </div>
                     <div class="p-dots"></div>
+                    <div class="small-gallery">
+                        <div class="p-slide" style="background-image:url(img/content/product/hero.jpg)"></div>
+                        <div class="p-slide" style="background-image:url(img/content/product/hero-02.jpg)"></div>
+                        <div class="p-slide" style="background-image:url(img/content/product/hero-03.jpg)"></div>
+                    </div>
                 </div>
                 <div class="p-cell p-info">
                     <div class="breadcrumbs">
@@ -493,19 +501,27 @@
                                 <div class="labels-cap">Colors:</div>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" checked />
-                                    <span class="label-color-inner" style="background: #afb7c4;"></span>
+                                    <span class="label-color-inner" style="background: #afb7c4;">
+                                        <strong class="hint-of-color">Gray</strong>
+                                    </span>
                                 </label>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" />
-                                    <span class="label-color-inner" style="background: #72c4cf;"></span>
+                                    <span class="label-color-inner" style="background: #72c4cf;">
+                                        <strong class="hint-of-color">Blue</strong>
+                                    </span>
                                 </label>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" />
-                                    <span class="label-color-inner" style="background: #fcfcfc;border-color: #f0f0f0;"></span>
+                                    <span class="label-color-inner" style="background: #fcfcfc;border-color: #f0f0f0;">
+                                        <strong class="hint-of-color">White</strong>
+                                    </span>
                                 </label>
                                 <label class="label label-color">
                                     <input type="radio" name="color" class="input-hidden" />
-                                    <span class="label-color-inner" style="background: #e2636c;"></span>
+                                    <span class="label-color-inner" style="background: #e2636c;">
+                                        <strong class="hint-of-color">Red</strong>
+                                    </span>
                                 </label>
                             </div>
                             <div class="labels nav">
@@ -528,10 +544,22 @@
                                     <input class="input-count" data-currency="g" type="text" value="1g" name="quantity" />
                                     <button class="js-counter input-count-plus" type="button">+</button>
                                 </div>
+                                <div class="hint-of-price">
+                                    <ul>
+                                        <li><span>50G-100G</span><span>USD10/G</span></li>
+                                        <li><span>100G-250G</span><span>USD9/G</span></li>
+                                        <li><span>250G-500G</span><span>USD8/G</span></li>
+                                        <li><span>500G-1KG</span><span>USD7/G</span></li>
+                                        <li><span>1KG-2KG</span><span>USD6/G</span></li>
+                                        <li><span>2KG-3KG</span><span>USD5/G</span></li>
+                                        <li><span>3KG-4KG</span><span>USD4/G</span></li>
+                                        <li><span>4KG-5KG</span><span>USD3/G</span></li>
+                                    </ul>
+                                </div>
                                 <div class="p-eq">=</div>
                                 <div class="p-total">$1560</div>
                             </div>
-                            <a href="" class="btn btn-blue">add to card</a>
+                            <button type="button" class="btn btn-blue">add to card</button>
                         </div>
                     </form>
                 </div>
@@ -677,23 +705,23 @@
                         <div class="i-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                         <form action="" class="inquiry inquiry-min">
                             <div class="i-row">
-                                <select class="order-select">
+                                <select class="order-select" id="express-product">
                                     <option class="option-fake">Product</option>
-                                    <option value="s">Seldafinil</option>
-                                    <option value="s">Seldafinil 1</option>
-                                    <option value="s">Seldafinil 2</option>
+                                    <option value="50">Seldafinil</option>
+                                    <option value="60">Seldafinil 1</option>
+                                    <option value="70">Seldafinil 2</option>
                                 </select>
                             </div>
                             <div class="i-row">
-                                <select class="order-select">
+                                <select class="order-select" id="express-weight">
                                     <option class="option-fake">Weight</option>
-                                    <option value="s">1 kg</option>
-                                    <option value="s">2 kg</option>
-                                    <option value="s">3 kg</option>
+                                    <option value="1">1 kg</option>
+                                    <option value="2">2 kg</option>
+                                    <option value="3">3 kg</option>
                                 </select>
                             </div>
                             <div class="i-row">
-                                <div class="i-sum center nav">
+                                <div class="i-sum express center nav">
                                     <span>Total: </span>
                                     <span class="i-total">95,70$</span>
                                 </div>
@@ -733,37 +761,37 @@
                     <div id="p-tab-08" class="p-desc js-tab-target">
                         <form action="" class="inquiry inquiry-min">
                             <div class="i-row">
-                                <select class="order-select">
+                                <select class="order-select" id="buy-sample-product">
                                     <option class="option-fake">Product</option>
-                                    <option value="s">Seldafinil</option>
-                                    <option value="s">Seldafinil 1</option>
-                                    <option value="s">Seldafinil 2</option>
+                                    <option value="50">Seldafinil</option>
+                                    <option value="60">Seldafinil 1</option>
+                                    <option value="70">Seldafinil 2</option>
                                 </select>
                             </div>
                             <div class="i-row">
-                                <select class="order-select">
+                                <select class="order-select" id="buy-sample-weight">
                                     <option class="option-fake">Select weight</option>
-                                    <option value="s">1 kg</option>
-                                    <option value="s">2 kg</option>
-                                    <option value="s">3 kg</option>
+                                    <option value="1">1 kg</option>
+                                    <option value="2">2 kg</option>
+                                    <option value="3">3 kg</option>
                                 </select>
                             </div>
                             <div class="i-row">
-                                <select class="order-select">
+                                <select class="order-select" id="buy-sample-country">
                                     <option class="option-fake">Select your country</option>
-                                    <option value="s">Ukraine</option>
-                                    <option value="s">China</option>
-                                    <option value="s">Japan</option>
+                                    <option value="10">Ukraine</option>
+                                    <option value="20">China</option>
+                                    <option value="30">Japan</option>
                                 </select>
                             </div>
                             <div class="i-row">
                                 <input type="text" class="input" placeholder="Enter your email" required />
                             </div>
                             <div class="i-row">
-                                <div class="i-sum i-sum-min center nav">
+                                <div class="i-sum i-sum-min center nav buy-sample">
                                     <span>Total: </span>
-                                    <span class="i-calc">$40 + $55 = </span>
-                                    <span class="i-total">95$</span>
+                                    <span class="i-calc"><i class="sum-price"></i> + <i class="ship-price"></i> = </span>
+                                    <span class="i-total buy-sample-total">95$</span>
                                 </div>
                             </div>
                             <div class="center">
@@ -879,7 +907,7 @@
                 <h3 class="p-head center">With this product also bought</h3>
                 <div class="similar-items-wrap">
                     <div class="similar-items">
-                        <div class="stuff">
+                        <form action="#" class="stuff">
                             <div class="stuff-inner">
                                 <a href="" class="stuff-img">
                                     <img src="img/content/category/5.png" alt="img" />
@@ -888,13 +916,13 @@
                                 <div class="stuff-tag">
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-crystal"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-crystal disabled">
                                         </div>
                                         <div class="stuff-tag-name">crystal</div>
                                     </a>
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-powder"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-powder">
                                         </div>
                                         <div class="stuff-tag-name">powder</div>
                                     </a>
@@ -919,14 +947,14 @@
                                         <option value="red">Red</option>
                                         <option value="yellow">Yellow</option>
                                         <option value="black">Black</option>
-                                    </select>            <a href="" class="btn btn-add">
+                                    </select>            <button type="button" class="btn btn-add">
                                         <i class="icon icon-cart"></i>
                                         <span class="btn-add-inner">Add to cart</span>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="stuff">
+                        </form>
+                        <form action="#" class="stuff">
                             <div class="stuff-inner">
                                 <a href="" class="stuff-img">
                                     <img src="img/content/category/6.png" alt="img" />
@@ -935,13 +963,13 @@
                                 <div class="stuff-tag">
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-crystal"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-crystal">
                                         </div>
                                         <div class="stuff-tag-name">crystal</div>
                                     </a>
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-powder"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-powder">
                                         </div>
                                         <div class="stuff-tag-name">powder</div>
                                     </a>
@@ -967,15 +995,15 @@
                                         <option value="red">Red</option>
                                         <option value="yellow">Yellow</option>
                                         <option value="black">Black</option>
-                                    </select>            <a href="" class="btn btn-add">
+                                    </select>            <button type="button" class="btn btn-add">
                                         <i class="icon icon-cart"></i>
                                         <span class="btn-add-inner">Add to cart</span>
-                                    </a>
+                                    </button>
                                 </div>
                                 <div class="sale sale-sale">sale</div>
                             </div>
-                        </div>
-                        <div class="stuff">
+                        </form>
+                        <form action="#" class="stuff">
                             <div class="stuff-inner">
                                 <a href="" class="stuff-img">
                                     <img src="img/content/category/7.png" alt="img" />
@@ -984,13 +1012,13 @@
                                 <div class="stuff-tag">
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-crystal"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-crystal">
                                         </div>
                                         <div class="stuff-tag-name">crystal</div>
                                     </a>
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-powder"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-powder disabled">
                                         </div>
                                         <div class="stuff-tag-name">powder</div>
                                     </a>
@@ -1015,14 +1043,14 @@
                                         <option value="red">Red</option>
                                         <option value="yellow">Yellow</option>
                                         <option value="black">Black</option>
-                                    </select>            <a href="" class="btn btn-add">
+                                    </select>            <button type="button" class="btn btn-add">
                                         <i class="icon icon-cart"></i>
                                         <span class="btn-add-inner">Add to cart</span>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="stuff">
+                        </form>
+                        <form action="#" class="stuff">
                             <div class="stuff-inner">
                                 <a href="" class="stuff-img">
                                     <img src="img/content/category/8.png" alt="img" />
@@ -1031,13 +1059,13 @@
                                 <div class="stuff-tag">
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-crystal"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-crystal">
                                         </div>
                                         <div class="stuff-tag-name">crystal</div>
                                     </a>
                                     <a href="" class="stuff-tag-link">
                                         <div class="stuff-tag-icon">
-                                            <i class="icon icon-powder"></i>
+                                            <input type="radio" name="type-of-item" class="icon icon-powder">
                                         </div>
                                         <div class="stuff-tag-name">powder</div>
                                     </a>
@@ -1063,14 +1091,14 @@
                                         <option value="red">Red</option>
                                         <option value="yellow">Yellow</option>
                                         <option value="black">Black</option>
-                                    </select>            <a href="" class="btn btn-add">
+                                    </select>            <button type="button" class="btn btn-add">
                                         <i class="icon icon-cart"></i>
                                         <span class="btn-add-inner">Add to cart</span>
-                                    </a>
+                                    </button>
                                 </div>
                                 <div class="sale sale-sale">sale</div>
                             </div>
-                        </div>                <form action="#" class="stuff">
+                        </form>                <form action="#" class="stuff">
                             <div class="stuff-inner">
                                 <a href="" class="stuff-img">
                                     <img src="img/content/category/1.png" alt="img" />
@@ -1342,3 +1370,87 @@
 </body>
 </html>
 
+<div id="error-add-to-cart" class="modal fade in mh" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h3 class="title-item">CHOOSE ALL PARAMETERS</h3>
+                <span class="color-of-product">Choose color of product</span>
+                <span class="type-of-product">Choose type of product ('Crystal' or 'Powder')</span>
+            </div>
+        </div>
+    </div>
+</div><form class="modal modal-confirm fade" id="form-feedback">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="confirm-name">Feedback</div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Input your e-mail*</div>
+                    <input type="email" class="input input-block" required>
+                </div>
+                <div class="mh-row">
+                    <div class="confirm-caption">Your message*</div>
+                    <textarea required class="input input-block input-textarea"></textarea>
+                </div>
+                <div class="center">
+                    <button type="submit" class="modal-push">
+                        <span class="modal-push-innerwrap">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form><form class="modal modal-confirm fade" id="form-sign-reg">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body clearfix">
+                <div class="modal-left">
+                    <div class="confirm-name center">Sign in</div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row forgot-container">
+                        <span class="forgot">Forgot password?</span>
+                        <input id="forgot" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="forgot">Remember me</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">SIGN IN</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <div class="confirm-name center">Registration</div>
+                    <div class="mh-row">
+                        <input type="text" class="input input-block" placeholder="USERNAME" required>
+                    </div>
+                    <div class="mh-row">
+                        <input type="email" class="input input-block" placeholder="EMAIL" required>
+                    </div>
+                    <div class="mh-row pass">
+                        <input type="password" class="input input-block" placeholder="PASSWORD" required>
+                        <span class="eye-pass icon icon-eye"></span>
+                    </div>
+                    <div class="mh-row term">
+                        <input id="term-us-use" class="custom-checkbox" type="checkbox" required>
+                        <label class="label-checkbox" for="term-us-use">I agree to the Terms of Use and to receive emails.</label>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="modal-push">
+                            <span class="modal-push-innerwrap">CREATE ACCOUNT</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
