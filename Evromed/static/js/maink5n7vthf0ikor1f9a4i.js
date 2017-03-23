@@ -4745,6 +4745,23 @@ $(window).load(function () {
         }
     });
 
+    //VISIBLE SEARCH FIELD ON CLICK .search-laptop__button
+    $('.search-laptop__button').on('click', function (e) {
+        e.preventDefault();
+        $('.search-laptop__box.mobile-version').height($('body').outerHeight() - parseInt($('.search-laptop__box').css('top')));
+        if ($('.search-laptop__box.mobile-version').hasClass('active')) {
+            $('.search-laptop__box.mobile-version').removeClass('active');
+        } else {
+            $('.search-laptop__box.mobile-version').addClass('active');
+        }
+    });
+
+    //var nP = navigator.platform;
+    //if (nP == "iPad" || nP == "iPhone" || nP == "iPod" || nP == "iPhone Simulator" || nP == "iPad Simulator"){
+    //    $('select option[disabled]').remove();
+    //}
+
+
     //BUTTON TURN
     $('.turn__item').on('click', function (e) {
         var $this = $(this);
@@ -4782,31 +4799,6 @@ $(window).load(function () {
             $('.question-title').removeClass('opened');
             $(this).next('ol').slideDown();
             $(this).addClass('opened');
-        }
-    });
-
-    //TURN .directions__box .womens, .directions__box .mens, .directions__box .childrens
-    if ($(window).outerWidth() <= 580) {
-        $('.directions__box .womens>a, .directions__box .mens>a, .directions__box .childrens>a').addClass('turned').next().slideUp();
-    }
-    $('.directions__box .womens>a, .directions__box .mens>a, .directions__box .childrens>a').on('click', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('turned').next().slideToggle();
-        $(this).parent().toggleClass('mb');
-    });
-
-    //TURNING .one-column in services box
-    $('.title-services').each(function (i, el) {
-        if (i > 0) {
-            $(el).addClass('turned');
-        }
-    });
-    $('.title-services').on('click', function () {
-        $('.title-services').addClass('turned').next('div').slideUp();
-        if ($(this).next().is(':visible')) {
-            $(this).addClass('turned').next('div').slideUp();
-        } else {
-            $(this).removeClass('turned').next('div').slideDown();
         }
     });
 
@@ -4850,6 +4842,7 @@ $(window).load(function () {
         dots: true,
         vertical: true,
         infinite: false,
+        swipe: false,
         appendArrows: '.arrows__container',
         appendDots: '.dots__container',
         prevArrow: '<span type="button" class="slick-prev"></span>',
@@ -4871,8 +4864,8 @@ $(window).load(function () {
             $('.popular-services__slider').next('.total__container').find('.slick-prev, .slick-next').on('click', function () {
                 var activePopularServices = $('.popular-services__slider').next('.total__container').find('li.slick-active'),
                     activePopularServicesNumber = +activePopularServices.text(),
-                    topPositionUl = activePopularServicesNumber * (activePopularServices.outerHeight() + 15) - (activePopularServices.outerHeight() + 15) * 7,
-                    moveDots = (activePopularServicesNumber - 7) * (activePopularServices.outerHeight() + 15);
+                    topPositionUl = activePopularServicesNumber * (activePopularServices.outerHeight() + 12) - (activePopularServices.outerHeight() + 12) * 7,
+                    moveDots = (activePopularServicesNumber - 7) * (activePopularServices.outerHeight() + 12);
                 if (topPositionUl >= 0) {
                     $('.popular-services__slider').next('.total__container').find('.slick-dots').css({ 'top': -moveDots });
                 }
@@ -4950,6 +4943,77 @@ $(window).load(function () {
         $('.cart-analyzes strong').text(summToCart - 1);
     });
 
+    var count = true;
+    function clickTitle() {
+        if (count) {
+            (function () {
+                var turned = function turned() {
+                    var _this = this;
+                    if ($(this).hasClass('turned')) {
+                        $(this).addClass('mb').find('ul').slideDown();
+                        setTimeout(function () {
+                            $(_this).removeClass('turned');
+                        }, 400);
+                    } else {
+                        $(this).removeClass('mb').find('ul').slideUp();
+                        setTimeout(function () {
+                            $(_this).addClass('turned');
+                        }, 400);
+                    }
+                };
+
+                if ($(window).width() <= 450) {
+                    //TURNING .one-column in services box
+                    $('.srv .title-services').each(function (i, el) {
+                        if (i > 0) {
+                            $(el).addClass('turned');
+                        }
+                    });
+                    $('.srv .title-services').on('click', function (e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        if ($(this).hasClass('turned')) {
+                            $(this).removeClass('turned');
+                        } else {
+                            $(this).addClass('turned');
+                        }
+                    });
+                    count = false;
+                } else {
+                    $('.title-services').removeClass('turned').unbind('click');
+                    count = true;
+                }
+
+                //TURN .directions__box .womens, .directions__box .mens, .directions__box .childrens
+                if ($(window).outerWidth() <= 580) {
+                    $('.directions__box .womens, .directions__box .mens, .directions__box .childrens').addClass('turned').find('ul').slideUp();
+                    $('.directions__box .womens').on('click', function (e) {
+                        e.preventDefault();
+                        turned.call(this);
+                    });
+                    $('.directions__box .mens').on('click', function (e) {
+                        e.preventDefault();
+                        turned.call(this);
+                    });
+                    $('.directions__box .childrens').on('click', function (e) {
+                        e.preventDefault();
+                        turned.call(this);
+                    });
+                    count = false;
+                } else {
+                    $('.directions__box .womens, .directions__box .mens, .directions__box .childrens').removeClass('turned').find('ul').slideDown();
+                    $('.directions__box .womens').unbind('click');
+                    $('.directions__box .mens').unbind('click');
+                    $('.directions__box .childrens').unbind('click');
+                    count = true;
+                }
+            })();
+        }
+    }
+
+    clickTitle();
+    $(window).on('orientationchange', clickTitle());
+
     laptopF();
     $(window).on('resize', laptopF);
     $(window).on('orientationchange', laptopF);
@@ -4972,59 +5036,59 @@ $(window).load(function () {
 
         //MOBILE MENU
         if ($(window).outerWidth() <= 780) {
+            var needHeightMenu;
 
-            //DELETE CHOSE ANALYZES
-            //$(document).on('click', '.delete-this-analysis', function() {
-            //    $(this).parent('.del-analyzes').parent('tr').prev('.border-none').remove();
-            //    $(this).parent('.del-analyzes').parent('tr').remove();
-            //});
+            (function () {
+                var mobileMenu = function mobileMenu() {
+                    if (needHeightMenu < $(window).outerHeight()) {
+                        $('.nav, .nav .container').outerHeight($(window).outerHeight());
+                        if ($('body').hasClass('menu-opened')) {
+                            $('body, html').outerHeight($(window).outerHeight());
+                        } else {
+                            $('body, html').css('height', 'auto');
+                        }
+                    } else {
+                        $('.nav, .nav .container,body, html').outerHeight(needHeightMenu);
+                        if ($('body').hasClass('menu-opened')) {
+                            $('body, html').outerHeight(needHeightMenu);
+                        } else {
+                            $('body, html').css('height', 'auto');
+                        }
+                    }
+                };
 
-            // MOBILE MENU
-            $('.nav, .nav .container').height($('body').outerHeight());
+                // MOBILE MENU
+                needHeightMenu = $('.navigation').height() + parseInt($('.navigation').css('padding-top')) + parseInt($('.navigation').css('padding-bottom')) + $('.nav .header__right__contacts').outerHeight() + parseInt($('.nav .header__right__contacts').css('margin-top')) + 50;
 
-            $('a.mobile-button').click(function (e) {
-                e.preventDefault();
-                $('.nav').addClass('active');
-            });
-            $('.close-menu__button').on('click', function (e) {
-                e.preventDefault();
-                $('.nav').removeClass('active');
-            });
+                $('.nav, .nav .container').height(needHeightMenu);
 
-            //MOVE .header__right__contacts TO NAVIGATION BOX if RESOLUTION IS <= 780
-            $('.header__right__contacts').appendTo('.nav .container');
+                mobileMenu();
 
-            //MOVE SEARCH BOX TO CONTAINER 'search-laptop__box' if RESOLUTION IS <= 780
-            $('.search__box').appendTo('.search-laptop__box');
+                $('a.mobile-button').click(function (e) {
+                    e.preventDefault();
+                    $('.nav').addClass('active');
+                    $('body').addClass('menu-opened');
+                    mobileMenu();
+                });
+                $('.close-menu__button').on('click', function (e) {
+                    e.preventDefault();
+                    $('.nav').removeClass('active');
+                    $('body').removeClass('menu-opened');
+                    mobileMenu();
+                });
 
-            //CHANGE PLACEHOLDER .search__submit
-            document.querySelector('.search__input').placeholder = 'Найдите свою услугу';
+                //CHANGE PLACEHOLDER .search__submit
+                document.querySelector('.search__input').placeholder = 'Найдите свою услугу';
 
-            $('.search-laptop__button').on('click', function (e) {
-                e.preventDefault();
-                $('.search-laptop__box').height($('body').outerHeight() - parseInt($('.search-laptop__box').css('top'))).toggleClass('active');
-            });
-
-            wasRebuild780 = true;
+                wasRebuild780 = true;
+            })();
         } else if (wasRebuild780) {
 
             // MOBILE MENU (NAV)
             $('.nav, .nav .container').css({ 'height': 'auto' });
 
-            //MOVE .header__right__contacts TO NAVIGATION BOX if RESOLUTION IS <= 780
-            $('.header__right__contacts').insertBefore('.header__right__appointment');
-
-            //MOVE SEARCH BOX TO CONTAINER 'search-laptop__box' if RESOLUTION IS <= 780
-            $('.search__box').appendTo('.nav .container');
-
             //CHANGE PLACEHOLDER .search__submit
             document.querySelector('.search__input').placeholder = 'Найти';
-
-            //DELETE CHOSE ANALYZES
-            //$(document).on('click', '.delete-this-analysis', function() {
-            //    $(this).parent('.del-analyzes').parent('tr').prev('.border-none').remove();
-            //    $(this).parent('.del-analyzes').parent('tr').remove();
-            //});
         }
 
         if ($(window).outerWidth() <= 580) {
@@ -5058,12 +5122,6 @@ $(window).load(function () {
             //CUSTOM .choose-radio
             $('.choose-radio').styler();
 
-            //MOVE .header__right__appointment__info if resolution is <= 579
-            $('.header__right__appointment').appendTo('.header__left');
-
-            //MOVE .header__right__contacts to .navigation__cover
-            $('.header__right__contacts').appendTo('.navigation__cover');
-
             //MOVE .one-doctor__buttons if resolution is <= 579
             $('.one-doctor__buttons').each(function (i, el) {
                 $(this).appendTo($(this).closest('.one-doctor'));
@@ -5076,9 +5134,6 @@ $(window).load(function () {
         } else if (wasRebuild580) {
 
             $('.news__cover').slick('unslick');
-
-            //MOVE .header__right__appointment__info if resolution is >= 780
-            $('.header__right__appointment').appendTo('.header__right');
 
             //MOVE .one-doctor__buttons if resolution is > 579
             $('.one-doctor__buttons').each(function (i, el) {
