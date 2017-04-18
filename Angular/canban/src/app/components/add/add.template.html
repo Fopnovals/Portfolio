@@ -1,0 +1,32 @@
+<form action="#" class="add-task" name="addTask">
+  <div class="button-add" ng-click="$ctrl.showFieldInput()">CREATE NEW TASK</div>
+  <div class="field-input" ng-class="{'show': $ctrl.show}">
+    <div class="input-cover">
+      <textarea required class="input-new-task" name="inputNewTask" id="" cols="30" rows="10" placeholder="Input new task" ng-model="addTask.task"></textarea>
+    </div>
+    <div class="priority">
+      <p>Choose a priority of task</p>
+      <div class="priority-checkbox__cover clearfix">
+        <div class="input-cover priority-checkbox">
+          <label for="low">
+            <input id="low" type="radio" checked name="radioPriority" value="low" ng-init="addTask.radio.value = 'low'" ng-model="addTask.radio.value">
+            Low priority</label>
+        </div>
+        <div class="input-cover priority-checkbox">
+          <label for="normal">
+            <input id="normal" type="radio" name="radioPriority" value="normal" ng-model="addTask.radio.value">
+            Normal priority</label>
+        </div>
+        <div class="input-cover priority-checkbox">
+          <label for="hight">
+            <input id="hight" type="radio" name="radioPriority" value="hight" ng-model="addTask.radio.value">
+            Hight priority</label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button type="button" class="button-for-add" ng-class="{'valid': addTask.$valid}" ng-click="$ctrl.addTask($event, addTask)">ADD</button>
+    </div>
+  </div>
+</form>
+

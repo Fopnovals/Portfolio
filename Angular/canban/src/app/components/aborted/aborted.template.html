@@ -1,0 +1,13 @@
+<div class="item">
+  <h2>ABORTED</h2>
+  <div class="task" ng-repeat="task in $ctrl.abortedTasks track by $index">
+    <p class="aborted-text" ng-class="task.priority">{{task.text}}</p>
+    <div class="time-box">
+      {{task.date}}{{task.month}}{{task.year}}
+      {{task.hours}}{{task.minutes}}{{task.seconds}}
+    </div>
+    <div class="buttons delete">
+      <button type="button" class="remove-task" ng-click="$ctrl.removeTask(task.id)">Remove</button>
+    </div>
+  </div>
+</div>

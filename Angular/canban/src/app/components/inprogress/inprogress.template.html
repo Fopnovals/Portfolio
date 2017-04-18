@@ -1,0 +1,32 @@
+<div class="item">
+  <h2>IN PROGRESS</h2>
+  <div class="task" ng-repeat="task in $ctrl.inProgress track by $index">
+    <form action="#" name="oneTask{{task.id}}">
+      <p ng-class="task.priority" class="task-description">{{task.text}}</p>
+      <div class="time-box">
+        {{task.date}}{{task.month}}{{task.year}}
+        {{task.hours}}{{task.minutes}}{{task.seconds}}
+      </div>
+      <div class="buttons">
+        <a href="#" class="edit" ng-click="$ctrl.edit($event)">Edit</a>
+        <button type="button" class="save-edit" ng-click="$ctrl.save($event, task)">Save</button>
+        <button type="button" class="abort" ng-click="$ctrl.aborted(task.id)">Abort</button>
+        <button type="button" class="move-done" ng-click="$ctrl.done(task.id)">Done</button>
+      </div>
+      <div class="edit-priority clearfix">
+        <div class="low-label">
+          <input name="radioPriority{{task.id}}" type="radio" id="low{{task.id}}" value="low" ng-model="task.priority">
+          <label for="low{{task.id}}">Low</label>
+        </div>
+        <div class="normal-label">
+          <input name="radioPriority{{task.id}}" type="radio" id="normal{{task.id}}" value="normal" ng-model="task.priority">
+          <label for="normal{{task.id}}">Normal</label>
+        </div>
+        <div class="hight-label">
+          <input name="radioPriority{{task.id}}" type="radio" id="hight{{task.id}}" value="hight" ng-model="task.priority">
+          <label for="hight{{task.id}}">Hight</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

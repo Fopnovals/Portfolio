@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../assets/fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../assets/fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("../assets/fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+  url("../assets/fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background: #fff;
+  color: #000;
+  font: 12px/14px "OpenSansRegular", arial, helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 58px 15px 20px;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.one-column {
+  width: 23%;
+  border: 1px solid blue;
+  padding: 10px 10px 20px;
+  border-radius: 2px;
+}
+.task:not(:last-of-type) {
+  border-bottom: 2px solid gray;
+  margin-bottom: 20px;
+}
+.task-description {
+  word-wrap: break-word;
+  overflow-y: auto;
+  display: block;
+  color: black;
+  font-size: 14px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  margin: 0;
+  &.low {
+    background-color: #fbfcd4;
+  }
+  &.normal {
+    background-color: #f4fd5c;
+  }
+  &.hight {
+    background-color: #fdc65c;
+  }
+}
+.aborted-text {
+  padding: 10px;
+  margin: 10px 0;
+  word-wrap: break-word;
+  &.low {
+    background-color: #fbfcd4;
+  }
+  &.normal {
+    background-color: #f4fd5c;
+  }
+  &.hight {
+    background-color: #fdc65c;
+  }
+}
+.low-label {
+  padding: 5px;
+  background-color: #fbfcd4;
+  float: left;
+  width: 33.333%;
+}
+.normal-label {
+  padding: 5px;
+  background-color: #f4fd5c;
+  float: left;
+  width: 33.333%;
+}
+.hight-label {
+  padding: 5px;
+  background-color: #fdc65c;
+  float: left;
+  width: 33.333%;
+}
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+.buttons {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  &.delete {
+    justify-content: center;
+  }
+}
+.button-add, .button-for-add {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px black;
+  padding: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.1s;
+  &:hover {
+    background-color: #4c01a1;
+  }
+  &:active {
+    box-shadow: 0 0 0 black;
+    left: 11px;
+    top: 11px;
+  }
+}
+.field-input {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+  border: 1px solid blue;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 2500px black;
+  padding: 20px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  &.show {
+    box-shadow: 10px 10px 20px black;
+    visibility: visible;
+    opacity: 1;
+    width: 800px;
+    height: 340px;
+  }
+}
+.input-new-task::-webkit-input-placeholder {color:gray;}
+.input-new-task::-moz-placeholder          {color:gray;}
+.input-new-task:-moz-placeholder           {color:gray;}
+.input-new-task:-ms-input-placeholder      {color:gray;}
+.input-new-task {
+  width: 100%;
+  resize: none;
+  border: 1px solid gray;
+  color: black;
+  padding: 10px;
+  &.ng-touched.ng-invalid-required, &.not-valid {
+    border-color: red;
+  }
+  &.ng-touched.ng-invalid-required::-webkit-input-placeholder {color:red;}
+  &.ng-touched.ng-invalid-required::-moz-placeholder {color:red;}
+  &.ng-touched.ng-invalid-required:-moz-placeholder {color:red;}
+  &.ng-touched.ng-invalid-required:-ms-input-placeholder {color:red;}
+}
+.priority {
+  margin-bottom: 15px;
+}
+.priority-checkbox {
+  float: left;
+  margin-right: 20px;
+}
+.button-for-add {
+  position: static;
+  border: none;
+  width: 100px;
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: default;
+  &.valid {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  &:active {
+    margin: 1px 0 0 1px;
+  }
+}
+.time-box {
+  margin: 10px 0;
+}
+.edit, .move-in-progress {
+  display: inline-flex;
+  padding: 5px 0;
+  width: 81px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: white;
+  background-color: blue;
+  font-size: 14px;
+  transition: 0.2s;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #4c01a1;
+  }
+}
+.abort {
+  width: 47px;
+  display: inline-flex;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  font-size: 14px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background-color: #a10404;
+  }
+}
+.move-done, .save-edit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  background-color: green;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+  width: 81px;
+  color: white;
+  &:hover {
+    background-color: #24460a;
+  }
+}
+doit-component {
+  h2 {
+    background: radial-gradient(#7ab4f4, transparent 70%);
+  }
+}
+aborted-component.one-column {
+  border: 1px solid red;
+  h2 {
+    background: radial-gradient(#ff9595, transparent 70%);
+  }
+}
+done-component.one-column {
+  border: 1px solid green;
+  h2 {
+    background: radial-gradient(#52ff9f, transparent 70%);
+  }
+}
+in-progress-component.one-column {
+  border: 1px solid yellow;
+  h2 {
+    background: radial-gradient(#f1f13f, transparent 74%);
+  }
+}
+.remove-task {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 5px 0;
+  background-color: red;
+  font-size: 14px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background-color: #a10404;
+  }
+}
+.save-edit, .edit-priority {
+  display: none;
+}

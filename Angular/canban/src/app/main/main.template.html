@@ -1,0 +1,27 @@
+<doit-component class=one-column
+  tasks="$ctrl.tasks"
+  edit-task="$ctrl.editTask(obj)"
+  move-in-progress="$ctrl.moveInProgress(obj)"
+  aborted-task="$ctrl.abortedTask(obj)">
+</doit-component>
+
+<in-progress-component class="one-column"
+  in-progress="$ctrl.inProgressTasks"
+  aborted-task="$ctrl.abortInProgressTask(obj)"
+  edit-in-progress-task="$ctrl.editInProgress(obj)"
+  move-to-done="$ctrl.moveToDone(obj)">
+</in-progress-component>
+
+<done-component class="one-column"
+  done-tasks="$ctrl.doneTasks"
+  remove-done-task="$ctrl.removeDoneTask(obj)">
+</done-component>
+
+<aborted-component class="one-column"
+  aborted-tasks="$ctrl.abortedTasks"
+  remove="$ctrl.removeTask(obj)">
+</aborted-component>
+
+<add-component
+  create-task="$ctrl.createTask(task)">
+</add-component>
