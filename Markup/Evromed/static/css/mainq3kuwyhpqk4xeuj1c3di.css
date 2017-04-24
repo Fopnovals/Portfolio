@@ -960,25 +960,25 @@ input[type='submit'].styler[disabled] {
 }
 
 .own-laboratory-base:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -421px -46px;
   width: 38px;
   height: 50px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/microscope.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .pregnancy:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -269px 0px;
   width: 41px;
   height: 55px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/pregnancy.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .photo-clinic {
@@ -1334,14 +1334,18 @@ input[type='submit'].styler[disabled] {
 }
 
 .own-base:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -269px -59px;
   width: 41px;
   height: 55px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/microscope.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
+}
+
+.own-base-svg {
+  fill: #fff;
 }
 
 .spec {
@@ -1350,14 +1354,14 @@ input[type='submit'].styler[disabled] {
 }
 
 .spec:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -140px -297px;
   width: 42px;
   height: 54px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/nurse.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .med-centers {
@@ -1366,14 +1370,14 @@ input[type='submit'].styler[disabled] {
 }
 
 .med-centers:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -194px -161px;
   width: 48px;
   height: 54px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/pharmacy.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .slider__cover {
@@ -1534,7 +1538,7 @@ input[type='submit'].styler[disabled] {
 .calc:before {
   top: 12px;
   left: 12px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -172px -421px;
   width: 27px;
   height: 31px;
@@ -1554,7 +1558,7 @@ input[type='submit'].styler[disabled] {
 }
 
 .fancybox-close {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -372px -103px;
   width: 41px;
   height: 41px;
@@ -1768,7 +1772,7 @@ input[type='submit'].styler[disabled] {
 }
 
 a.delete-this-analysis {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -105px -314px;
   width: 15px;
   height: 18px;
@@ -1837,58 +1841,58 @@ a.delete-this-analysis {
 }
 
 .assessment:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -39px -109px;
   width: 54px;
   height: 59px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/medicine.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .admission-form:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -314px -193px;
   width: 39px;
   height: 55px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/admision-form-white.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .economic:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -140px -123px;
   width: 43px;
   height: 55px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/price.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .time-of-diagnostics:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -194px -219px;
   width: 48px;
   height: 50px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/clock.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .individual-approach:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -140px -182px;
   width: 45px;
   height: 52px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/medical-history.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .complex-programs__block {
@@ -2335,36 +2339,36 @@ a.delete-this-analysis {
 }
 
 .metods-diagnostics:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -39px -172px;
   width: 58px;
   height: 54px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/medical-operation.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .equipment:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -39px -288px;
   width: 62px;
   height: 47px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/medic.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .modern-information-system:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -314px 0px;
   width: 54px;
   height: 41px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/medical-computer.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .control p {
@@ -2396,14 +2400,14 @@ a.delete-this-analysis {
 .download-contract:before {
   top: -4px;
   left: -36px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -97px -142px;
   width: 23px;
   height: 26px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/3/doc-file-format.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .download-contract:hover {
@@ -2454,7 +2458,7 @@ a.delete-this-analysis {
 .footer__top__left__info:before {
   top: 23px;
   left: 10px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -39px -54px;
   width: 78px;
   height: 51px;
@@ -2546,25 +2550,25 @@ a.delete-this-analysis {
 }
 
 .adress-footer strong:before {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -357px -213px;
   width: 9px;
   height: 16px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/footer/placeholder-for-locate-places-on-maps.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .phone-footer strong:before {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -357px -233px;
   width: 10px;
   height: 10px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/footer/phone-call.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .phone-footer span {
@@ -2572,14 +2576,14 @@ a.delete-this-analysis {
 }
 
 .shedule-footer strong:before {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -21px -343px;
   width: 14px;
   height: 14px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/footer/clock.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .shedule-footer span {
@@ -2628,7 +2632,7 @@ a.delete-this-analysis {
 }
 
 .social li.vk a {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -382px -374px;
   width: 22px;
   height: 22px;
@@ -2639,7 +2643,7 @@ a.delete-this-analysis {
 }
 
 .social li.facebook a {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -356px -374px;
   width: 22px;
   height: 22px;
@@ -2650,14 +2654,14 @@ a.delete-this-analysis {
 }
 
 .social li.instagram a {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -231px -421px;
   width: 22px;
   height: 22px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/footer/instagram-logo.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .pay-cards {
@@ -2679,25 +2683,25 @@ a.delete-this-analysis {
 }
 
 .pay-cards li.visa {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -39px -339px;
   width: 56px;
   height: 18px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/footer/visa.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .pay-cards li.mastercard {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -372px -340px;
   width: 44px;
   height: 26px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/footer/mastercard.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .footer-list {
@@ -2774,14 +2778,18 @@ a.delete-this-analysis {
 }
 
 .right-footer__box .analyzes-button.result-analyzes:before {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -101px -172px;
   width: 17px;
   height: 24px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/footer/medical-history2.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
+}
+
+.right-footer__box .analyzes-button.result-analyzes:hover:before {
+  background-image: url(../img/content/icons-svg/footer/medical-history2-green.svg);
 }
 
 .right-footer__box .analyzes-button.home-analyzes {
@@ -2789,14 +2797,18 @@ a.delete-this-analysis {
 }
 
 .right-footer__box .analyzes-button.home-analyzes:before {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -101px -200px;
   width: 17px;
   height: 23px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/microscope.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
+}
+
+.right-footer__box .analyzes-button.home-analyzes:hover:before {
+  background-image: url(../img/content/icons-svg/2/microscope-green.svg);
 }
 
 .subscribe {
@@ -2851,15 +2863,15 @@ a.delete-this-analysis {
 
 .subm__cover:after {
   right: 10px;
-  top: 9px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -357px -193px;
+  top: 7px;
   width: 10px;
-  height: 16px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  height: 17px;
+  background-image: url(../img/content/icons-svg/footer/arrow-point-to-right.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
   cursor: pointer;
 }
 
@@ -3178,14 +3190,14 @@ a.delete-this-analysis {
 }
 
 .enroll-gastro:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -98px -230px;
   width: 21px;
   height: 29px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/admision-form.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
   right: -45px;
   top: -8px;
 }
@@ -3415,25 +3427,25 @@ input:focus:-ms-input-placeholder {
 }
 
 .analyzes-button.result-analyzes:before {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -152px -462px;
   width: 20px;
   height: 29px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/medical-prescription.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .analyzes-button.home-analyzes:before {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -97px -109px;
   width: 21px;
   height: 29px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/microscope-green.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .analyzes-button:hover {
@@ -3570,14 +3582,14 @@ header.container {
 }
 
 .header__right__appointment__info strong {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -203px -421px;
   width: 24px;
   height: 28px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/medical-history.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
   display: block;
 }
 
@@ -3731,36 +3743,36 @@ header.container {
 }
 
 .control-quality:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -194px -273px;
   width: 42px;
   height: 57px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/quality-badge.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .fast-result:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -39px 0px;
-  width: 81px;
+  width: 56px;
   height: 50px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/ambulance.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .rare-tests:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -314px -252px;
   width: 42px;
   height: 50px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/dna.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .pink {
@@ -3847,7 +3859,7 @@ header.container {
 .search-analyses__button__cover:after {
   top: 16px;
   right: 15px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -280px -421px;
   width: 19px;
   height: 19px;
@@ -4095,7 +4107,7 @@ header.container {
 }
 
 .add-analysis:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -262px -462px;
   width: 16px;
   height: 22px;
@@ -4226,14 +4238,14 @@ header.container {
   border: none;
   cursor: pointer;
   font-size: 0;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -257px -421px;
   width: 19px;
   height: 19px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/magnifying-glass.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
   position: absolute;
   right: 0;
   margin: 0;
@@ -4435,7 +4447,7 @@ header.container {
 .slide__image:before {
   left: -1px;
   top: 0;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: 0px 0px;
   width: 17px;
   height: 370px;
@@ -4506,7 +4518,7 @@ header.container {
 .news-general__box__item__image:before {
   left: -1px;
   top: 0;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -252px 0px;
   width: 13px;
   height: 154px;
@@ -4524,7 +4536,7 @@ header.container {
 .news-general__box .earlier a:after {
   right: 42px;
   top: 13px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -21px -307px;
   width: 14px;
   height: 14px;
@@ -4713,36 +4725,30 @@ header.container {
 }
 
 .popular-services .slick-prev, .popular-services .slick-next {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -242px -462px;
-  width: 16px;
-  height: 22px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
-  background-repeat: no-repeat;
+  width: 22px;
+  height: 16px;
+  background: url(../img/content/icons-svg/2/arrow.svg) no-repeat center center;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-     -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%);
   cursor: pointer;
+  left: 7px;
 }
 
 .popular-services .slick-prev {
   top: 0;
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .popular-services .slick-next {
-  -webkit-transform: rotate(180deg);
-     -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
   bottom: 17px;
-  left: 10px;
 }
 
 .arrows__container {
@@ -4805,14 +4811,14 @@ header.container {
 .question-answer h3:after {
   right: 1px;
   top: 18px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -252px -225px;
-  width: 12px;
+  width: 14px;
   height: 8px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/3/arrow.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -4820,14 +4826,12 @@ header.container {
 }
 
 .question-answer h3.opened:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -252px -213px;
-  width: 12px;
-  height: 8px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
-  background-repeat: no-repeat;
+  background-image: url(../img/content/icons-svg/3/arrow-green.svg);
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .question-answer ol {
@@ -5033,7 +5037,7 @@ header.container {
 }
 
 .title-services.blood-tests:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -421px 0px;
   width: 46px;
   height: 42px;
@@ -5048,7 +5052,7 @@ header.container {
 }
 
 .title-services.hospital-reception:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -314px -143px;
   width: 47px;
   height: 46px;
@@ -5059,7 +5063,7 @@ header.container {
 }
 
 .title-services.doctor:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -372px -48px;
   width: 38px;
   height: 51px;
@@ -5074,7 +5078,7 @@ header.container {
 }
 
 .title-services.complex-programs:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -53px -421px;
   width: 38px;
   height: 37px;
@@ -5131,7 +5135,7 @@ header.container {
 .etaps__one:not(:last-of-type):after {
   right: -50px;
   top: 37%;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -314px -354px;
   width: 33px;
   height: 13px;
@@ -5318,36 +5322,36 @@ header.container {
 }
 
 .family:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -140px 0px;
   width: 50px;
   height: 55px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/family-room.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .complex-programs-big:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -194px -53px;
   width: 52px;
   height: 50px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/first-aid-kit.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .doctor-middle:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -140px -238px;
   width: 42px;
   height: 55px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/1/doctor.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .choose-direction {
@@ -5917,7 +5921,7 @@ header.container {
   position: absolute;
   top: 22px;
   right: 16px;
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+  background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
   background-position: -252px -201px;
   width: 13px;
   height: 8px;
@@ -6556,47 +6560,47 @@ header.container {
 }
 
 .blood-tests:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -194px 0px;
   width: 54px;
   height: 49px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/blood-test.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .hospital-reception:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -39px -230px;
   width: 55px;
   height: 54px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/hospital-reception.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .doctor:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -140px -59px;
   width: 45px;
   height: 60px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/doctor.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .complex-programs:after {
-  background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-  background-position: -372px 0px;
   width: 45px;
   height: 44px;
-  -moz-background-size: 507px, 501px;
-    -o-background-size: 507px, 501px;
-       background-size: 507px, 501px;
+  background-image: url(../img/content/icons-svg/2/first-aid-kit.svg);
   background-repeat: no-repeat;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center center;
 }
 
 .vacancies__box {
@@ -6938,7 +6942,7 @@ header.container {
     width: 393px;
   }
   .slide__image:before {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -21px 0px;
     width: 14px;
     height: 303px;
@@ -7270,14 +7274,14 @@ header.container {
     position: absolute;
     right: 25px;
     top: 66px;
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -99px -339px;
     width: 16px;
     height: 16px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
+    background-image: url(../img/content/icons-svg/2/magnifying-glass-black.svg);
     background-repeat: no-repeat;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+    background-position: center center;
   }
   .search-laptop__box {
     position: absolute;
@@ -7369,34 +7373,16 @@ header.container {
     padding: 78px 15px 0;
   }
   .own-base:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -269px -322px;
     width: 32px;
     height: 44px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .med-centers:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -421px -292px;
     width: 40px;
     height: 44px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .spec:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -372px -292px;
     width: 34px;
     height: 44px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .dt tr.details-about-analysis td p {
     margin: 0 0 19px 0;
@@ -7474,17 +7460,8 @@ header.container {
     max-height: 203px;
   }
   .popular-services .slick-prev, .popular-services .slick-next {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -252px -158px;
     width: 12px;
     height: 18px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
-  }
-  .popular-services .slick-next {
-    left: 7px;
   }
   .treatment {
     padding: 18px 0;
@@ -7519,44 +7496,20 @@ header.container {
     padding: 17px 16px 9px;
   }
   .blood-tests:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -421px -200px;
     width: 44px;
     height: 40px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .hospital-reception:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -314px -306px;
     width: 45px;
     height: 44px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .doctor:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -421px -100px;
     width: 36px;
     height: 49px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .complex-programs:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -135px;
     width: 36px;
     height: 36px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .news h2 {
     margin-bottom: 11px;
@@ -7717,7 +7670,7 @@ header.container {
     width: 158px;
   }
   .enroll-gastro:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -282px -462px;
     width: 16px;
     height: 22px;
@@ -7784,7 +7737,7 @@ header.container {
     margin-bottom: 8px;
   }
   .title-services.blood-tests:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -471px -304px;
     width: 36px;
     height: 33px;
@@ -7797,7 +7750,7 @@ header.container {
     margin-bottom: 8px;
   }
   .title-services.hospital-reception:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -95px -421px;
     width: 37px;
     height: 36px;
@@ -7807,7 +7760,7 @@ header.container {
     background-repeat: no-repeat;
   }
   .title-services.doctor:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -471px -382px;
     width: 30px;
     height: 39px;
@@ -7820,7 +7773,7 @@ header.container {
     margin-bottom: 8px;
   }
   .title-services.complex-programs:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -228px -374px;
     width: 30px;
     height: 29px;
@@ -7848,7 +7801,7 @@ header.container {
   .etaps__one:not(:last-of-type):after {
     top: 35%;
     right: -36px;
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -140px -355px;
     width: 26px;
     height: 11px;
@@ -7889,24 +7842,12 @@ header.container {
     padding: 76px 10px 0 16px;
   }
   .control-quality:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -372px -195px;
     width: 34px;
     height: 45px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .fast-result:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -421px -340px;
     width: 44px;
     height: 40px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .choose-direction.complex .container {
     padding-left: 22px;
@@ -7921,7 +7862,7 @@ header.container {
     padding: 11px 44px 9px 17px;
   }
   .search-analyses__button__cover:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -21px -325px;
     width: 14px;
     height: 14px;
@@ -8000,7 +7941,7 @@ header.container {
     font-size: 12px;
   }
   .add-analysis:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -252px -180px;
     width: 12px;
     height: 17px;
@@ -8324,7 +8265,7 @@ header.container {
     margin-bottom: 20px;
   }
   .slide__image:before {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -124px 0px;
     width: 12px;
     height: 266px;
@@ -8458,34 +8399,16 @@ header.container {
     margin: 0 16px;
   }
   .complex-programs-big:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -135px;
     width: 36px;
     height: 36px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .family:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -421px -244px;
     width: 40px;
     height: 44px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .doctor-middle:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -372px -244px;
     width: 34px;
     height: 44px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .analysis__one tr td:nth-of-type(2) {
     font-size: 13px;
@@ -8496,54 +8419,24 @@ header.container {
     padding-right: 0;
   }
   .assessment:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -314px -90px;
     width: 45px;
     height: 49px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .admission-form:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -258px;
     width: 30px;
     height: 42px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .economic:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -43px;
     width: 33px;
     height: 42px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .time-of-diagnostics:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -421px -153px;
     width: 41px;
     height: 43px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .individual-approach:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -372px -148px;
     width: 37px;
     height: 43px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .about-services-specialists.bred .container {
     background-color: #fff;
@@ -8571,24 +8464,12 @@ header.container {
     padding: 14px 10px 0;
   }
   .pregnancy:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -89px;
     width: 31px;
     height: 42px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .own-laboratory-base:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -269px -322px;
     width: 32px;
     height: 44px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .adress__box__one h4 {
     padding: 0;
@@ -8725,34 +8606,16 @@ header.container {
     width: 14%;
   }
   .metods-diagnostics:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: 0px -374px;
     width: 46px;
     height: 43px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .equipment:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -314px -45px;
     width: 54px;
     height: 41px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .modern-information-system:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: 0px -421px;
     width: 49px;
     height: 37px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
 }
 
@@ -9007,7 +8870,7 @@ header.container {
     height: 200px;
   }
   .slide__image:before {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -269px -118px;
     width: 9px;
     height: 200px;
@@ -9850,7 +9713,7 @@ header.container {
   }
   .directions__box .womens > a:before, .directions__box .mens > a:before, .directions__box .childrens > a:before {
     clear: both;
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -39px -361px;
     width: 14px;
     height: 8px;
@@ -10054,14 +9917,8 @@ header.container {
     width: 45%;
   }
   .header__right__appointment__info strong {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -176px -462px;
     width: 20px;
     height: 23px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .search-laptop__button {
     top: 53px;
@@ -10147,7 +10004,7 @@ header.container {
     content: '';
     clear: both;
     display: block;
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -351px -354px;
     width: 16px;
     height: 10px;
@@ -10554,7 +10411,7 @@ header.container {
     transition: 0.4s;
   }
   .title-services:before {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -57px -361px;
     width: 14px;
     height: 7px;
@@ -10740,7 +10597,7 @@ header.container {
   }
   .jq-selectbox__trigger-arrow {
     top: 15px;
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -252px -237px;
     width: 10px;
     height: 6px;
@@ -11085,24 +10942,8 @@ header.container {
     height: 36px;
   }
   .right-footer__box .analyzes-button.result-analyzes:before {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -105px -288px;
     width: 15px;
     height: 22px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
-  }
-  .right-footer__box .analyzes-button.home-analyzes:before {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -221px -462px;
-    width: 17px;
-    height: 23px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .right-footer__box .analyzes-button:before {
     left: 6px;
@@ -11128,34 +10969,16 @@ header.container {
     font-size: 11px;
   }
   .own-base:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -282px -118px;
     width: 28px;
     height: 38px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .spec:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -282px -160px;
     width: 28px;
     height: 37px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .med-centers:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -136px -421px;
     width: 32px;
     height: 36px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .advantages__item:after {
     top: 16px;
@@ -11222,54 +11045,24 @@ header.container {
     padding: 0;
   }
   .blood-tests:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -189px -374px;
     width: 35px;
     height: 32px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .hospital-reception:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -151px -374px;
     width: 34px;
     height: 33px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .doctor:after, .doctor-middle:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -33px -462px;
     width: 29px;
     height: 39px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .complex-programs:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -425px;
     width: 35px;
     height: 33px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .family:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -216px;
     width: 34px;
     height: 38px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .treatment__box__one:first-child:before {
     display: none;
@@ -11430,7 +11223,7 @@ header.container {
     position: absolute;
     right: -25px;
     bottom: 4px;
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -39px -361px;
     width: 14px;
     height: 8px;
@@ -11491,7 +11284,7 @@ header.container {
     padding: 14px 1px 13px;
   }
   .enroll-gastro:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -127px -462px;
     width: 21px;
     height: 29px;
@@ -11835,87 +11628,39 @@ header.container {
     top: -35px;
   }
   .assessment:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px 0px;
     width: 36px;
     height: 39px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .admission-form:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -282px -201px;
     width: 27px;
     height: 38px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .economic:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -66px -462px;
     width: 29px;
     height: 37px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .time-of-diagnostics:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -175px;
     width: 35px;
     height: 37px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .individual-approach:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -471px -341px;
     width: 32px;
     height: 37px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .about-services-specialists .container h3 {
     font-size: 22px;
   }
   .metods-diagnostics:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -109px -374px;
     width: 38px;
     height: 35px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .equipment:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -194px -334px;
     width: 47px;
     height: 36px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .modern-information-system:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -421px -384px;
     width: 40px;
     height: 31px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .choose-direction {
     background-color: #fff;
@@ -11940,14 +11685,8 @@ header.container {
     margin: 0;
   }
   .own-laboratory-base:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -282px -118px;
     width: 28px;
     height: 38px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .cart-analyzes {
     width: 320px;
@@ -11966,34 +11705,16 @@ header.container {
     line-height: 1.4;
   }
   .control-quality:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: 0px -462px;
     width: 29px;
     height: 39px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .fast-result:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -50px -374px;
-    width: 55px;
+    width: 39px;
     height: 35px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .rare-tests:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -282px -284px;
     width: 28px;
     height: 34px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .search-analyses__input {
     padding: 15px 48px 15px 7px;
@@ -12007,7 +11728,7 @@ header.container {
     background-color: #f5f0e8;
   }
   .search-analyses__button__cover:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -98px -263px;
     width: 19px;
     height: 19px;
@@ -12115,24 +11836,12 @@ header.container {
   .analyzes-button.result-analyzes:before {
     top: 7px;
     left: 7px;
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -322px -462px;
     width: 15px;
     height: 22px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .analyzes-button.home-analyzes:before {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -200px -462px;
     width: 17px;
     height: 23px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
     top: 5px;
   }
   .treatment {
@@ -12154,14 +11863,8 @@ header.container {
     left: 10px;
   }
   .pregnancy:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -282px -243px;
     width: 27px;
     height: 37px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
   }
   .alphabet {
     width: 100%;
@@ -12267,7 +11970,7 @@ header.container {
     height: 82px;
   }
   .srv .title-services.blood-tests:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -294px -374px;
     width: 29px;
     height: 27px;
@@ -12277,7 +11980,7 @@ header.container {
     background-repeat: no-repeat;
   }
   .srv .title-services.hospital-reception:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -262px -374px;
     width: 28px;
     height: 28px;
@@ -12287,7 +11990,7 @@ header.container {
     background-repeat: no-repeat;
   }
   .srv .title-services.doctor:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -99px -462px;
     width: 24px;
     height: 33px;
@@ -12297,7 +12000,7 @@ header.container {
     background-repeat: no-repeat;
   }
   .srv .title-services.complex-programs:after {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
+    background-image: url(../img/png-sprite/96dpi/spriteq3kuwyhpqk4xeuj1c3di.png);
     background-position: -327px -374px;
     width: 25px;
     height: 24px;
@@ -12446,21 +12149,13 @@ header.container {
   .popular-services .slick-prev {
     top: 10px;
   }
-  .popular-services .slick-next {
-    left: 10px;
-  }
   .popular-services .dots__container {
     top: 0;
   }
   .popular-services .slick-prev, .popular-services .slick-next {
-    background-image: url(../img/png-sprite/96dpi/sprite0vscklijdi4l33plow29.png);
-    background-position: -302px -462px;
     width: 16px;
     height: 22px;
-    -moz-background-size: 507px, 501px;
-      -o-background-size: 507px, 501px;
-         background-size: 507px, 501px;
-    background-repeat: no-repeat;
+    left: 9px;
   }
   .popular-services__slide__info h3 {
     min-height: 32px;
