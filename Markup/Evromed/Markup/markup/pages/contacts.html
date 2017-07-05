@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+    {{> head/head}}
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+
+{{> header/header }}
+
+{{> nav/nav }}
+
+{{> contacts/contacts }}
+
+{{> footer/footer }}
+
+{{> sign-up-doctor/sign-up-doctor }}
+
+{{> home-tests/home-tests }}
+
+
+<script type="text/javascript">
+    window.addEventListener('load', mapInit2);
+    function mapInit2 (){
+        var myMap;
+
+        ymaps.ready(function(){
+            var myMap = new ymaps.Map("adress__box__one__map", {
+                    center: [45.0686203,38.9806929],
+                    zoom: 16,
+                    controls: ['smallMapDefaultSet']
+                }),
+                myPlacemark = new ymaps.Placemark([45.0686203,38.9806929], {}, {
+                    iconLayout: 'default#image'
+                });
+            myMap.geoObjects.add(myPlacemark); // Размещение геообъекта на карте.
+            myMap.controls.remove('searchControl');
+            myMap.controls.remove('trafficControl');
+            myMap.controls.remove('typeSelector');
+            myMap.controls.remove('fullscreenControl');
+        })}
+
+    window.addEventListener('load', mapInit3);
+    function mapInit3 (){
+        var myMap;
+
+        ymaps.ready(function(){
+            var myMap = new ymaps.Map("adress__box__one__map2", {
+                    center: [45.0187123,39.017784],
+                    zoom: 16,
+                    controls: ['smallMapDefaultSet']
+                }),
+                myPlacemark = new ymaps.Placemark([45.0187123,39.017784], {}, {
+                    iconLayout: 'default#image'
+                });
+            myMap.geoObjects.add(myPlacemark); // Размещение геообъекта на карте.
+            myMap.controls.remove('searchControl');
+            myMap.controls.remove('trafficControl');
+            myMap.controls.remove('typeSelector');
+            myMap.controls.remove('fullscreenControl');
+        })}
+
+</script>
+
+<!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+<script src="%=static=%js/separate-js/popups.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+.about-clinic-advantage {
+    display: flex;
+    justify-content: space-between;
+}
+.not-index {
+    .advantages__item:nth-of-type(3), .advantages__item:nth-of-type(4) {
+        margin-bottom: 1px;
+    }
+}
+.own-laboratory-base {
+    &:after {
+        width: 38px;
+        height: 50px;
+        background-image: url(%=static=%content/icons-svg/2/microscope.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+.pregnancy {
+    &:after {
+        width: 41px;
+        height: 55px;
+        background-image: url(%=static=%content/icons-svg/2/pregnancy.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+.photo-clinic {
+    background-color: #f2f9f0;
+    padding: 52px 0 91px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.half-box {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    &:first-of-type {
+        margin: 0 3px 0 0;
+    }
+    &.right {
+        width: 50.9%;
+    }
+    &.left {
+        flex-direction: column;
+        width: 49%;
+    }
+    &__top {
+        margin-bottom: 2px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 253px;
+        background-position: 50% 50%;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        background-size: cover;
+        height: 253px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    &-small {
+        width: 49.9%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        &:first-child {
+            margin-right: 0.2%;
+        }
+    }
+}
+.tabs {
+    padding-bottom: 1px;
+    background-color: #f2f9f0;
+    &-title__box {
+        display: flex;
+        justify-content: flex-end;
+        border: 2px solid #70a064;
+        margin-bottom: 55px;
+    }
+    &__item {
+        padding: 8px 0;
+        flex-basis: 1000px;
+        display: inline-flex;
+        justify-content: center;
+        border-left: 2px solid #70a064;
+        cursor: pointer;
+        transition: 0.3s;
+        &:first-of-type {
+            border-left: none;
+        }
+        span {
+            text-transform: uppercase;
+            font-size: 20px;
+            color: black;
+            white-space: nowrap;
+            font-family: $f-pf-r;
+        }
+        &:hover, &.active {
+            background-color: #70a064;
+            span {
+                color: #fff;
+            }
+        }
+    }
+    &-info__item {
+        h3 {
+            color: #47a364;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 14px;
+            font-family: $f-cor-r;
+        }
+        .one-column {
+            background-color: #f3ffec;
+            margin: 19px 16px;
+            width: 30%;
+            &:after {
+                display: none;
+            }
+        }
+        .usi-list {
+            padding: 21px 18px;
+            ul {
+                li {
+                    margin: 0 0 8px;
+                    padding: 0 0 9px;
+                    &:not(:last-of-type) {
+                        border-bottom: 1px solid #bcc9c6;
+                    }
+                    a {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .directions__box {
+            margin-bottom: 50px;
+        }
+    }
+}
+.cover-usi {
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 49px;
+    justify-content: space-between;
+}

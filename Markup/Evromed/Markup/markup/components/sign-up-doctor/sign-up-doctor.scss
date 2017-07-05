@@ -1,0 +1,60 @@
+.sign-up-doctor {
+    display: none;
+    width: 620px;
+    padding: 20px 51px 20px 22px;
+    background-color: white;
+    box-shadow: 0 0 24px rgba(9, 9, 9, 0.32);
+    h2 {
+        margin-bottom: 3px;
+    }
+    span {
+        font-size: 11px;
+        display: block;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+    }
+    p {
+        color: #1e1e1e;
+        font-size: 11px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+    .cover__submit {
+        width: 100%;
+        margin: 20px 0 61px;
+        input {
+            width: 100%;
+        }
+        span {
+            left: 0;
+            right: auto;
+            bottom: -52px;
+        }
+    }
+    .input-label__cover {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    label {
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .jq-selectbox {
+        width: 59.7%;
+        font-size: 14px;
+        text-transform: uppercase;
+        height: 42px;
+        li {
+            font-size: 14px;
+        }
+    }
+    .jq-selectbox__trigger-arrow {
+        top: 17px;
+    }
+    .input__cover input {
+        padding: 12px 13px 11px;
+    }
+}

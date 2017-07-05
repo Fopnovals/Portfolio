@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="">
+    <title>Eximus commerce</title>
+    <link media="all" rel="stylesheet" href="css/select2.css"/>
+    <link media="all" rel="stylesheet" href="css/jquery.formstyler.css"/>
+    <link media="all" rel="stylesheet" href="css/main.css"/>
+
+    <!--[if lt IE 7]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--BEGIN HEADER-->
+
+<header class="header">
+
+    <!--header top-->
+    <div class="header-top">
+        <div class="container clearfix">
+            <nav class="helper">
+                <ul class="clearfix">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Как сделать заказ</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Обратная свазь</a></li>
+                </ul>
+            </nav>
+            <div class="sign-reg clearfix">
+                <a href="#" class="button_green sign-in">Вход</a>
+                <a href="#" class="button_green registration">Регистрация</a>
+            </div>
+            <div class="wish">
+                <a href="#">Желания</a>
+                <span>12</span>
+            </div>
+            <div class="compare">
+                <a href="#">Сравнить</a>
+            </div>
+        </div>
+    </div>
+
+    <!--header middle    -->
+
+    <div class="header-middle">
+        <div class="container clearfix">
+            <a href="index.html" class="logo">
+                <h1>Eximus commerce</h1>
+                <span>интернет-магазин</span>
+            </a>
+            <div class="header-middle-center">
+                <div class="clearfix">
+                    <a href="tel:099-189-790-278" class="phone">(099) 189-790-278</a>
+                    <a href="skype:Eximus_commerce" class="skype">Eximus_commerce</a>
+                    <div class="currency">
+                        <span>Валюта</span>
+                        <div class="clearfix chose-currency" href="#">
+                            <a class="active">$</a>
+                            <a>руб.</a>
+                        </div>
+                    </div>
+                </div>
+                <form  action="#" class="form-search">
+                    <input type="search" class="input-search" placeholder="Поиск товаров">
+                    <input type="button" class="button-search">
+                </form>
+            </div>
+            <div class="cart">
+                <div class="cart__title">
+                    <a href="#">Корзина</a>
+                </div>
+                <div class="cart__items">
+                    <span>2 товара</span>
+                    <strong>14 000,00 $</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--header bottom    -->
+
+    <div class="header-bottom">
+        <nav class="navigation container">
+            <ul class="clearfix">
+                <li class="active"><a href="#">Ноутбуки</a></li>
+                <li><a href="#">компьютеры</a></li>
+                <li><a href="#">мониторы</a></li>
+                <li><a href="#">телефоны</a></li>
+                <li><a href="#">бытовая техника</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<!--END HEADER-->
+
+
+<!--BEGIN CONTENT-->
+<div class="container">
+    <div class="clearfix general">
+        <div class="left-side">
+            <ul class="state-badges">
+                <li><span class="stock">Акция</span></li>
+                <li><span class="sale">Sale</span></li>
+                <li><span class="new-item">New</span></li>
+                <li><span class="hyt-item">Хит продаж</span></li>
+            </ul>
+            <ul class="some-buttons">
+                <li><button type="button" class="button_dark-green">Default</button></li>
+                <li><button type="button" class="button_dark-green hover">Hover</button></li>
+                <li><button type="button" class="button_dark-green active">Click</button></li>
+            </ul>
+            <ul class="share-shape-badges">
+                <li>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="share-shape">
+                        <a href="#" class="share hover"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape hover"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="sort-cover">
+                <div class="sort-box example">
+                    <span class="method-sort">Сортировка по</span>
+                    <select name="" id="sort">
+                        <option selected data-attr="top" value="Названию вверх">Названию</option>
+                        <option value="От дешевых">От дешевых</option>
+                        <option value="От дорогих">От дорогих</option>
+                        <option value="Популярные">Популярные</option>
+                        <option value="Новинки">Новинки</option>
+                        <option value="Акции">Акции</option>
+                    </select>
+                </div>
+                <div class="example-sort-box">
+                    <span class="method-sort">Сортировка по</span>
+                    <ul class="example-sort">
+                        <li class="selected-sort">Названию<i class="sort-arrow"></i></li>
+                        <li>От дешевых</li>
+                        <li class="example-hover">От дорогих</li>
+                        <li>Популярные</li>
+                        <li>Новинки</li>
+                        <li>Акции</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="view-cover first">
+                <div class="view-box">
+                    <a href="#" class="view-list"></a>
+                    <a href="#" class="view-image hover"></a>
+                </div>
+                <div class="view-box">
+                    <a href="#" class="view-list hover"></a>
+                    <a href="#" class="view-image"></a>
+                </div>
+            </div>
+            <div class="view-cover second">
+                <div class="view-box">
+                    <a href="#" class="view-list"></a>
+                    <a href="#" class="view-image active"></a>
+                </div>
+                <div class="view-box">
+                    <a href="#" class="view-list active"></a>
+                    <a href="#" class="view-image"></a>
+                </div>
+            </div>
+            <div class="arrows-cover">
+                <div class="pagination-arrows">
+                    <a href="#" class="pagination-left hover"></a>
+                    <a href="#" class="pagination-right"></a>
+                </div>
+                <div class="pagination-arrows">
+                    <a href="#" class="pagination-left"></a>
+                    <a href="#" class="pagination-right hover"></a>
+                </div>
+            </div>
+            <div class="arrows-cover second">
+                <div class="pagination-arrows">
+                    <a href="#" class="pagination-left active"></a>
+                    <a href="#" class="pagination-right"></a>
+                </div>
+                <div class="pagination-arrows">
+                    <a href="#" class="pagination-left"></a>
+                    <a href="#" class="pagination-right active"></a>
+                </div>
+            </div>
+            <div class="numbers-cover">
+                <div class="cover-number">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="cover-number">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="cover-number">
+                    <input type="number" value="1" min="1">
+                </div>
+            </div>
+            <ul class="buttons-close-cover">
+                <li><span class="button-close"></span></li>
+                <li><span class="button-close hover"></span></li>
+                <li><span class="button-close active"></span></li>
+            </ul>
+            <ul class="some-buttons">
+                <li><button type="button" class="button_blue">Default</button></li>
+                <li><button type="button" class="button_blue hover">Default</button></li>
+                <li><button type="button" class="button_blue active">Default</button></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <div class="titles">
+                <div class="titles-image">
+                    <img src="img/titles-image.jpg" alt="">
+                </div>
+                <div class="titles-info">
+                    <div class="h1">Заголовок 1</div>
+                    <div class="h2">Заголовок 2</div>
+                    <div class="h3">Заголовок 3</div>
+                    <div class="h4">Заголовок 4</div>
+                    <div class="h5">Заголовок 5</div>
+                </div>
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p class="text">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            </div>
+            <div class="examples-items-box">
+                <div class="examples-items-box_left">
+                    <ul class="ul">
+                        <li>Chrome</li>
+                        <li>Firefox Add-on</li>
+                        <li>NodeJS</li>
+                        <li>TeX Package</li>
+                        <li>Java Class</li>
+                        <li>Python Interface</li>
+                    </ul>
+                    <ol class="ol">
+                        <li>Chrome</li>
+                        <li>Firefox Add-on</li>
+                        <li>NodeJS</li>
+                        <li>TeX Package</li>
+                        <li>Java Class</li>
+                        <li>Python Interface</li>
+                    </ol>
+                </div>
+                <div class="examples-items-box_right">
+                    <table>
+                        <tr>
+                            <th class="title-table">№</th>
+                            <th class="title-table">Название</th>
+                            <th class="title-table">Цена</th>
+                            <th class="title-table">Сумма</th>
+                        </tr>
+                        <tr>
+                            <td class="number-row">1</td>
+                            <td class="name-col">
+                                <div class="item-name"><a href="#">Aple iMac A1311</a></div>
+                            </td>
+                            <td class="price-col">
+                                <div class="price">1 400,00$</div>
+                            </td>
+                            <td class="total-col">
+                                <div class="item-total">1 400,00$</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number-row">2</td>
+                            <td class="name-col">
+                                <div class="item-name"><a href="#">iPhone 5C</a></div>
+                            </td>
+                            <td class="price-col">
+                                <div class="price">600,00$</div>
+                            </td>
+                            <td class="total-col">
+                                <div class="item-total">600,00$</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number-row">3</td>
+                            <td class="name-col">
+                                <div class="item-name"><a href="#">iPhone 5S</a></div>
+                            </td>
+                            <td class="price-col">
+                                <div class="price">500,00$</div>
+                            </td>
+                            <td class="total-col">
+                                <div class="item-total">500,00$</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number-row">4</td>
+                            <td class="name-col">
+                                <div class="item-name"><a href="#">iPad Air</a></div>
+                            </td>
+                            <td class="price-col">
+                                <div class="price">700,00$</div>
+                            </td>
+                            <td class="total-col">
+                                <div class="item-total">700,00$</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number-row">5</td>
+                            <td class="name-col">
+                                <div class="item-name"><a href="#">Apple iPod 4</a></div>
+                            </td>
+                            <td class="price-col">
+                                <div class="price">200,00$</div>
+                            </td>
+                            <td class="total-col">
+                                <div class="item-total">200,00$</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number-row">6</td>
+                            <td class="name-col">
+                                <div class="item-name"><a href="#">iPod Toutch 5</a></div>
+                            </td>
+                            <td class="price-col">
+                                <div class="price">199,00$</div>
+                            </td>
+                            <td class="total-col">
+                                <div class="item-total">199,00$</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--begin sidebar-->
+
+
+</div>
+
+<!--footer-->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-left">
+            <div class="phone-box">
+                <span>Работаем с 9.00 до 18.00</span>
+                <a href="tel:099189790278">Тел: (099) 189 -790 -278</a>
+            </div>
+            <div class="pay-box clearfix">
+                <a href="#" class="visa"><span></span></a>
+                <a href="#" class="master-card"><span></span></a>
+                <a href="#" class="web-money"><span></span></a>
+                <a href="#" class="qiwi"><span></span></a>
+                <a href="#" class="portmone"><span></span></a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <ul class="menu-items clearfix">
+                <li class="menu-item"><a href="#">Помощь</a></li>
+                <li class="menu-item"><a href="#">Ноутбуки</a></li>
+                <li class="menu-item"><a href="#">Как сделать заказ</a></li>
+                <li class="menu-item"><a href="#">Компютеры</a></li>
+                <li class="menu-item"><a href="#">Гарантия</a></li>
+                <li class="menu-item"><a href="#">Мониторы</a></li>
+                <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+                <li class="menu-item"><a href="#">Телефоны</a></li>
+                <li class="menu-item"><a href="#">Обраратная свазь</a></li>
+                <li class="menu-item"><a href="#">Бытовая техника</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="img/logo-footer.png" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="#" class="twitter"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="google"></a>
+                <a href="#" class="pinterest"></a>
+                <a href="#" class="instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/select2.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+<script>
+    $( function() {
+        $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 40000,
+            values: [ 10000, 30000 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val([ui.values[ 0 ], ui.values[ 1 ]]);
+                $('#min-price').val(ui.values[ 0 ]);
+                $('#max-price').val(ui.values[ 1 ]);
+            }
+        });
+        $('#min-price').val($( "#slider-range" ).slider( "values", 0 ));
+        $('#max-price').val($( "#slider-range" ).slider( "values", 1 ));
+        $( "#amount" ).val( [$( "#slider-range" ).slider( "values", 0 ), $( "#slider-range" ).slider( "values", 1 )]);
+    } );
+</script>
+<script>
+    $(function() {
+        function formatState (state) {
+            if (!state.id) {
+                return state.text;
+            }
+            if($(state.element).attr('data-attr') == 'top') {
+                var $state = $('<span>' + state.text +'<i class="sort-arrow"></i></span>');
+            } else {
+                var $state = $('<span>' + state.text +'</span>');
+            }
+            return $state;
+        };
+
+        $('#sort').select2({
+            templateSelection: formatState
+        });
+    });
+</script>
+<script>
+    $(function() {
+        $('input[type="number"]').styler();
+    });
+</script>
+
+</body>
+</html>

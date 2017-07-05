@@ -1,0 +1,41 @@
+.slider-stock {
+    margin: 9px 0 0;
+    position: relative;
+    .slick-prev, .slick-next {
+        position: absolute;
+        color: #2d2d2d;
+        bottom: -78px;
+        cursor: pointer;
+        &:after {
+            @extend .pseudo;
+            width: 8px;
+            height: 8px;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            top: 4px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .slick-prev {
+        left: 19px;
+        &:after {
+            transform: rotate(135deg);
+            left: -20px;
+        }
+    }
+    .slick-next {
+        right: 19px;
+        &:after {
+            transform: rotate(-45deg);
+            right: -20px;
+        }
+    }
+    strong {
+        color: #70a064;
+        margin-bottom: 5px;
+        display: block;
+        font-size: 15px;
+    }
+}

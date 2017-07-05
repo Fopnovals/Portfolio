@@ -1,0 +1,152 @@
+.one-doctor__details {
+    position: relative;
+    margin-bottom: 35px;
+    &-box {
+        position: relative;
+        h2 {
+            font-family: $f-pf-m;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            color: #70a064;
+            margin-bottom: 15px;
+            font-family: $f-pf-m;
+        }
+    }
+    &__image {
+        width: 30.3%;
+        float: left;
+    }
+    &__info {
+        width: 69.7%;
+        padding-bottom: 70px;
+        float: right;
+        padding-left: 35px;
+        h4 {
+            color: black;
+            font-size: 20px;
+            text-transform: none;
+            margin-bottom: 21px;
+            padding: 0;
+        }
+        span {
+            color: black;
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: block;
+            a {
+                color: #70a064;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        strong {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 29px;
+            a {
+                font-size: 16px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        p {
+            color: black;
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+    .one-doctor__buttons {
+        left: 33%;
+        bottom: 0;
+        width: 440px;
+        a {
+            width: 206px;
+            height: 60px;
+            font-size: 16px;
+            &.make-appoint {
+                background-color: #70a064;
+                border: 3px solid #70a064;
+                &:hover {
+                    background-color: #6da878;
+                }
+            }
+            &.ask-question {
+                border: 3px solid #70a064;
+                color: black;
+                &:hover {
+                    color: white;
+                    background-color: #6da878;
+                }
+            }
+        }
+    }
+}
+.ask-answer {
+    &__box {
+        background-color: #f5f0e8;
+        padding: 25px 0;
+        h2 {
+            text-transform: none;
+            margin-bottom: 14px;
+        }
+        h3 {
+            color: black;
+            text-transform: none;
+            font-size: 18px;
+            margin-bottom: 9px;
+            font-family: $f-cor-r;
+        }
+        span {
+            display: block;
+            color: #767676;
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+        p {
+            color: black;
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .one-doctor__buttons {
+            position: static;
+            width: 440px;
+            margin: 45px 0;
+            a {
+                width: 205px;
+                height: 60px;
+            }
+        }
+        .make-ask-question {
+            background-color: #70a064;
+            border: 3px solid #70a064;
+            &:hover {
+                background-color: #6da878;
+            }
+        }
+        .all-questions-answers {
+            border: 3px solid #70a064;
+            color: black;
+            &:hover {
+                color: white;
+                background-color: #6da878;
+            }
+        }
+    }
+    &__one {
+        margin-bottom: 16px;
+        &:not(:nth-last-child(2)) {
+            border-bottom: 1px solid #7d7d7d;
+        }
+    }
+    &__ask {
+        margin-bottom: 30px;
+    }
+    &__answer {
+        margin-bottom: 19px;
+    }
+}

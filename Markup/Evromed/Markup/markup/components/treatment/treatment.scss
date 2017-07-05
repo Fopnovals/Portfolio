@@ -1,0 +1,95 @@
+.treatment {
+    background-color: #f5f0e8;
+    padding: 18px 0 59px;
+    h2 {
+        margin-bottom: 29px;
+    }
+    &__box {
+        background: url(%=static=%/general/treatment.jpg);
+        &__one {
+            position: relative;
+            &__item {
+                float: left;
+                width: 50%;
+                padding: 47px 138px 12px 129px;
+                transition: 0.3s;
+                h3 {
+                    font-size: 25px;
+                    margin-bottom: 12px;
+                }
+                span {
+                    text-decoration: underline;
+                    color: #d7fafa;
+                    font-family: $f-pts-r;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                position: relative;
+                &:after {
+                    @extend .pseudo;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 76px;
+                }
+                &:hover {
+                    background-color: rgba(255,255,255,0.2);
+                }
+            }
+            &:first-child {
+                &:before {
+                    @extend .pseudo;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 1px;
+                    width: 940px;
+                    background-color: rgba(255,255,255,0.5);
+                }
+            }
+        }
+    }
+}
+.treatment__box__one:last-of-type .treatment__box__one__item {
+    padding: 55px 138px 23px 129px;
+}
+.blood-tests {
+    &:after {
+        width: 54px;
+        height: 49px;
+        background-image: url(%=static=%content/icons-svg/2/blood-test.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+.hospital-reception {
+    &:after {
+        width: 55px;
+        height: 54px;
+        background-image: url(%=static=%content/icons-svg/2/hospital-reception.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+.doctor {
+    &:after {
+        width: 45px;
+        height: 60px;
+        background-image: url(%=static=%content/icons-svg/2/doctor.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+.complex-programs {
+    &:after {
+        width: 45px;
+        height: 44px;
+        background-image: url(%=static=%content/icons-svg/2/first-aid-kit.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}

@@ -1,0 +1,154 @@
+.assessment:after {
+    width: 54px;
+    height: 59px;
+    background-image: url(%=static=%content/icons-svg/1/medicine.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.admission-form:after {
+    width: 39px;
+    height: 55px;
+    background-image: url(%=static=%content/icons-svg/1/admision-form-white.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.economic:after {
+    width: 43px;
+    height: 55px;
+    background-image: url(%=static=%content/icons-svg/1/price.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.time-of-diagnostics:after {
+    width: 48px;
+    height: 50px;
+    background-image: url(%=static=%content/icons-svg/1/clock.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.individual-approach:after {
+    width: 45px;
+    height: 52px;
+    background-image: url(%=static=%content/icons-svg/1/medical-history.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.complex-programs__block {
+    background-color: #fff;
+    font-size: 14px;
+    padding: 17px 13px 25px;
+    h4 {
+        color: black;
+        font-size: 18px;
+    }
+    &__table {
+        width: 100%;
+        tr {
+            border-bottom: 1px solid #bcc9c6;
+            td {
+                padding: 8px 0;
+                &:nth-of-type(1) {
+                    width: 517px;
+                }
+                &:nth-of-type(2) {
+                    width: 100px;
+                }
+                &:nth-of-type(3) {
+                    padding: 8px 0 8px 8px;
+                    width: 19%;
+                }
+                &:nth-of-type(4) {
+                    padding: 8px 0 8px 18px;
+                    width: 120px;
+                }
+                a {
+                    color: #47a364;
+                    font-size: 14px;
+                    &.submit-request {
+                        font-size: 12px;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &.enroll {
+                        font-size: 12px;
+                    }
+                }
+                p {
+                    margin: 15px 43px 19px 0;
+                    line-height: 1.7;
+                    font-size: 12px;
+                    display: none;
+                }
+                ul {
+                    font-size: 12px;
+                    margin: 13px 0 28px;
+                    display: none;
+                    li {
+                        margin: 11px 0;
+                    }
+                }
+            }
+            &.border-none {
+                border: none;
+            }
+            &.caption {
+                h4 {
+                    margin-top: 30px;
+                    margin-bottom: 0;
+                }
+            }
+            &:last-of-type {
+                border: none;
+            }
+        }
+    }
+}
+.mobile-table {
+    display: none;
+}
+.ultra-sound {
+    padding: 30px 13px 25px;
+    .complex-programs__block__table {
+        tr {
+            td {
+                &:nth-of-type(3) {
+                    padding: 8px 0 8px 8px;
+                    width: 11%;
+                }
+                &:nth-of-type(2) {
+                    width: 112px;
+                }
+                &:nth-of-type(4) {
+                    width: 58px;
+                    padding: 8px 0 8px 16px;
+                }
+            }
+        }
+    }
+}
+.dt h4 {
+    margin-bottom: 12px;
+}
+.dt .complex-programs__block__table tr td:nth-of-type(3) {
+    font-size: 15px;
+    padding: 8px 0 4px 8px;
+    width: 11.5%;
+}
+.dt tr.details-about-analysis td p {
+    margin: 0 43px 19px 0;
+}
+.dt .complex-programs__block__table tr td:nth-of-type(4) {
+    padding: 8px 0 6px 16px;
+}
+.dt .complex-programs__block__table tr td {
+    padding: 8px 0 7px;
+}
+.choose-direction.complex.comp-pr.dt {
+    padding-bottom: 54px;
+}

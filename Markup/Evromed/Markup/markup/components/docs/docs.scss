@@ -1,0 +1,44 @@
+.control {
+    p {
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+    .etaps {
+        margin: 0;
+        padding: 31px 0 20px;
+        background-color: #eaf5e8;
+        h3 {
+            color: #202020;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+    }
+}
+.download-contract {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 36px 35px;
+    color: #70a064;
+    text-decoration: underline;
+    position: relative;
+    &:before {
+        @extend .pseudo;
+        top: -4px;
+        left: -36px;
+        width: 23px;
+        height: 26px;
+        background-image: url(%=static=%content/icons-svg/3/doc-file-format.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:last-child {
+        margin-bottom: 50px;
+    }
+}
+.docs h2 {
+    margin: 8px 0 21px;
+}

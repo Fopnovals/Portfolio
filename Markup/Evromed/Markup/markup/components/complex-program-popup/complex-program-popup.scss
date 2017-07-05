@@ -1,0 +1,34 @@
+.complex-program-popup {
+    display: none;
+    width: 630px;
+    padding: 20px 50px 20px 33px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 0 0 24px rgba(9, 9, 9, 0.32);
+    h2 {
+        margin-bottom: 3px;
+    }
+    span {
+        font-size: 11px;
+        display: block;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+    }
+    p {
+        color: #1e1e1e;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    .cover__submit {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+        span {
+            left: 0;
+            right: auto;
+            bottom: -52px;
+        }
+    }
+}

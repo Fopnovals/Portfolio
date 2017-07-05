@@ -1,0 +1,97 @@
+.question-answer {
+    background-color: #f5f0e8;
+    padding-top: 1px;
+    h2 {
+        font-size: 40px;
+        margin: 7px 0 8px;
+    }
+    p {
+        color: #1e1e1e;
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+    h3 {
+        color: #70a064;
+        font-size: 17px;
+        padding-right: 30px;
+        font-family: $f-cor-r;
+        line-height: 38px;
+        text-transform: none;
+        cursor: pointer;
+        margin-bottom: 9px;
+        position: relative;
+        &:after {
+            @extend .pseudo;
+            right: 1px;
+            top: 18px;
+            width: 14px;
+            height: 8px;
+            background-image: url(%=static=%content/icons-svg/3/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            transition: 0.2s;
+        }
+        &.opened:after {
+            background-image: url(%=static=%content/icons-svg/3/arrow-green.svg);
+            transform: rotate(180deg);
+        }
+    }
+    ol {
+        list-style: decimal;
+        li {
+            color: #1e1e1e;
+            font-size: 14px;
+            line-height: 14px;
+            margin: 0 0 14px 17px;
+        }
+    }
+}
+.answer {
+    margin-bottom: 6px;
+    position: relative;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #c2c2c2;
+    }
+    &:last-of-type {
+        margin-bottom: 50px;
+    }
+    &-box {
+        display: none;
+        margin-bottom: 40px;
+    }
+}
+.question-title.opened + ol {
+    display: block;
+}
+.add-question {
+    padding-bottom: 88px;
+    h4 {
+        font-family: $f-pf-r;
+        color: black;
+        font-size: 22px;
+        text-transform: none;
+    }
+    span {
+        display: block;
+        margin-bottom: 25px;
+    }
+    textarea {
+        height: 143px;
+        margin-bottom: 26px;
+    }
+    .cover__submit {
+        float: none;
+        width: 100%;
+        input {
+            width: 100%;
+        }
+        span {
+            bottom: -57px;
+            right: auto;
+            left: 0;
+        }
+    }
+}
+

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="">
+    <title>Eximus commerce</title>
+    <link media="all" rel="stylesheet" href="css/jquery.formstyler.css"/>
+    <link media="all" rel="stylesheet" href="css/main.css"/>
+
+    <!--[if lt IE 7]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--popup for slider-->
+<div class="popup-slider">
+    <div class="popup-arrows"></div>
+    <div class="popup-image"></div>
+</div>
+
+<!--BEGIN HEADER-->
+<a href="#" class="burger"></a>
+<header class="header">
+
+    <!--header top-->
+    <div class="header-top">
+        <div class="container clearfix">
+            <nav class="helper">
+                <ul class="clearfix">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Как сделать заказ</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Обратная свазь</a></li>
+                </ul>
+            </nav>
+            <div class="sign-reg clearfix">
+                <a href="#" class="button_green sign-in">Вход</a>
+                <a href="#" class="button_green registration">Регистрация</a>
+            </div>
+            <div class="wish">
+                <a href="#">Желания</a>
+                <span>12</span>
+            </div>
+            <div class="compare">
+                <a href="#">Сравнить</a>
+            </div>
+        </div>
+    </div>
+
+    <!--header middle    -->
+
+    <div class="header-middle">
+        <div class="container clearfix">
+            <a href="index.html" class="logo">
+                <h1>Eximus commerce</h1>
+                <span>интернет-магазин</span>
+            </a>
+            <div class="header-middle-center">
+                <div class="clearfix">
+                    <a href="tel:099-189-790-278" class="phone">(099) 189-790-278</a>
+                    <a href="skype:Eximus_commerce" class="skype">Eximus_commerce</a>
+                    <div class="currency">
+                        <span>Валюта</span>
+                        <div class="clearfix chose-currency" href="#">
+                            <a class="active">$</a>
+                            <a>руб.</a>
+                        </div>
+                    </div>
+                </div>
+                <form  action="#" class="form-search">
+                    <input type="search" class="input-search" placeholder="Поиск товаров">
+                    <input type="button" class="button-search">
+                </form>
+            </div>
+            <ul class="logout">
+                <li class="compare-icon">
+                    <a href="#"></a>
+                </li>
+                <li class="wanted-icon">
+                    <a href="#"></a>
+                </li>
+                <li class="user-icon">
+                    <a href="#"></a>
+                </li>
+            </ul>
+            <div class="cart">
+                <div class="cart__title">
+                    <a href="#">Корзина</a>
+                </div>
+                <div class="cart__items">
+                    <span>2 товара</span>
+                    <strong>14 000,00 $</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--header bottom    -->
+
+    <div class="header-bottom">
+        <nav class="navigation container">
+            <div class="currency-mobile">
+                <span>Валюта</span>
+                <div class="clearfix chose-currency" href="#">
+                    <a class="active">$</a>
+                    <a>руб.</a>
+                </div>
+            </div>
+            <form  action="#" class="form-search-mobile">
+                <input type="search" class="input-search" placeholder="Поиск товаров">
+                <input type="button" class="button-search">
+            </form>
+            <h2 class="mobile">Категории</h2>
+            <ul class="clearfix">
+                <li class="active"><a href="#">Ноутбуки</a></li>
+                <li><a href="#">компьютеры</a></li>
+                <li><a href="#">мониторы</a></li>
+                <li><a href="#">телефоны</a></li>
+                <li><a href="#">бытовая техника</a></li>
+            </ul>
+            <h2 class="mobile">Мой аккаунт</h2>
+            <ul class="mobile">
+                <li><a href="#" class="my-acc">Сравнить</a></li>
+                <li><a href="#" class="my-acc">Желания</a></li>
+                <li><a href="#" class="my-acc">Вход/Регистрация</a></li>
+            </ul>
+            <h2 class="mobile">Помощь</h2>
+            <ul class="mobile">
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Как сделать заказ</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Обратная свазь</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<!--END HEADER-->
+
+<!--BEGIN CONTENT-->
+
+<!--BREADCRUMBS-->
+<div class="container">
+    <ul class="clearfix breadcrumbs">
+        <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+        <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+        <li class="breadcrumbs-item active"><a href="#">Компьютеры</a></li>
+    </ul>
+</div>
+
+<!--begin detail of item-->
+<div class="container">
+    <div class="item-detail">
+        <div class="item-detail__left">
+            <div class="arrows-detail"></div>
+            <div class="vertical-slider">
+                <div class="one-slide">
+                    <img src="img/items/thumbnails/item1.jpg" alt="">
+                </div>
+                <div class="one-slide">
+                    <img src="img/items/thumbnails/item2.jpg" alt="">
+                </div>
+                <div class="one-slide">
+                    <img src="img/items/thumbnails/item3.jpg" alt="">
+                </div>
+                <div class="one-slide">
+                    <img src="img/items/thumbnails/item4.jpg" alt="">
+                </div>
+                <div class="one-slide">
+                    <img src="img/items/thumbnails/item5.jpg" alt="">
+                </div>
+                <div class="one-slide">
+                    <img src="img/items/thumbnails/item1.jpg" alt="">
+                </div>
+                <div class="one-slide">
+                    <img src="img/items/thumbnails/item2.jpg" alt="">
+                </div>
+            </div>
+            <div class="current-image">
+                <a href="#" class="current-image-a" style="background-image: url(img/items/forslider/item1.jpg)"></a>
+            </div>
+        </div>
+        <form action="#" class="item-detail__right">
+            <div class="description-item">
+                <a href="#" class="all-items">Все товары Apple</a>
+                <h2 class="name-detail">Aple iMac A1311 21.5’’ (Z0PG001UE)</h2>
+                <div class="code-box">
+                    <span class="code">Код 01-349525</span>
+                    <div class="big-stars">
+                        <div class="big-stars-active" style="width: 50%"></div>
+                    </div>
+                </div>
+                <p class="description-detail">21.5” IPS (1920х1080) LED, глянцевый / Intel Core i5-4570S (2.9 ГГц) / RAM 16 ГБ / HDD 1 ТБ / nVidia GeForce GT 750M, 1 ГБ / без ОД / веб-камера / LAN / Wi-Fi / Bluetooth / кардридер / Mac OS X Mountain Lion / клавиатура +</p>
+                <div class="want-review">
+                    <a href="#" class="add-review">Оставить отзыв</a>
+                    <a href="#" class="review">2</a>
+                </div>
+                <div class="widgets">
+                    <div class="google-widget">
+                        <a href="#">
+                            <img src="img/google-widget.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="vk-widget">
+                        <a href="#">
+                            <img src="img/vk-widget.jpg" alt="">
+                        </a>
+                    </div>
+                    <facebook-widget>
+                        <a href="#">
+                            <img src="img/facebook-widget.jpg" alt="">
+                        </a>
+                    </facebook-widget>
+                </div>
+            </div>
+            <div class="sum-column">
+                <span class="status-now">Есть в наличии</span>
+                <span class="current-price">1 400,00$</span>
+                <span class="old-price">1 500,00$</span>
+                <div>
+                    <div class="select-cover">
+                        <span>Размер:</span>
+                        <select class="size" name="" id="size">
+                            <option selected value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                            <option value="XXXL">XXXL</option>
+                        </select>
+                    </div>
+                    <div class="select-cover">
+                        <span>Цвет:</span>
+                        <select class="color" name="" id="color">
+                            <option selected value="blue">111</option>
+                            <option value="green">222</option>
+                            <option value="red">333</option>
+                        </select>
+                    </div>
+                    <div class="quantity">
+                        <div class="share-shape">
+                            <a href="#" class="share"></a>
+                            <a href="#" class="shape"></a>
+                        </div>
+                        <div class="cover-number">
+                            <input type="number" value="2" min="1">
+                        </div>
+                    </div>
+                    <button type="button" class="button_green buy-button">Купить</button>
+                    <div class="discount-info">
+                        Скидка<span class="green-discount"> 20%</span>, экономия <span class="economy">100,00$</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--begin conditions-->
+    <div class="conditions">
+        <div class="conditions-box order-by-phone-description">
+            <h4 class="conditions-title">Заказ по телефону</h4>
+            <ul class="description-list">
+                <li>(093) 000-20-00</li>
+                <li>(093) 000-08-00</li>
+                <li>(093) 000-20-00 </li>
+            </ul>
+        </div>
+        <div class="conditions-box pay-order-description">
+            <h4 class="conditions-title">Оплата</h4>
+            <ul class="description-list">
+                <li>Наличными при получении заказа</li>
+                <li>Переводом через Сбербанк РФ</li>
+                <li>Безналичным переводом </li>
+            </ul>
+        </div>
+        <div class="conditions-box delivery-description">
+            <h4 class="conditions-title">Доставка</h4>
+            <ul class="description-list">
+                <li>Транспортные компании </li>
+                <li>Укрпочта</li>
+                <li>Курьерская служба</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!--related products-->
+    <div class="can-interesting related">
+        <div class="title-interesting">
+            <h3>Похожие товары:</h3>
+            <div class="arrows-interesting"></div>
+        </div>
+        <div class="related-items">
+            <form action="#" class="item">
+                <div class="item-top__box">
+                    <div class="item-name">
+                        <a href="#">MacBoock Pro A1286</a>
+                    </div>
+                    <div class="item-price">1 200,00$</div>
+                </div>
+                <div class="item-image__box">
+                    <a class="item-image" href="#">
+                        <img src="img/items/item-1.jpg" alt="">
+                    </a>
+                    <span class="stock">Акция</span>
+                </div>
+                <div class="item-bottom">
+                    <button type="button" class="button_dark-green">Выбрать</button>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" class="item">
+                <div class="item-top__box">
+                    <div class="item-name">
+                        <a href="#">iPad Air C3456iPad Air C3456</a>
+                    </div>
+                    <div class="item-price">699,99$</div>
+                </div>
+                <div class="item-image__box">
+                    <a class="item-image" href="#">
+                        <img src="img/items/item-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="item-bottom">
+                    <button type="button" class="button_dark-green">Выбрать</button>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" class="item">
+                <div class="item-top__box">
+                    <div class="item-name">
+                        <a href="#">Mac Mini A1392</a>
+                    </div>
+                    <div class="item-price">1 000,00$</div>
+                </div>
+                <div class="item-image__box">
+                    <a class="item-image" href="#">
+                        <img src="img/items/item-3.jpg" alt="">
+                    </a>
+                    <span class="new-item">New</span>
+                </div>
+                <div class="item-bottom">
+                    <button type="button" class="button_dark-green">Выбрать</button>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" class="item">
+                <div class="item-top__box">
+                    <div class="item-name">
+                        <a href="#">Aple iMac A1311 21.5’’</a>
+                    </div>
+                    <div class="item-price">1 400,00$ <span class="old-price">1 500,00$</span></div>
+                </div>
+                <div class="item-image__box">
+                    <a class="item-image" href="#">
+                        <img src="img/items/item-4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="item-bottom">
+                    <button type="button" class="button_dark-green">Выбрать</button>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" class="item">
+                <div class="item-top__box">
+                    <div class="item-name">
+                        <a href="#">Aple iPod </a>
+                    </div>
+                    <div class="item-price">199,99$</div>
+                </div>
+                <div class="item-image__box">
+                    <a class="item-image" href="#">
+                        <img src="img/items/item-5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="item-bottom">
+                    <button type="button" class="button_dark-green">Выбрать</button>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" class="item">
+                <div class="item-top__box">
+                    <div class="item-name">
+                        <a href="#">MacBoock Pro A1286</a>
+                    </div>
+                    <div class="item-price">1 200,00$</div>
+                </div>
+                <div class="item-image__box">
+                    <a class="item-image" href="#">
+                        <img src="img/items/item-1.jpg" alt="">
+                    </a>
+                    <span class="stock">Акция</span>
+                </div>
+                <div class="item-bottom">
+                    <button type="button" class="button_dark-green">Выбрать</button>
+                    <div class="share-shape">
+                        <a href="#" class="share"></a>
+                        <a href="#" class="shape"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <ul class="tabs-titles">
+            <li class="tabs-title active">Характеристики</li>
+            <li class="tabs-title">Информация</li>
+            <li class="tabs-title">Отзывы
+            <span class="review-in-tab">12</span></li>
+            <li class="tabs-title">Аксесуары</li>
+        </ul>
+        <div class="tabs-items">
+            <div class="tabs-item active">
+                <div class="left-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Бренд:</td>
+                            <td class="description-table">Apple</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип процесора:</td>
+                            <td class="description-table">Intel Core i7</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота процесора:</td>
+                            <td class="description-table">2.2 ГГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Дісплей:</td>
+                            <td class="description-table">15.6"</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розширення дісплея:</td>
+                            <td class="description-table">1440x900 WXGA+</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Оперативна память:</td>
+                            <td class="description-table">8 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип оперативної памяті:</td>
+                            <td class="description-table">DDR3</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота оперативної памяті:</td>
+                            <td class="description-table">1333 МГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Жосткий диск:</td>
+                            <td class="description-table">500 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Відеокарта:</td>
+                            <td class="description-table">Radeon HD 6750M</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Память відеокарти:</td>
+                            <td class="description-table">512 Мб GDDR3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Мережева карта:</td>
+                            <td class="description-table">10 / 100 / 1000 Мбит/сек</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Wifi:</td>
+                            <td class="description-table">802.11 (b/g/n)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">BlueTooth:</td>
+                            <td class="description-table">2.1 + EDR</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вебкамера:</td>
+                            <td class="description-table">FaceTime HD (720 p)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Встановленна ОС:</td>
+                            <td class="description-table">Mac OS X Lion</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Колір:</td>
+                            <td class="description-table">Серебристый</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розміри:</td>
+                            <td class="description-table">364 мм х 249 мм х 24 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вага:</td>
+                            <td class="description-table">2.54 кг</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Термін гарантії:</td>
+                            <td class="description-table">1 г с/ц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Сайт виробника:</td>
+                            <td class="description-table">
+                                <a href="#">www.apple.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Код виробника:</td>
+                            <td class="description-table">MD318RS/A</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tabs-item">
+                <div class="left-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Другий таб:</td>
+                            <td class="description-table">Apple</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип процесора:</td>
+                            <td class="description-table">Intel Core i7</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота процесора:</td>
+                            <td class="description-table">2.2 ГГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Дісплей:</td>
+                            <td class="description-table">15.6"</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розширення дісплея:</td>
+                            <td class="description-table">1440x900 WXGA+</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Оперативна память:</td>
+                            <td class="description-table">8 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип оперативної памяті:</td>
+                            <td class="description-table">DDR3</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота оперативної памяті:</td>
+                            <td class="description-table">1333 МГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Жосткий диск:</td>
+                            <td class="description-table">500 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Відеокарта:</td>
+                            <td class="description-table">Radeon HD 6750M</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Память відеокарти:</td>
+                            <td class="description-table">512 Мб GDDR3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Мережева карта:</td>
+                            <td class="description-table">10 / 100 / 1000 Мбит/сек</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Wifi:</td>
+                            <td class="description-table">802.11 (b/g/n)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">BlueTooth:</td>
+                            <td class="description-table">2.1 + EDR</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вебкамера:</td>
+                            <td class="description-table">FaceTime HD (720 p)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Встановленна ОС:</td>
+                            <td class="description-table">Mac OS X Lion</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Колір:</td>
+                            <td class="description-table">Серебристый</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розміри:</td>
+                            <td class="description-table">364 мм х 249 мм х 24 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вага:</td>
+                            <td class="description-table">2.54 кг</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Термін гарантії:</td>
+                            <td class="description-table">1 г с/ц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Сайт виробника:</td>
+                            <td class="description-table">
+                                <a href="#">www.apple.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Код виробника:</td>
+                            <td class="description-table">MD318RS/A</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tabs-item">
+                <div class="left-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Третий таб:</td>
+                            <td class="description-table">Apple</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип процесора:</td>
+                            <td class="description-table">Intel Core i7</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота процесора:</td>
+                            <td class="description-table">2.2 ГГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Дісплей:</td>
+                            <td class="description-table">15.6"</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розширення дісплея:</td>
+                            <td class="description-table">1440x900 WXGA+</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Оперативна память:</td>
+                            <td class="description-table">8 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип оперативної памяті:</td>
+                            <td class="description-table">DDR3</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота оперативної памяті:</td>
+                            <td class="description-table">1333 МГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Жосткий диск:</td>
+                            <td class="description-table">500 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Відеокарта:</td>
+                            <td class="description-table">Radeon HD 6750M</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Память відеокарти:</td>
+                            <td class="description-table">512 Мб GDDR3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Мережева карта:</td>
+                            <td class="description-table">10 / 100 / 1000 Мбит/сек</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Wifi:</td>
+                            <td class="description-table">802.11 (b/g/n)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">BlueTooth:</td>
+                            <td class="description-table">2.1 + EDR</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вебкамера:</td>
+                            <td class="description-table">FaceTime HD (720 p)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Встановленна ОС:</td>
+                            <td class="description-table">Mac OS X Lion</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Колір:</td>
+                            <td class="description-table">Серебристый</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розміри:</td>
+                            <td class="description-table">364 мм х 249 мм х 24 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вага:</td>
+                            <td class="description-table">2.54 кг</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Термін гарантії:</td>
+                            <td class="description-table">1 г с/ц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Сайт виробника:</td>
+                            <td class="description-table">
+                                <a href="#">www.apple.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Код виробника:</td>
+                            <td class="description-table">MD318RS/A</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tabs-item">
+                <div class="left-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Четвертий таб:</td>
+                            <td class="description-table">Apple</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип процесора:</td>
+                            <td class="description-table">Intel Core i7</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота процесора:</td>
+                            <td class="description-table">2.2 ГГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Дісплей:</td>
+                            <td class="description-table">15.6"</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розширення дісплея:</td>
+                            <td class="description-table">1440x900 WXGA+</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Оперативна память:</td>
+                            <td class="description-table">8 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Тип оперативної памяті:</td>
+                            <td class="description-table">DDR3</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Чястота оперативної памяті:</td>
+                            <td class="description-table">1333 МГц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Жосткий диск:</td>
+                            <td class="description-table">500 Гб</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Відеокарта:</td>
+                            <td class="description-table">Radeon HD 6750M</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Память відеокарти:</td>
+                            <td class="description-table">512 Мб GDDR3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-table">
+                    <table>
+                        <tr>
+                            <td class="title-table-item">Мережева карта:</td>
+                            <td class="description-table">10 / 100 / 1000 Мбит/сек</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Wifi:</td>
+                            <td class="description-table">802.11 (b/g/n)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">BlueTooth:</td>
+                            <td class="description-table">2.1 + EDR</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вебкамера:</td>
+                            <td class="description-table">FaceTime HD (720 p)</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Встановленна ОС:</td>
+                            <td class="description-table">Mac OS X Lion</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Колір:</td>
+                            <td class="description-table">Серебристый</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Розміри:</td>
+                            <td class="description-table">364 мм х 249 мм х 24 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Вага:</td>
+                            <td class="description-table">2.54 кг</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Термін гарантії:</td>
+                            <td class="description-table">1 г с/ц</td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Сайт виробника:</td>
+                            <td class="description-table">
+                                <a href="#">www.apple.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-table-item">Код виробника:</td>
+                            <td class="description-table">MD318RS/A</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-left">
+            <div class="phone-box">
+                <span>Работаем с 9.00 до 18.00</span>
+                <a href="tel:099189790278">Тел: (099) 189 -790 -278</a>
+            </div>
+            <div class="pay-box clearfix">
+                <a href="#" class="visa"><span></span></a>
+                <a href="#" class="master-card"><span></span></a>
+                <a href="#" class="web-money"><span></span></a>
+                <a href="#" class="qiwi"><span></span></a>
+                <a href="#" class="portmone"><span></span></a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <ul class="menu-items clearfix">
+                <li class="menu-item"><a href="#">Помощь</a></li>
+                <li class="menu-item"><a href="#">Ноутбуки</a></li>
+                <li class="menu-item"><a href="#">Как сделать заказ</a></li>
+                <li class="menu-item"><a href="#">Компютеры</a></li>
+                <li class="menu-item"><a href="#">Гарантия</a></li>
+                <li class="menu-item"><a href="#">Мониторы</a></li>
+                <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+                <li class="menu-item"><a href="#">Телефоны</a></li>
+                <li class="menu-item"><a href="#">Обраратная свазь</a></li>
+                <li class="menu-item"><a href="#">Бытовая техника</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="img/logo-footer.png" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="#" class="twitter"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="google"></a>
+                <a href="#" class="pinterest"></a>
+                <a href="#" class="instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+<script>
+    $(function() {
+        $('input[type="number"]').styler();
+        $('#size').styler();
+        $('#color').styler({
+            selectSearch: false,
+            onFormStyled: function() {
+                var options = $('#color option'),
+                    dropdownList = $('.color.jq-selectbox li'),
+                    selectedColor = $('#color option:selected').val();
+                $('.color .jq-selectbox__select-text').append('<span class="option-color" style="background-color:'+selectedColor+'"></span>');
+                options.each(function(i, el) {
+                    var currentColor = $(el).val();
+                    dropdownList.eq(i).append('<span class="option-color" style="background-color:'+currentColor+'"></span>');
+                });
+            },
+            onSelectClosed: function() {
+                var selectedColor = $(this).find('option:selected').val();
+                if($('.color .jq-selectbox__select-text').find('span').length) {
+                    return;
+                } else {
+                    $('.color .jq-selectbox__select-text').append('<span class="option-color" style="background-color:'+selectedColor+'"></span>');
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

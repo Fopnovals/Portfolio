@@ -1,0 +1,49 @@
+.fancybox-close {
+    @include bg($fancybox-close);
+}
+.cart-analyzes {
+    position: fixed;
+    top: 370px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 237px;
+    background-color: #70a064;
+    z-index: 50;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: -2px 0 0 rgba(21, 98, 2, 0.75);
+    &.empty, &:hover {
+        background-color: #6da878;
+    }
+    &:after {
+        @extend .pseudo;
+        width: 45px;
+        height: 1px;
+        background-color: #fff;
+        left: 6px;
+        top: 65px;
+    }
+    span {
+        position: absolute;
+        bottom: 79px;
+        left: -36px;
+        letter-spacing: 5px;
+        transform: rotate(-90deg);
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    strong {
+        color: white;
+        display: inline-block;
+        padding-top: 25px;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+}
+.fancybox-overlay-fixed {
+    background-color: rgba(71,163,100,0.8);
+}

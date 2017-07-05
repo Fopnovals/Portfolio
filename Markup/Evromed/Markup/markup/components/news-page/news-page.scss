@@ -1,0 +1,93 @@
+.news-general {
+    &__title {
+        h2 {
+            font-size: 40px;
+            font-family: $f-pf-m;
+            margin: 10px 0 16px;
+        }
+    }
+    &__box {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #cbcbcb;
+            span {
+                font-size: 20px;
+                font-family: $f-pf-r;
+                text-transform: uppercase;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                color: #282828;
+                margin-bottom: 12px;
+            }
+            p {
+                color: #2d2d2d;
+                line-height: 1.8;
+            }
+            &__date {
+                width: 110px;
+                padding: 12px 2px;
+            }
+            &__image {
+                width: 325px;
+                position: relative;
+                font-size: 0;
+                &:before {
+                    @extend .pseudo;
+                    left: -1px;
+                    top: 0;
+                    @include bg($news-border-left);
+                }
+            }
+            &__info {
+                padding: 10px 55px 0 27px;
+                width: 562px;
+            }
+        }
+        .earlier {
+            a {
+                &:after {
+                    @extend .pseudo;
+                    right: 42px;
+                    top: 13px;
+                    @include bg($earlier);
+                    transition: 0.3s;
+                    transform: rotate(0deg);
+                }
+                &:hover:after {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
+.earlier {
+    text-align: center;
+    margin: 48px 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        display: inline-block;
+        padding: 10px 0;
+        width: 173px;
+        height: 45px;
+        position: relative;
+        border: 2px solid #70a064;
+        border-radius: 33px;
+        color: #2d2d2d;
+        font-size: 15px;
+        transition: 0.3s;
+        background-color: transparent;
+        &:hover {
+            background-color: #70a064;
+            color: white;
+        }
+    }
+}

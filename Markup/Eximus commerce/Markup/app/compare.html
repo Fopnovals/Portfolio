@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="">
+    <title>Eximus commerce</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <link media="all" rel="stylesheet" href="css/main.css"/>
+
+    <!--[if lt IE 7]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<a href="#" class="burger"></a>
+<!--BEGIN HEADER-->
+
+<header class="header">
+
+    <!--header top-->
+    <div class="header-top">
+        <div class="container clearfix">
+            <nav class="helper">
+                <ul class="clearfix">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Как сделать заказ</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Обратная свазь</a></li>
+                </ul>
+            </nav>
+            <div class="sign-reg clearfix">
+                <a href="#" class="button_green sign-in">Вход</a>
+                <a href="#" class="button_green registration">Регистрация</a>
+            </div>
+            <div class="wish">
+                <a href="#">Желания</a>
+                <span>12</span>
+            </div>
+            <div class="compare">
+                <a href="#">Сравнить</a>
+            </div>
+        </div>
+    </div>
+
+    <!--header middle    -->
+
+    <div class="header-middle">
+        <div class="container clearfix">
+            <a href="index.html" class="logo">
+                <h1>Eximus commerce</h1>
+                <span>интернет-магазин</span>
+            </a>
+            <div class="header-middle-center">
+                <div class="clearfix">
+                    <a href="tel:099-189-790-278" class="phone">(099) 189-790-278</a>
+                    <a href="skype:Eximus_commerce" class="skype">Eximus_commerce</a>
+                    <div class="currency">
+                        <span>Валюта</span>
+                        <div class="clearfix chose-currency" href="#">
+                            <a class="active">$</a>
+                            <a>руб.</a>
+                        </div>
+                    </div>
+                </div>
+                <form  action="#" class="form-search">
+                    <input type="search" class="input-search" placeholder="Поиск товаров">
+                    <input type="button" class="button-search">
+                </form>
+            </div>
+            <ul class="logout">
+                <li class="compare-icon">
+                    <a href="#"></a>
+                </li>
+                <li class="wanted-icon">
+                    <a href="#"></a>
+                </li>
+                <li class="user-icon">
+                    <a href="#"></a>
+                </li>
+            </ul>
+            <div class="cart">
+                <div class="cart__title">
+                    <a href="#">Корзина</a>
+                </div>
+                <div class="cart__items">
+                    <span>2 товара</span>
+                    <strong>14 000,00 $</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--header bottom    -->
+
+    <div class="header-bottom">
+        <nav class="navigation container">
+            <div class="currency-mobile">
+                <span>Валюта</span>
+                <div class="clearfix chose-currency" href="#">
+                    <a class="active">$</a>
+                    <a>руб.</a>
+                </div>
+            </div>
+            <form  action="#" class="form-search-mobile">
+                <input type="search" class="input-search" placeholder="Поиск товаров">
+                <input type="button" class="button-search">
+            </form>
+            <h2 class="mobile">Категории</h2>
+            <ul class="clearfix">
+                <li class="active"><a href="#">Ноутбуки</a></li>
+                <li><a href="#">компьютеры</a></li>
+                <li><a href="#">мониторы</a></li>
+                <li><a href="#">телефоны</a></li>
+                <li><a href="#">бытовая техника</a></li>
+            </ul>
+            <h2 class="mobile">Мой аккаунт</h2>
+            <ul class="mobile">
+                <li><a href="#" class="my-acc">Сравнить</a></li>
+                <li><a href="#" class="my-acc">Желания</a></li>
+                <li><a href="#" class="my-acc">Вход/Регистрация</a></li>
+            </ul>
+            <h2 class="mobile">Помощь</h2>
+            <ul class="mobile">
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Как сделать заказ</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Обратная свазь</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<!--END HEADER-->
+
+<!--BEGIN CONTENT-->
+
+<!--BREADCRUMBS-->
+<div class="container">
+    <ul class="clearfix breadcrumbs">
+        <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+        <li class="breadcrumbs-item active"><a href="#">Сравнение товаров</a></li>
+    </ul>
+</div>
+
+<div class="container">
+
+    <!--compare products-->
+    <div class="compare-box">
+        <div class="header-compare">
+            <h2>сравнение товаров</h2>
+            <div class="params">
+                <a href="#" class="button-params active">Все параметры</a>
+                <a href="#" class="button-params">Только отличия</a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <table class="titles-table">
+                <tr>
+                    <td class="first-col">
+                        <a class="button-add">Добавить модель</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Краткие характеристики</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Экран</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Процессор</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Объем оперативной памяти</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Тип оперативной памяти</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Жесткий диск</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Графический адаптер</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Сетевые адаптеры</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Оптический привод</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col">
+                        <p>Дополнительные возможности</p>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="inner">
+                <table class="compare-table">
+                    <tr>
+                        <td class="item-col">
+                            <div class="item-header">
+                                <div class="item-name">
+                                    <a href="#">MacBoock Pro ME864</a>
+                                </div>
+                                <span class="button-close"></span>
+                            </div>
+                            <div class="price">1200,00$</div>
+                            <a href="#" class="product-image">
+                                <img src="img/items/item-1.jpg" alt="">
+                            </a>
+                            <div class="buttons-box">
+                                <button type="button" class="button_dark-green">Выбрать</button>
+                                <a href="#" class="shape"></a>
+                            </div>
+                        </td>
+                        <td class="item-col">
+                            <div class="item-header">
+                                <div class="item-name">
+                                    <a href="#">MacBoock Pro ME864</a>
+                                </div>
+                                <span class="button-close"></span>
+                            </div>
+                            <div class="price">1200,00$</div>
+                            <a href="#" class="product-image">
+                                <img src="img/items/item-1.jpg" alt="">
+                            </a>
+                            <div class="buttons-box">
+                                <button type="button" class="button_dark-green">Выбрать</button>
+                                <a href="#" class="shape"></a>
+                            </div>
+                        </td>
+                        <td class="item-col">
+                            <div class="item-header">
+                                <div class="item-name">
+                                    <a href="#">MacBoock Pro ME864</a>
+                                </div>
+                                <span class="button-close"></span>
+                            </div>
+                            <div class="price">1200,00$</div>
+                            <a href="#" class="product-image">
+                                <img src="img/items/item-1.jpg" alt="">
+                            </a>
+                            <div class="buttons-box">
+                                <button type="button" class="button_dark-green">Выбрать</button>
+                                <a href="#" class="shape"></a>
+                            </div>
+                        </td>
+                        <td class="item-col">
+                            <div class="item-header">
+                                <div class="item-name">
+                                    <a href="#">MacBoock Pro ME864</a>
+                                </div>
+                                <span class="button-close"></span>
+                            </div>
+                            <div class="price">1200,00$</div>
+                            <a href="#" class="product-image">
+                                <img src="img/items/item-1.jpg" alt="">
+                            </a>
+                            <div class="buttons-box">
+                                <button type="button" class="button_dark-green">Выбрать</button>
+                                <a href="#" class="shape"></a>
+                            </div>
+                        </td>
+                        <td class="item-col">
+                            <div class="item-header">
+                                <div class="item-name">
+                                    <a href="#">MacBoock Pro ME864</a>
+                                </div>
+                                <span class="button-close"></span>
+                            </div>
+                            <div class="price">1200,00$</div>
+                            <a href="#" class="product-image">
+                                <img src="img/items/item-1.jpg" alt="">
+                            </a>
+                            <div class="buttons-box">
+                                <button type="button" class="button_dark-green">Выбрать</button>
+                                <a href="#" class="shape"></a>
+                            </div>
+                        </td>
+                        <td class="item-col">
+                            <div class="item-header">
+                                <div class="item-name">
+                                    <a href="#">MacBoock Pro ME864</a>
+                                </div>
+                                <span class="button-close"></span>
+                            </div>
+                            <div class="price">1200,00$</div>
+                            <a href="#" class="product-image">
+                                <img src="img/items/item-1.jpg" alt="">
+                            </a>
+                            <div class="buttons-box">
+                                <button type="button" class="button_dark-green">Выбрать</button>
+                                <a href="#" class="shape"></a>
+                            </div>
+                        </td>
+                        <td class="item-col">
+                            <div class="item-header">
+                                <div class="item-name">
+                                    <a href="#">MacBoock Pro ME864</a>
+                                </div>
+                                <span class="button-close"></span>
+                            </div>
+                            <div class="price">1200,00$</div>
+                            <a href="#" class="product-image">
+                                <img src="img/items/item-1.jpg" alt="">
+                            </a>
+                            <div class="buttons-box">
+                                <button type="button" class="button_dark-green">Выбрать</button>
+                                <a href="#" class="shape"></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>Экран 13.6" (1366x768) LED, глянцевый / Intel Core i3-370M (2.4 ГГц) / RAM 3 ГБ / HDD 500 ГБ / AMD Radeon HD6370M, 1 ГБ / DVD SuperMulti / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / вес 2.6 кг / коричневый</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Экран 13.6" (1366x768) LED, глянцевый / Intel Core i3-370M (2.4 ГГц) / RAM 3 ГБ / HDD 500 ГБ / AMD Radeon HD6370M, 1 ГБ / DVD SuperMulti / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / вес 2.6 кг / коричневый</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Экран 13.6" (1366x768) LED, глянцевый / Intel Core i3-370M (2.4 ГГц) / RAM 3 ГБ / HDD 500 ГБ / AMD Radeon HD6370M, 1 ГБ / DVD SuperMulti / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / вес 2.6 кг / коричневый</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Экран 13.6" (1366x768) LED, глянцевый / Intel Core i3-370M (2.4 ГГц) / RAM 3 ГБ / HDD 500 ГБ / AMD Radeon HD6370M, 1 ГБ / DVD SuperMulti / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / вес 2.6 кг / коричневый</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Экран 13.6" (1366x768) LED, глянцевый / Intel Core i3-370M (2.4 ГГц) / RAM 3 ГБ / HDD 500 ГБ / AMD Radeon HD6370M, 1 ГБ / DVD SuperMulti / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / вес 2.6 кг / коричневый</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Экран 13.6" (1366x768) LED, глянцевый / Intel Core i3-370M (2.4 ГГц) / RAM 3 ГБ / HDD 500 ГБ / AMD Radeon HD6370M, 1 ГБ / DVD SuperMulti / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / вес 2.6 кг / коричневый</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Экран 13.6" (1366x768) LED, глянцевый / Intel Core i3-370M (2.4 ГГц) / RAM 3 ГБ / HDD 500 ГБ / AMD Radeon HD6370M, 1 ГБ / DVD SuperMulti / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / вес 2.6 кг / коричневый</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>15.5" (1366x768) WXGA</p>
+                        </td>
+                        <td class="item-col">
+                            <p>15.5" (1366x768) WXGA</p>
+                        </td>
+                        <td class="item-col">
+                            <p>15.5" (1366x768) WXGA</p>
+                        </td>
+                        <td class="item-col">
+                            <p>15.5" (1366x768) WXGA</p>
+                        </td>
+                        <td class="item-col">
+                            <p>15.5" (1366x768) WXGA</p>
+                        </td>
+                        <td class="item-col">
+                            <p>15.5" (1366x768) WXGA</p>
+                        </td>
+                        <td class="item-col">
+                            <p>15.5" (1366x768) WXGA</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>Двухъядерный Intel Core i3-370M (2.4 ГГц)</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Двухъядерный Intel Core i3-370M (2.4 ГГц)</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Двухъядерный Intel Core i3-370M (2.4 ГГц)</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Двухъядерный Intel Core i3-370M (2.4 ГГц)</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Двухъядерный Intel Core i3-370M (2.4 ГГц)</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Двухъядерный Intel Core i3-370M (2.4 ГГц)</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Двухъядерный Intel Core i3-370M (2.4 ГГц)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>3 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>3 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>3 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>3 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>3 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>3 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>3 ГБ</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>DDR3</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DDR3</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DDR3</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DDR3</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DDR3</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DDR3</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DDR3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>500 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>500 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>500 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>500 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>500 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>500 ГБ</p>
+                        </td>
+                        <td class="item-col">
+                            <p>500 ГБ</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>Дискретный, AMD Radeon HD6370M, 1 ГБ выделенной видеопамяти</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Дискретный, AMD Radeon HD6370M, 1 ГБ выделенной видеопамяти</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Дискретный, AMD Radeon HD6370M, 1 ГБ выделенной видеопамяти</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Дискретный, AMD Radeon HD6370M, 1 ГБ выделенной видеопамяти</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Дискретный, AMD Radeon HD6370M, 1 ГБ выделенной видеопамяти</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Дискретный, AMD Radeon HD6370M, 1 ГБ выделенной видеопамяти</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Дискретный, AMD Radeon HD6370M, 1 ГБ выделенной видеопамяти</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>Wi-Fi 802.11 b/g/n</p>
+                            <p>Bluetooth</p>
+                            <p>Gigabit Ethernet</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Wi-Fi 802.11 b/g/n</p>
+                            <p>Bluetooth</p>
+                            <p>Gigabit Ethernet</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Wi-Fi 802.11 b/g/n</p>
+                            <p>Bluetooth</p>
+                            <p>Gigabit Ethernet</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Wi-Fi 802.11 b/g/n</p>
+                            <p>Bluetooth</p>
+                            <p>Gigabit Ethernet</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Wi-Fi 802.11 b/g/n</p>
+                            <p>Bluetooth</p>
+                            <p>Gigabit Ethernet</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Wi-Fi 802.11 b/g/n</p>
+                            <p>Bluetooth</p>
+                            <p>Gigabit Ethernet</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Wi-Fi 802.11 b/g/n</p>
+                            <p>Bluetooth</p>
+                            <p>Gigabit Ethernet</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item-col">
+                            <p>DVD Super Multi</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DVD Super Multi</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DVD Super Multi</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DVD Super Multi</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DVD Super Multi</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DVD Super Multi</p>
+                        </td>
+                        <td class="item-col">
+                            <p>DVD Super Multi</p>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td class="item-col">
+                            <p>Веб-камера 0.3 Мп</p>
+                            <p>Встроенный микрофон</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Веб-камера 0.3 Мп</p>
+                            <p>Встроенный микрофон</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Веб-камера 0.3 Мп</p>
+                            <p>Встроенный микрофон</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Веб-камера 0.3 Мп</p>
+                            <p>Встроенный микрофон</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Веб-камера 0.3 Мп</p>
+                            <p>Встроенный микрофон</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Веб-камера 0.3 Мп</p>
+                            <p>Встроенный микрофон</p>
+                        </td>
+                        <td class="item-col">
+                            <p>Веб-камера 0.3 Мп</p>
+                            <p>Встроенный микрофон</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!--footer-->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-left">
+            <div class="phone-box">
+                <span>Работаем с 9.00 до 18.00</span>
+                <a href="tel:099189790278">Тел: (099) 189 -790 -278</a>
+            </div>
+            <div class="pay-box clearfix">
+                <a href="#" class="visa"><span></span></a>
+                <a href="#" class="master-card"><span></span></a>
+                <a href="#" class="web-money"><span></span></a>
+                <a href="#" class="qiwi"><span></span></a>
+                <a href="#" class="portmone"><span></span></a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <ul class="menu-items clearfix">
+                <li class="menu-item"><a href="#">Помощь</a></li>
+                <li class="menu-item"><a href="#">Ноутбуки</a></li>
+                <li class="menu-item"><a href="#">Как сделать заказ</a></li>
+                <li class="menu-item"><a href="#">Компютеры</a></li>
+                <li class="menu-item"><a href="#">Гарантия</a></li>
+                <li class="menu-item"><a href="#">Мониторы</a></li>
+                <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+                <li class="menu-item"><a href="#">Телефоны</a></li>
+                <li class="menu-item"><a href="#">Обраратная свазь</a></li>
+                <li class="menu-item"><a href="#">Бытовая техника</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="img/logo-footer.png" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="#" class="twitter"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="google"></a>
+                <a href="#" class="pinterest"></a>
+                <a href="#" class="instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+<script>
+    (function() {
+        $(window).on("load",function(){
+            $('.inner').mCustomScrollbar({
+                axis:"x"
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

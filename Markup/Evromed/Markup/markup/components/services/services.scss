@@ -1,0 +1,183 @@
+.breadcrumbs {
+    padding: 23px 0 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li {
+        color: #454545;
+        font-size: 12px;
+        margin-right: 3px;
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &.general {
+            a {
+                color: #7e7e7e;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.services {
+    h2 {
+        margin-bottom: 114px;
+    }
+}
+.columns-services {
+    top: -83px;
+    position: relative;
+    display: flex;
+}
+.bg-services {
+    background-color: #f5f0e8;
+}
+.one-column {
+    width: 25%;
+    position: relative;
+    background-color: white;
+    &:after {
+        @extend .pseudo;
+        right: -1px;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background-color: #f5f0e8;
+        opacity: 0.7;
+    }
+    &:last-of-type:after {
+        display: none;
+    }
+    &.red {
+        background-color: #fff9f0;
+    }
+    h4 {
+        font-size: 13px;
+        margin-left: 9px;
+        font-weight: 700;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    ul {
+        margin: 0 9px;
+        li {
+            margin: 0 0 17px;
+            a {
+                font-size: 12px;
+                color: black;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.title-services {
+    background-color: #6da878;
+    position: relative;
+    height: 168px;
+    padding: 73px 17px 0 9px;
+    &:after {
+        @extend .pseudo;
+        top: 20px;
+        left: 11px;
+    }
+    h3 {
+        font-size: 25px;
+        font-family: $f-pf-r;
+        line-height: 1.8;
+        text-transform: uppercase;
+    }
+    &.blood-tests {
+        margin-bottom: 15px;
+        &:after {
+            background-image: url(../img/content/icons-svg/2/blood-test.svg);
+            width: 46px;
+            height: 42px;
+        }
+    }
+    &.hospital-reception {
+        margin-bottom: 15px;
+        &:after {
+            width: 47px;
+            height: 46px;
+            background-image: url(../img/content/icons-svg/2/hospital-reception.svg)
+        }
+    }
+    &.doctor:after {
+        width: 38px;
+        height: 51px;
+        background-image: url(../img/content/icons-svg/2/doctor.svg);
+    }
+    &.complex-programs {
+        margin-bottom: 15px;
+        &:after {
+            width: 38px;
+            height: 37px;
+            background-image: url(../img/content/icons-svg/2/first-aid-kit.svg);
+        }
+    }
+}
+.womens {
+    padding: 15px 0;
+    background-color: #ffecec;
+}
+.mens {
+    padding: 20px 0;
+    background-color: #f2ffec;
+}
+.childrens {
+    padding: 15px 0;
+}
+.etaps {
+    background-color: #edf5e8;
+    padding: 164px 0 47px;
+    margin-top: -232px;
+    h2 {
+        margin-bottom: 30px;
+    }
+    &__box {
+        width: 940px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__one {
+        width: 186px;
+        position: relative;
+        &:not(:last-of-type):after {
+            @extend .pseudo;
+            right: -50px;
+            top: 37%;
+            @include bg($arrow-etaps);
+        }
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        strong {
+            display: block;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.8;
+        }
+    }
+}
+.services-info {
+    background-color: #f5f0e8;
+    padding: 27px 0 38px;
+    h2 {
+        margin-bottom: 13px;
+    }
+    p {
+        font-size: 12px;
+        color: black;
+        line-height: 1.6;
+    }
+}

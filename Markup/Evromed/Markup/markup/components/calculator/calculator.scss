@@ -1,0 +1,28 @@
+/*CALCULATOR*/
+.calc {
+    width: 50px;
+    display: none;
+    height: 279px;
+    background-color: #70a064;
+    border-radius: 2px;
+    box-shadow: -2px 0 0 rgba(24, 92, 14, 0.75);
+    position: fixed;
+    right: 0;
+    top: calc((100vh - 280px)/2);
+    padding: 58px 0px 0;
+    z-index: 10;
+    &:before {
+        @extend .pseudo;
+        top: 12px;
+        left: 12px;
+        @include bg($calc);
+    }
+    span {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: white;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,173 @@
+.gastro-simptoms {
+    &__left {
+        float: left;
+        width: 47%;
+    }
+    &__right {
+        float: right;
+        width: 50%;
+    }
+    color: black;
+    font-size: 15px;
+    padding: 28px 0;
+    p {
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 17px;
+    }
+    ul {
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+.doctors {
+    background-color: #fffbf5;
+    padding-bottom: 1px;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+    }
+}
+.one-doctor {
+    width: 49.8%;
+    display: flex;
+    color: white;
+    margin-bottom: 35px;
+    &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 10px;
+        padding: 0 10px;
+        left: 0;
+        font-size: 14px;
+        a {
+            width: 48%;
+            height: 44px;
+            border: 2px solid #fffbf5;
+            font-size: 14px;
+            color: white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            &:hover {
+                background-color: #70a064;
+            }
+        }
+    }
+    &__image {
+        width: 50%;
+        display: inline-flex;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info {
+        width: 50%;
+        background-color: #6da878;
+        position: relative;
+        padding: 19px 10px 0 10px;
+        &:after {
+            @extend .pseudo;
+            display: block;
+            right: -5px;
+            top: 50%;
+            margin-top: -8px;
+            width: 9px;
+            height: 9px;
+            transform: rotate(45deg);
+            background-color: #6da878;
+        }
+        span {
+            display: block;
+            margin: 0 0 4px 15px;
+            &:last-of-type {
+                margin-bottom: 28px;
+            }
+        }
+        strong {
+            font-size: 18px;
+            display: block;
+            margin: 0 10px 7px 12px;
+            &:last-of-type {
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+.more-doctors__button {
+    color: black;
+    font-size: 16px;
+    width: 191px;
+    height: 58px;
+    border: 2px solid #70a064;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 65px;
+    transition: 0.3s;
+    &:hover {
+        background-color: #70a064;
+        color: #fff;
+    }
+}
+.turn__box {
+    display: none;
+}
+.enroll-gastro {
+    display: inline-block;
+    position: relative;
+    color: #47a364;
+    font-size: 12px;
+    &:after {
+        @extend .pseudo;
+        width: 21px;
+        height: 29px;
+        background-image: url(%=static=%content/icons-svg/1/admision-form.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        right: -45px;
+        top: -8px;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.gastro {
+    padding-bottom: 50px;
+}
+.gastro__block {
+    background-color: #fff;
+    padding: 0 11px;
+}
+.gastro__table {
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    td {
+        padding: 30px 8px;
+        &:nth-of-type(1) {
+            width: 58%;
+        }
+        &:nth-of-type(2) {
+            font-size: 16px;
+        }
+        &:last-of-type {
+            width: 177px;
+        }
+    }
+    tr:not(:last-of-type) {
+        border-bottom: 1px solid #bcc9c6;
+    }
+}
+.one-doctor__buttons.det-info {
+    padding: 0;
+}

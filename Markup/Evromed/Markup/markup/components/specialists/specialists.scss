@@ -1,0 +1,234 @@
+/*CUSTOM SELECT*/
+.jq-selectbox {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.jq-selectbox__select {
+    height: 48px;
+    padding: 12px 45px 0 13px;
+}
+.sign-up-doctor .jq-selectbox__select {
+    height: 39px;
+}
+.jq-selectbox__select-text {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.jq-selectbox .placeholder {
+    color: #a7a7a7;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+    border-top-color: #000;
+}
+.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+    border-top-color: #AAA;
+}
+.jq-selectbox__search {
+    margin: 5px;
+}
+.jq-selectbox__search input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 5px 27px 6px 8px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 1px 1px #F1F1F1;
+    color: #a7a7a7;
+    -webkit-appearance: textfield;
+}
+.jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox__search input::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+.jq-selectbox__not-found {
+    margin: 5px;
+    padding: 5px 8px 6px;
+    background: #F0F0F0;
+    font-size: 13px;
+}
+.jq-selectbox ul {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden!important;
+    height: 100%;
+    max-height: 100%!important;
+}
+.jq-selectbox li {
+    min-height: 18px;
+    padding: 11px 13px 11px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    color: #a7a7a7;
+}
+.jq-selectbox li.selected {
+    background: #eaf5e8;
+    color: #a7a7a7;
+}
+.jq-selectbox li:hover {
+    background: #eaf5e8;
+    color: #a7a7a7;
+}
+.jq-selectbox li.disabled {
+    color: #a7a7a7;
+}
+.jq-selectbox li.disabled:hover {
+    background: none;
+}
+.jq-selectbox li.optgroup {
+    font-weight: bold;
+}
+.jq-selectbox li.optgroup:hover {
+    background: none;
+    color: #a7a7a7;
+    cursor: default;
+}
+.jq-selectbox li.option {
+    padding-left: 25px;
+}
+.jq-selectbox {
+    width: 48.7%;
+    float: left;
+    color: #a7a7a7;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid rgba(112, 160, 100, 0.39);
+}
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 22px;
+    right: 16px;
+    @include bg($arrow-select);
+}
+.jq-selectbox__trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+}
+.jq-selectbox__dropdown {
+    box-sizing: content-box;
+    left: -1px!important;
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 0;
+    top: 46px;
+    background-color: #fff;
+    border: 1px solid rgba(112, 160, 100, 0.39);
+    color: #a7a7a7;
+    font-size: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.jq-selectbox__select:hover {
+    background: #eaf5e8;
+}
+.jq-selectbox__select:active {
+    background: #eaf5e8;
+}
+.jq-selectbox li:first-of-type {
+    display: none;
+}
+/*END CUSTOM SELECT*/
+
+.all-specialists__box {
+    padding-top: 32px;
+    flex-wrap: wrap;
+}
+.choose-specialists {
+    &__form {
+        margin-bottom: 45px;
+        width: 100%;
+    }
+    &__input {
+        color: #a7a7a7;
+        height: 50px;
+        width: 100%;
+        font-size: 20px;
+        padding: 14px 10px 11px 17px;
+        background-color: white;
+        border: 1px solid rgba(112, 160, 100, 0.39);
+        @include placeholder(#a7a7a7);
+    }
+}
+.all-doctors__box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .one-doctor__info {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        color: black;
+        &:after {
+            background-color: white;
+        }
+        strong {
+            margin: 0 10px 7px 0;
+            &:last-of-type {
+                margin: 0 10px 18px 0;
+            }
+        }
+        span {
+            margin: 0 0 4px;
+        }
+    }
+    .one-doctor__buttons {
+        .make-appoint {
+            color: white;
+            background-color: #70a064;
+            border: 2px solid #70a064;
+            &:hover {
+                background-color: #6da878;
+            }
+        }
+        .about-doctor {
+            border: 2px solid #70a064;
+            color: black;
+            &:hover {
+                background-color: #6da878;
+                color: white;
+            }
+        }
+    }
+}
+.cover-autocomplite {
+    position: relative;
+    float: right;
+    width: 48.7%;
+}
+#ui-id-1 {
+    position: absolute;
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid rgba(112, 160, 100, 0.39);
+    padding: 0;
+    li {
+        div {
+            font-size: 20px;
+            padding: 14px 10px 11px 17px;
+            background-color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            color: #a7a7a7;
+            &:hover {
+                color: black;
+                background-color: #f5f0e8;
+            }
+        }
+        &:not(:last-of-type) div {
+            border-bottom: 1px solid rgba(112, 160, 100, 0.39);
+        }
+    }
+}

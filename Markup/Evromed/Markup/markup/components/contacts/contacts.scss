@@ -1,0 +1,182 @@
+.title-contacts {
+    background-color: #f9f5f0;
+    h2 {
+        font-size: 40px;
+        font-family: $f-pf-m;
+        margin: 8px 0 37px;
+    }
+}
+.contacts {
+    &__box {
+        padding-bottom: 25px;
+        &__one {
+            float: left;
+            color: black;
+            &:first-of-type {
+                margin-right: 109px;
+            }
+            span {
+                display: block;
+                font-size: 17px;
+                line-height: 44px;
+                margin-bottom: 8px;
+            }
+            a, strong {
+                font-size: 20px;
+            }
+            strong {
+                margin-right: 20px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.feedback {
+    background-color: #f2f9f0;
+    padding: 21px 0 31px;
+    h3 {
+        color: #282828;
+        font-size: 30px;
+        margin-bottom: 27px;
+    }
+    &__left {
+        float: left;
+        width: 49%;
+        input {
+            height: 41px;
+        }
+    }
+    &__right {
+        float: right;
+        width: 49%;
+        textarea {
+            height: 194px;
+        }
+    }
+}
+.input__cover {
+    width: 100%;color: black;
+    margin-bottom: 10px;
+    input {
+        font-size: 14px;
+        padding: 12px 13px 11px;
+        text-transform: uppercase;
+        width: 100%;
+        border: 1px solid #70a064;
+        &.error {
+            border: 1px solid #e53030;
+        }
+        @include placeholder(black)
+    }
+    textarea {
+        border: 1px solid #70a064;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 10px 13px 13px;
+        font-family: $f-cor-r;
+        @include placeholder(black);
+        &:focus {
+            @include placeholder(transparent)
+        }
+    }
+}
+.capcha {
+    float: left;
+    overflow: hidden;
+    margin-right: 16px;
+    &__box {
+        margin: 18px 0;
+        float: left;
+        width: 100%;
+    }
+}
+.enter-capcha {
+    float: left;
+    width: 340px;
+    label {
+        width: 147px;
+        float: right;
+        color: #676767;
+        font-size: 11px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-top: 3px;
+    }
+    .input__cover {
+        float: left;
+        width: 186px;
+    }
+}
+.cover__submit {
+    float: right;
+    margin-top: -10px;
+    position: relative;
+    input {
+        width: 370px;
+        height: 60px;
+        background: #70a064;
+        border: 2px solid #70a064;
+        font-size: 14px;
+        cursor: pointer;
+        color: white;
+        transition: 0.3s;
+        text-transform: uppercase;
+        -webkit-box-shadow: 0 2px 0 #165301;
+        -moz-box-shadow: 0 2px 0 #165301;
+        box-shadow: 0 2px 0 #165301;
+        &:hover {
+            background-color: #fff;
+            color: black;
+        }
+    }
+    span {
+        color: #e73333;
+        font-size: 11px;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -25px;
+        right: 8px;
+    }
+}
+.adress__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 22px 0;
+    &__one {
+        width: 49%;
+        margin-bottom: 50px;
+        &__photo {
+            margin-bottom: 15px;
+            img {
+                width: 100%;
+            }
+        }
+        h4 {
+            font-family: $f-pf-r;
+            color: #282828;
+            margin-bottom: 22px;
+            font-size: 30px;
+            text-transform: none;
+        }
+        p {
+            color: black;
+            font-size: 14px;
+            line-height: 26px;
+        }
+        strong {
+            font-family: $f-pf-r;
+            color: #70a064;
+            font-size: 20px;
+            display: block;
+            margin-top: 18px;
+        }
+    }
+}
+#adress__box__one__map, #adress__box__one__map2,#adress__box__one__map3, #adress__box__one__map4 {
+    height: 344px;
+    margin-bottom: 19px;
+}

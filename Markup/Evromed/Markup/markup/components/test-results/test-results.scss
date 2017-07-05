@@ -1,0 +1,169 @@
+.test-results {
+    &__left {
+        width: 541px;
+        padding-right: 5px;
+        float: left;
+        h2 {
+            margin: 5px 0 30px;
+            font-size: 44px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        strong {
+            color: #d73e3e;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+    &__right {
+        width: 421px;
+        float: right;
+        position: relative;
+        background-color: #f5f0e8;
+        padding: 126px 0 0 45px;
+        &:after {
+            @extend .pseudo;
+            top: 0;
+            right: -100vw;
+            height: 100%;
+            width: 100vw;
+            background-color: #f5f0e8;
+        }
+        label {
+            color: #2d2d2d;
+            display: block;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .input__cover {
+            margin-bottom: 30px;
+        }
+    }
+    &__write {
+        background-color: #eaf5e8;
+        padding: 23px 0 41px;
+        h3 {
+            font-family: $f-pf-m;
+            font-size: 30px;
+            color: black;
+            margin-bottom: 35px;
+            text-transform: none;
+        }
+        &_save {
+            display: flex;
+            align-items: center;
+            span, strong {
+                display: block;
+                line-height: 1.8;
+                font-size: 14px;
+                margin-right: 15px;
+                color: black;
+            }
+            strong {
+                font-weight: 700;
+            }
+            .adobe-reader {
+                color: #d73e3e;
+                a {
+                    color: #262626;
+                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                float: left;
+            }
+        }
+        &_status {
+            float: left;
+        }
+    }
+    &__detail {
+        background-color: #f6fbfa;
+        padding: 29px 0;
+        &__item {
+            margin-bottom: 25px;
+            width: 100%;
+            caption {
+                font-family: $f-pf-r;
+                font-size: 30px;
+                color: black;
+                margin-bottom: 19px;
+                text-align: left;
+            }
+            tr {
+                width: 100%;
+                td {
+                    font-size: 14px;
+                    padding: 15px 0 17px 12px;
+                    color: black;
+                    &:first-child {
+                        width: 305px;
+                    }
+                    &:nth-of-type(2) {
+                        width: calc(100% - 305px);
+                    }
+                }
+                &:nth-of-type(odd) {
+                    td {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.adobe-reader {
+    color: #d73e3e;
+    a {
+        color: #262626;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    float: left;
+}
+.download-result {
+    float: left;
+    margin: 0 52px 0 47px;
+    a {
+        background-color: #457938;
+        width: 350px;
+        color: white;
+        text-transform: uppercase;
+        border: 2px solid #457938;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        transition: 0.3s;
+        font-size: 14px;
+        cursor: pointer;
+        box-shadow: 0 2px 0 #224d18;
+        &:hover {
+            background-color: #fff;
+            color: black;
+        }
+    }
+}
+.test-results-button {
+    background-color: #70a064;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #70a064;
+    height: 56px;
+    transition: 0.3s;
+    font-size: 14px;
+    margin: 17px 0 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 0 #277500;
+    &:hover {
+        background-color: #fff;
+        color: black;
+    }
+}

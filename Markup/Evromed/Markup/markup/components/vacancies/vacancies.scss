@@ -1,0 +1,45 @@
+.vacancies {
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    &__item {
+        transition: 0.3s;
+        width: 316px;
+        background-color: #f5f0e8;
+        margin-bottom: 20px;
+        padding: 18px 2px 24px 11px;
+        cursor: pointer;
+        &:hover {
+            background-color: #6da878;
+            h3, p, a {
+                color: white;
+            }
+        }
+        h3 {
+            color: #282828;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 19px;
+            transition: 0.3s;
+        }
+        p {
+            color: black;
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            strong {
+                font-weight: 700;
+            }
+            a {
+                transition: 0.3s;
+                :hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
